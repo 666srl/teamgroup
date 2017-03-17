@@ -55,6 +55,6 @@ angular
   		templateUrl:"views/businesstrip.html"
   	})
   	
-	$urlRouterProvider.otherwise("/login");
+	$urlRouterProvider.otherwise("/transfer");
 	
   }]);

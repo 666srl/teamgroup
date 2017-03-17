@@ -1,0 +1,29 @@
+body{
+	background: url(../images/timg.jpg);
+}
+.pj_head{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:0.53rem;
+	position:relative;
+	top:1.3rem;
+}
+.pj_head:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.pj_head:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
+}
+
