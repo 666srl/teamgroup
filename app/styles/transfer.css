@@ -5,6 +5,7 @@ body{
 	width:0.55rem;
 	height:0.6rem;
 	margin-left:0.53rem;
+	border-bottom: 1px white solid;
 	position:relative;
 	top:1.3rem;
 }
