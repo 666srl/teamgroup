@@ -1,0 +1,40 @@
+.boss_wrapper{
+	width:16rem;
+	height:100vh;
+	background: url(../images/timg.jpg) no-repeat;
+}
+.boss_header{
+	width:16rem;
+	height:2.5rem;
+	border-bottom:1px solid white;
+	line-height:1.5rem;
+	text-align:center;
+	color:white;
+}
+.boss_prompt{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:0.53rem;
+	position:relative;
+	top:1.3rem;
+}
+.boss_prompt:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.boss_prompt:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
+}
+
+
