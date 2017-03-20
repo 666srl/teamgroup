@@ -1,1 +1,140 @@
+.dj-bg{
+	background: rgba(255,255,255,0.3);
+	height: 100%;
+}
+.dj_top {
+	height: 2.5rem;
+	border-bottom: 1px solid white;
+	line-height: 2.5rem;
+	padding-left: 1rem;
+	width: 100%;
+}
+.dj_top p{
+	display: inline-block;
+	margin-left: 3rem;
+	float: left;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: .8rem;
+	
+}
+.boss_prompt{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:0.53rem;
+	position:relative;
+	top:1.3rem;
+	float: left;
+}
+.boss_prompt:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.boss_prompt:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
+}
 
+.dj-content{
+	font-size: .6rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	width: 90%;
+	margin: 0 auto;
+}
+.dj-xq>span{
+	margin-right: .7rem;
+}
+.dj-xq>span:first-child{
+	margin-left: .5rem;
+}
+
+.dj-bj{
+	
+	border: 0;
+	width: 2rem;
+	
+	border-radius: .2rem;
+}
+.dj-xq {
+	border-bottom: 1px solid #fff;
+	height: 1.5rem;
+	padding: .2rem 0 .2rem 0;
+}
+input{
+	color: #000;
+	border: none;
+	padding-left: .3rem;
+	
+}
+.dj-add input{
+	width: 6rem;
+	height: 1.2rem;
+	border-radius: .2rem;
+}
+.dj-add p{
+	margin-top: .5rem;
+}
+.dj-xq button{
+	margin-right: .5rem;
+}
+.dj-btn{
+	margin-left: 5.2rem;
+	margin-top: .8rem;
+	
+	width:3.5rem !important;
+	border: 0;
+	
+	border-radius: .2rem;
+}
+.dj-io{
+	color:#000 ;
+	width: 3rem;
+	height: 1.2rem;
+	border: 0;
+}
+button{
+	background: #fff;
+}
+.dj-list{
+	margin-top: 1.5rem;
+	width: 100%;
+	padding-bottom: .5rem;
+	border: 1px solid #fff;
+}
+.dj-add{
+	width: 100%;
+	/*border: 1px solid #fff;*/
+	margin-top: 3rem;
+	padding-left: 1rem;
+	padding: .2rem 0 .2rem 1rem;
+}
+
+.form-control{
+	width: 3rem;
+	display: inline-block;
+}
+.tj{
+	color: #000;
+	width: 3rem;
+	border-radius: .2rem;
+	height: 1.3rem;
+	border: 0;
+	margin-top: .5rem;
+}
+.la{
+	margin-left: .3rem;
+}
+.j{
+	margin-top: .5rem;
+}
