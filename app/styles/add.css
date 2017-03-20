@@ -122,6 +122,7 @@ button{
 
 .form-control{
 	width: 3rem;
+	height:auto;
 	display: inline-block;
 }
 .tj{
