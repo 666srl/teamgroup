@@ -85,4 +85,9 @@
 	width: 3.5rem;
 	height: 1.2rem;
 	border-radius: 0.3rem;
+	color: #000;
+}
+.pj_center select option{
+	
+	color: #000;
 }
