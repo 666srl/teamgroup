@@ -8,6 +8,10 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('bossCtrl', function () {
-    
-  });
+  .controller('bossCtrl', ["$scope","$http",function () {
+      $http({
+      	url:"http://47.88.16.225:404/user",
+      	method:"get"
+      })
+      
+  }]);
