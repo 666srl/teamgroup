@@ -8,6 +8,12 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
+<<<<<<< HEAD
+  .controller('leaveCtrl', function () {
+    
+   
+=======
   .controller('lessCtrl', function () {
     
+>>>>>>> origin/master
   });
