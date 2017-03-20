@@ -60,10 +60,10 @@ angular
   		templateUrl:"views/businesstrip.html"
   	})
   	
-<<<<<<< HEAD
+
 	$urlRouterProvider.otherwise("/transfer");
-=======
-	$urlRouterProvider.otherwise("/homepage");
->>>>>>> origin/master
+
+
+
 	
   }]);
