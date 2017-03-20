@@ -60,6 +60,6 @@ angular
   		templateUrl:"views/businesstrip.html"
   	})
   	
-	$urlRouterProvider.otherwise("/add");
+	$urlRouterProvider.otherwise("/login");
 	
   }]);

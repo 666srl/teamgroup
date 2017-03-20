@@ -1,0 +1,71 @@
+.boss_prompt {
+	width: 0.55rem;
+	height: 0.6rem;
+	margin-left: 0.53rem;
+	position: relative;
+	top: 1.3rem;
+}
+
+.boss_prompt:after {
+	width: 0.55rem;
+	height: 0.1rem;
+	position: absolute;
+	content: "";
+	background: white;
+	transform-origin: left center;
+	transform: rotate(45deg);
+}
+
+.boss_prompt:before {
+	width: 0.55rem;
+	height: 0.1rem;
+	position: absolute;
+	content: "";
+	background: white;
+	transform-origin: left center;
+	transform: rotate(-45deg);
+}
+
+.ly-head {
+	height: 2.5rem;
+	border-bottom: 1px solid white;
+	line-height: 2.5rem;
+	padding-left: 1rem;
+}
+.ly-head>h1{
+	line-height: 1.5rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+}
+.ly_xq{
+	width: 100%;
+	/*border: 1px solid #fff;*/
+	margin-top: 3rem;
+	padding-left: 1rem;
+	padding: 0rem 0 .2rem 1rem;
+	font-size: .8rem;
+	color: #fff;
+}
+.ly_xq input{
+	width: 6rem;
+	height: 1.2rem;
+	border-radius: .2rem;
+}
+.ly_xq p{
+	margin-top: .5rem;
+}
+p.ye input{
+	width: 2.5rem;
+}
+.go{
+	color: #fff;
+	width: 3rem;
+	border-radius: .2rem;
+	height: 1.3rem;
+	border: 0;
+	margin-top: .5rem;
+}
+.end{
+	margin-left: .3rem;
+}
