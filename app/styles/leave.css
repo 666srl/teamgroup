@@ -1,0 +1,82 @@
+body{
+	font-family:微软雅黑;
+}
+.staff_wrapper{
+	width:16rem;
+	height:100vh;
+	background: url(../images/timg.jpg) no-repeat;
+	background-size:cover; 	
+}
+.staff_header{
+	width:16rem;
+	height:2.5rem;
+	font-size:0.8rem;
+	border-bottom:1px solid white;
+	line-height:1.5rem;
+	text-align:center;
+	color:white;
+}
+.staff_prompt{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:0.53rem;
+	position:relative;
+	top:1.3rem;
+}
+.staff_prompt:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.staff_prompt:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
+}
+.leave_content{
+	color:white;
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+	height:auto;
+	margin-top:1.5rem;
+}
+.leave_content input{
+	color:black;
+}
+.leave_content textarea{
+	color:black;
+}
+.leave_content>p{
+	margin-top:0.5rem;
+}
+.leave_content>p:last-child{
+	margin-top:1.5rem;
+}
+.leave_btn input:nth-child(1){
+	margin-left:4rem;
+}
+.leave_qianjia span{
+	display:block;
+	margin-left:3rem;
+}
+.leave_qianjia span>input{
+	margin-left:0.5rem;
+	display:inline-block;
+}
+.leave_qianjia span:nth-child(2){
+	margin-top:0.5rem;
+}
+.leave_btn input:nth-child(2){
+	margin-left:4rem;
+}
+.leave_btn>input{
+	color:white;
+}

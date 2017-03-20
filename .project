@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>come</name>
+
+	<name>over</name>
+
 	<comment></comment>
 	<projects>
 	</projects>
@@ -14,4 +16,17 @@
 	<natures>
 		<nature>com.aptana.projects.webnature</nature>
 	</natures>
+
+	<filteredResources>
+		<filter>
+			<id>1489969290519</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-node_modules</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+
 </projectDescription>
