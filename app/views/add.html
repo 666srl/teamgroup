@@ -19,15 +19,15 @@
 			
 		</div>
 		<div class="dj-add" ng-show="x">
-			<p>姓&#X3000;名 : <input type="text"  /></p>
-			<p>职&#X3000;位 : <input type="text" /></p>
-			<p>账&#X3000;号 : <input type="text" /></p>
-			<p>密&#X3000;码 : <input type="password" /></p>
-			<p>手机号 : <input type="tel" /></p>
-			<p>地&#X3000;点 : <select name="" class="dj-io">
-				<option >北京</option>
-				<option >上海</option>
-				<option >山西</option>
+			<p>姓&#x3000;名 : <input type="text" ng-module="name"/></p>
+			<p>职&#x3000;位 : <input type="text" ng-module="zhiwei"/></p>
+			<p>账&#x3000;号 : <input type="text" ng-module="user"/></p>
+			<p>密&#x3000;码 : <input type="password" ng-module="pass"/></p>
+			<p>手机号 : <input type="tel" ng-module="tel"/></p>
+			<p>地&#x3000;点 : <select name="" class="dj-io">
+				<option value="beijing">北京</option>
+				<option value="shanghai">上海</option>
+				<option value="shanxi">山西</option>
 			</select></p>
 			
 			<button class="j btn btn-primary btn-sm">提交</button>
