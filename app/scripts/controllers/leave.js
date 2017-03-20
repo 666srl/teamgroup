@@ -7,6 +7,8 @@
  * # MainCtrl
  * Controller of the teamGroupApp
  */
-angular.module('teamGroupApp')
-  .controller('leaveCtrl', function () {
+angular.module('teamGroupApp').controller('leaveCtrl',function($scope){
+  	$scope.aa=function(){
+  		alert(1)
+  	}
   });
