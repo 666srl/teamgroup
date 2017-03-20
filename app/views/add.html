@@ -1,9 +1,37 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+<div ng-controller="addCtrl" >
+	<div class="dj-zzc">
+		<div class="dj_top">
+		<div class="boss_prompt"></div>
+		<p>添加员工信息</p>
+	</div>
+	</div>
+	<div class="dj-content">
+		<div class="dj-list">
+			<p class="dj-xq">
+				<span>姓名: <span>杜江</span></span>
+				<span>职位: <span>web开发</span></span>
+				<button class="dj-bj btn-primary btn-sm">修改</button>
+				<button class="dj-bj btn-primary btn-sm">删除</button>
+			</p>
+			<p>
+				<button class="dj-btn btn-primary btn-sm" ng-click="xs()" >添加员工</button>
+			</p>
+			
+		</div>
+		<div class="dj-add" ng-show="x">
+			<p>姓&#X3000;名 : <input type="text"  /></p>
+			<p>职&#X3000;位 : <input type="text" /></p>
+			<p>账&#X3000;号 : <input type="text" /></p>
+			<p>密&#X3000;码 : <input type="password" /></p>
+			<p>手机号 : <input type="tel" /></p>
+			<p>地&#X3000;点 : <select name="" class="dj-io">
+				<option >北京</option>
+				<option >上海</option>
+				<option >山西</option>
+			</select></p>
+			
+			<button class="j btn btn-primary btn-sm">提交</button>
+			<button class="j la btn btn-primary btn-sm" ng-click="qx()">取消</button>
+		</div>
+	</div>
+</div>
