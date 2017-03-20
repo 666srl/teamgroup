@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>team group</name>
+	<name>over</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,11 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-<<<<<<< HEAD
-			<id>1489734799616</id>
-=======
-			<id>1489735579395</id>
->>>>>>> origin/master
+			<id>1489969290519</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
