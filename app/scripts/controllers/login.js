@@ -8,8 +8,7 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('loginCtrl', function ($scope,$http) {
-  
+  .controller('loginCtrl', function ($scope,$http,$state) {
   	$scope.username = '';
 	$scope.user = function(){
 		var name = /^[a-zA-Z]/;
@@ -28,7 +27,8 @@ angular.module('teamGroupApp')
 		
 		if($scope.password == ''){
 			alert("请输入密码");
-		}else {
+		}
+		else {
 			if (reg.test($scope.password) == false) {
 				alert("请输入正确的密码")
 			}
@@ -45,8 +45,18 @@ angular.module('teamGroupApp')
     		"password":$scope.password
     	}
     }).then(function(e){
-    	console.log($scope.e);
-    	
+    	localStorage.loid = e.data.uid;
+    	console.log(e);
+    	$http({
+    		url:"http://"+ip+"/users/"+localStorage.loid,
+    		method:"get"
+    	}).then(function(respone){
+    		console.log(respone);
+    		localStorage.loname = respone.data.username;
+//  		if (respone.data.username == 'srl') {
+    			$state.go("homepage")
+//  		}
+    	})
     	
     })
 
