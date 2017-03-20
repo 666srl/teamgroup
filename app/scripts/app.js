@@ -61,9 +61,6 @@ angular
   	})
   	
 
-	$urlRouterProvider.otherwise("/transfer");
-
-
-
+	$urlRouterProvider.otherwise("/login");
 	
   }]);

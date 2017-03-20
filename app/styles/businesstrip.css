@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	color: #fff;
+}
+.gtf_ccsq{
+	
+}
+.gtf_ccsq .ccsq_header{
+	font-size: .8rem;
+	padding: 2% 5%;
+	border-bottom: .1rem solid #E0E0E0;
+}
+.gtf_ccsq .ccsq_header span{
+	display: inline-block;
+}
+.gtf_ccsq .ccsq_header span a{
+	color: #fff;
+}
+.gtf_ccsq .ccsq_header .ccsq{
+	margin-left: 35%;
+	
+}
+.ccsq_main{
+	font-size: .6rem;
+	padding: 0 8%;
+	margin: 1rem 0 0;
+}
+.ccsq_main ul{
+	
+}
+.ccsq_main ul li{
+	margin-bottom: .7rem;
+}
+.ccsq_main p{
+	margin-bottom: .7rem;
+}
+.ccsq_main ul li input{
+	width:11rem;
+	border-radius: .2rem;
+	text-indent: 5%;
+	color: #000;
+}
+.ccsq_main ul li textarea{
+	width: 11rem;
+	border-radius: .2rem;
+	text-indent: 5%;
+	color: #000;
+}
+.ccsq_main ul li span{
+	vertical-align: top;
+}
+.ccsq_main ul li button{
+	width: 2.2rem;
+	height: 1.2rem;
+	margin: .2rem;
+}
+.ccsq_main ul .but{
+	text-align: center;
+}
