@@ -1,0 +1,88 @@
+.pj-bj {
+	height: 100%;
+}
+
+.pj_head {
+	height: 2.5rem;
+	border-bottom: 1px solid white;
+	line-height: 2.5rem;
+	text-align: center;
+	font-size: 0.8rem;
+	font-family: "微软雅黑";
+	color: white;
+}
+
+.pj_head:after {
+	width: 0.55rem;
+	height: 0.1rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 0.99rem;
+	content: "";
+	background: white;
+	transform: rotate(-45deg);
+}
+
+.pj_head:before {
+	width: 0.55rem;
+	height: 0.1rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 1.35rem;
+	content: "";
+	background: white;
+	transform: rotate(45deg);
+}
+
+.pj_center {
+	margin-top: 0.5rem;
+	padding-left: 0.5rem;
+	color: white;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+}
+
+.pj_center p {
+	line-height: 2.0rem;
+}
+
+.pj_center p>span {
+	width: 6rem;
+	height: 1.0rem;
+	line-height: 1.8rem;
+}
+
+.pj_center .wenben {
+	width: 11.3rem;
+	height: 9rem;
+	float: right;
+	margin-right: 1.0rem;
+	margin-top: -0.9rem;
+	font-family: "微软雅黑";
+	color: #000;
+} 
+
+.pj_center .pp {
+	float: left;
+	margin-top: 0.8rem;
+}
+
+.pj_center .sq {
+	margin-top: -0.5rem;
+	float: left;
+}
+
+.pj_center>input {
+	margin-top: 0.9rem;
+	font-size: 0.6rem;
+	color: white;
+	border-radius: 0.3rem;
+	float: right;
+	margin-right: 1.2rem;
+}
+
+.pj_center select {
+	width: 3.5rem;
+	height: 1.2rem;
+	border-radius: 0.3rem;
+}
