@@ -25,6 +25,11 @@ angular
   		templateUrl:"views/staff.html"
   	})
   	
+  	.state("add",{
+  		url:"/add",
+  		templateUrl:"views/add.html"
+  	})
+  	
   	.state("applyfor",{
   		url:"/applyfor",
   		templateUrl:"views/applyfor.html"
@@ -55,6 +60,6 @@ angular
   		templateUrl:"views/businesstrip.html"
   	})
   	
-	$urlRouterProvider.otherwise("/login");
+	$urlRouterProvider.otherwise("/homepage");
 	
   }]);
