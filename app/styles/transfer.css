@@ -2,8 +2,6 @@
 	height: 100%;
 }
 
-
-
 .pj_head {
 	height: 2.5rem;
 	border-bottom: 1px solid white;
@@ -58,11 +56,10 @@
 	width: 11.3rem;
 	height: 9rem;
 	float: right;
-	margin-right:1.0rem;
+	margin-right: 1.0rem;
 	margin-top: -0.9rem;
 	font-family: "微软雅黑";
 	color: #000;
-	
 }
 
 .pj_center .pp {
@@ -77,18 +74,15 @@
 
 .pj_center>input {
 	margin-top: 0.9rem;
-	-margin-right: 0.5rem;
 	font-size: 0.6rem;
 	color: white;
-	border-radius:0.3rem;
-	-margin-left: 7.8rem;
+	border-radius: 0.3rem;
 	float: right;
 	margin-right: 1.2rem;
-	-width: 3.5rem;
-}
-.pj_center select{
-	width: 3.5rem;
-	height:1.2rem;
-	border-radius: 0.3rem;
 }
 
+.pj_center select {
+	width: 3.5rem;
+	height: 1.2rem;
+	border-radius: 0.3rem;
+}
