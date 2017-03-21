@@ -9,6 +9,6 @@
  */
 angular.module('teamGroupApp')
   .controller('applyforCtrl', ["$scope",function($scope){
-  
+  	
   
   }]);
