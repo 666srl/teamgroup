@@ -7,8 +7,20 @@
  * # MainCtrl
  * Controller of the teamGroupApp
  */
-angular.module('teamGroupApp').controller('leaveCtrl',["$scope","$http",function($scope,$http){
-  	$scope.aa=function(){ 
-  		alert(1)
-  	}
-  }]);
+angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http){
+  	$http({
+  		url:"http://"+ip+"/users/",
+      	method:"post",
+      	data:{
+      	    xingming:$scope.xingming,
+      	    bumen:$scope.bumen,
+      	    gangwei:$scope.gangwei,
+      	    yuanyin:$scope.yuanyin,
+      	    shijian:$scope.shijian
+      	}
+  	}).then(function(e){
+  		console.log(e)
+  	})
+  		
+  	})
+
