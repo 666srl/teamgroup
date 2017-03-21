@@ -3,19 +3,19 @@
 		    <div class="boss_prompt"></div>
 		          请假 leave</div>
 		    <div class="leave_content">
-		    	<p>姓&#x3000;名：<input type="text"><p>
-		    	<p>部&#x3000;门：<input type="text"><p>
-		    	<p>岗&#x3000;位：<input type="text"><p>
-		    	<p class="leave_qianjia">请假类别：<span><input type="checkbox">事假
-		    	       <input type="checkbox">病假
-		    	       <input type="checkbox">丧假</span>
-		    	       <span><input type="checkbox">婚假
-		    	       <input type="checkbox">工伤
-		    	       <input type="checkbox">其他</span></p>
-		    	<p>请假事由：<textarea></textarea></p>
-		    	<p>时&#x3000;间：<input type="date" name="date"></p>
+		    	<p>姓&#x3000;&#x3000;名：<input type="text" ng-model="xingming"><p>
+		    	<p>部&#x3000;&#x3000;门：<input type="text" ng-model="bumen"><p>
+		    	<p>岗&#x3000;&#x3000;位：<input type="text" ng-model="gangwei"><p>
+		    	<p class="qianjia">请假类别：<span><input type="radio" name="jiaa">事假
+		    	       <input type="radio" name="jiaa">病假
+		    	       <input type="radio" name="jiaa">丧假</span>
+		    	       <span><input type="radio" name="jiaa">婚假
+		    	       <input type="radio" name="jiaa">工伤
+		    	       <input type="radio" name="jiaa">其他</span></p>
+		    	<p>请假事由：<textarea ng-model="yuanyin"></textarea></p>
+		    	<p>时&#x3000;&#x3000;间：<input type="date" name="date" ng-model="shijian"></p>
 		    	<p class="leave_btn">
-		    		<input type="button" class="btn btn-primary btn-sm" value="提交">
+		    		<input type="button" class="btn btn-primary btn-sm" value="提交" ng-cilck="aa()">
 		    		<input type="button" class="btn btn-primary btn-sm" value="取消"></p>
 	    </div>
 </div>

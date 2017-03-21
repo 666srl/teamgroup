@@ -12,7 +12,7 @@ body{
 	height:2.5rem;
 	font-size:0.8rem;
 	border-bottom:1px solid white;
-	line-height:1.5rem;
+	line-height:2.5rem;
 	text-align:center;
 	color:white;
 }
@@ -47,6 +47,7 @@ body{
 	margin-right:0.5rem;
 	height:auto;
 	margin-top:1.5rem;
+	font-size:0.6rem;
 }
 .leave_content input{
 	color:black;

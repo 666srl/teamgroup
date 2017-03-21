@@ -2,12 +2,15 @@
 	<div class="boss_header">
 		<div class="boss_prompt"></div>
 		信息提示</div>
-	<div class="boss_staff">
-		<p>姓名：<span></span></p>
-		<p>职位：<span></span></p>
-		<p>手机号：<span>13241786924</span></p>
-		<p>原因：<span></span></p>
-		<input type="button" value="同意" class="btn btn-warning btn-sm">
-		<input type="button" value="不同意" class="btn btn-warning btn-sm">
+		<div class="boss_content">
+	<div class="boss_staff" ng-repeat="xin in arr">
+		<p>姓名：{{xin.xinming}}</p>
+		<p>职位：{{xin.zhiwei}}</p>
+		<p>手机号：{{xin.tel}}</p>
+		<p>时间：{{xin.yuefen+xin.shijian}}</p>
+	    <p>原因：{{xin.xiangmumingcheng}}</p>
+		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi()">
+		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi()">
 	</div>
+		</div>
 </div>     
