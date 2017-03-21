@@ -8,9 +8,14 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('businesstripCtrl',['$scope','$http',function($scope,$http){
-  	var host = 'http://47.88.16.225:404/users/businesstrip'
+  .controller('businesstripCtrl',function($scope,$http){
   	$http({
-  		url:host
+  		url:'http://'+ip+'/users',
+  		method:'get'
+  	}) 
+  	.then(function(rep){
+  		console.log(rep)
+  	},function(error){
+  		alert('请求失败')
   	})
-  }]);
+  });

@@ -18,6 +18,7 @@
 }
 .gtf_ccsq .ccsq_header span a{
 	color: #fff;
+	text-decoration: none;
 }
 .gtf_ccsq .ccsq_header .ccsq{
 	margin-left: 35%;

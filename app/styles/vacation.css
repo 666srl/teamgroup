@@ -18,6 +18,7 @@
 }
 .gtf_tx .tx_header span a{
 	color: #fff;
+	text-decoration: none;
 }
 .gtf_tx .tx_header .tx{
 	margin-left: 35%;

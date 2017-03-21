@@ -5,11 +5,11 @@
 	</div>
 	<form action="">
 		<div class="ccsq_main">
-			<p>公司</p><p>姓名：</p>
+			<p>XX公司</p><p>姓名：{{id}}</p>
 			<ul>
-				<li><span>手机：</span><input type="text" /></li>
-				<li><span>日期：</span><input type="text" /></li>
-				<li><span>报告：</span><textarea name="" rows="" cols=""></textarea></li>
+				<li><span>手机：</span><input type="text" ng-model="tel" name="phone"/></li>
+				<li><span>日期：</span><input type="text" ng-model="date" name="riqi"/></li>
+				<li><span>报告：</span><textarea name="" rows="" cols="" no-model="text" name="area"></textarea></li>
 				<li class="but"><button class="btn btn-primary btn-sm"
 	>提交</button><button class="btn btn-primary btn-sm">取消</button></li>
 			</ul>

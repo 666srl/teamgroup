@@ -61,6 +61,6 @@ angular
   	})
   	
 
-	$urlRouterProvider.otherwise("/businesstrip");
+	$urlRouterProvider.otherwise("/login");
 	
   }]);
