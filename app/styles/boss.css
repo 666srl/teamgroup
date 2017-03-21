@@ -15,10 +15,10 @@ body{
 	line-height:2.5rem;
 	text-align:center;
 	color:white;
-	background:blue;
 	position:fixed;
 	left:0px;
 	top:0px;
+	z-index:99;
 }
 .boss_prompt{
 	width:0.55rem;

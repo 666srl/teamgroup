@@ -14,35 +14,25 @@ angular.module('teamGroupApp')
 		$http({
 			url: "http://" + ip + "/apply-for",
 			method: "get",
-		}).then(function(e){
+		}).then(function(e) {
 			console.log(e.data)
 			$scope.arr = e.data
-			$http({
-			url: "http://" + ip + arr.uid,
-			method: "get",
-		}).then(function(sa){
-			console.log(sa)
-		})
-	})
+			console.log($scope.arr[2].uid);
+			var index = 0;
+			for(var i = 0; i < $scope.arr.length; i++) {
+				index = i;
+				console.log($scope.arr[index].uid)
+				$http({
+					url: "http://" + ip + "$scope.arr[index].uid",
+					method: "get",
+				}).then(function(sa) {
+					console.log(sa)
+				})
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			}
+
+		})
+
 		$scope.tongyi = function() {
 			$http({
 				url: "http://" + ip + "/users/",
