@@ -4,14 +4,28 @@
 		<h1>报&nbsp;销</h1>
 	</div>
 	<div class="ly_xq">
-			<p>姓&#X3000;名 : <input type="text"  /></p>
-			<p>部&#X3000;门 : <input type="text" /></p>
-			<p>项&#X3000;目 : <input type="text" /></p>
-			<p>日&#X3000;期 : <input type="text" /></p>
-			<p>金&#X3000;额 : <input type="text" /></p>
-			<p class="ye">发票张数:<input type="text" /></p>
-			<p>报销日期:<input type="text" /></p>
+			<p>姓&#X3000;名 : <span>{{arr.xingming}}</span></p>
+			<p>部&#X3000;门 : <span>{{arr.bumen}}</span></p>
+			<p>项&#X3000;目 : <input type="text" ng-model="coms"/></p>
+			<p>月&#X3000;份 :
+				<select ng-model="months">
+				<option value="1月">1月</option>
+				<option value="2月">2月</option>
+				<option value="3月">3月</option>
+				<option value="4月">4月</option>
+				<option value="5月">5月</option>
+				<option value="6月">6月</option>
+				<option value="7月">7月</option>
+				<option value="8月">8月</option>
+				<option value="9月">9月</option>
+				<option value="10月">10月</option>
+				<option value="11月">11月</option>
+				<option value="12月">12月</option>
+			</select>
+			</p>
+			<p>日&#X3000;期 : <input type="text" ng-model="date"/></p>
+			<p>金&#X3000;额 : <input type="text" ng-model="money"/></p>
 			<button class="go btn btn-primary btn-sm" ng-click="send()">提交</button>
-			<button class="go end btn btn-primary btn-sm">取消</button>
+			<button class="go end btn btn-primary btn-sm" ng-click="noSend()">取消</button>
 	</div>
 </div>
