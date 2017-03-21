@@ -1,3 +1,6 @@
+body{
+	height: auto;
+}
 .dj-bg{
 	background: rgba(255,255,255,0.3);
 	height: 100%;
@@ -57,13 +60,14 @@
 }
 .dj-xq>span:first-child{
 	margin-left: .5rem;
+	margin-right: 2rem;
 }
 
 .dj-bj{
 	
 	border: 0;
 	width: 2rem;
-	
+	float: right;
 	border-radius: .2rem;
 }
 .dj-xq {
@@ -103,6 +107,9 @@ input{
 	height: 1.2rem;
 	border: 0;
 }
+.dj-io option{
+	color: #000;
+}
 button{
 	background: #fff;
 }
@@ -115,7 +122,7 @@ button{
 .dj-add{
 	width: 100%;
 	/*border: 1px solid #fff;*/
-	margin-top: 3rem;
+	margin-top: 1rem;
 	padding-left: 1rem;
 	padding: .2rem 0 .2rem 1rem;
 }
@@ -133,3 +140,4 @@ button{
 .j{
 	margin-top: .5rem;
 }
+

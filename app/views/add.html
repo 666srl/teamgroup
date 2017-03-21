@@ -1,17 +1,17 @@
 <div ng-controller="addCtrl" >
 	<div class="dj-zzc">
 		<div class="dj_top">
-		<div class="boss_prompt"></div>
+		<div class="boss_prompt" ng-click="tuichu()"></div>
 		<p>添加员工信息</p>
 	</div>
 	</div>
 	<div class="dj-content">
-		<div class="dj-list">
-			<p class="dj-xq">
-				<span>姓名: <span>杜江</span></span>
-				<span>职位: <span>web开发</span></span>
+		<div class="dj-list" ng-show="f">
+			<p class="dj-xq" ng-repeat="a in arr">
+				<span>姓名: <span>{{a.xingming}}</span></span>
+				<span>职位: <span>{{a.zhiwei}}</span></span>
+				<button class="dj-bj btn-primary btn-sm" ng-click="sc()">删除</button>
 				<button class="dj-bj btn-primary btn-sm">修改</button>
-				<button class="dj-bj btn-primary btn-sm">删除</button>
 			</p>
 			<p>
 				<button class="dj-btn btn-primary btn-sm" ng-click="xs()" >添加员工</button>
@@ -19,15 +19,17 @@
 			
 		</div>
 		<div class="dj-add" ng-show="x">
-			<p>姓&#x3000;名 : <input type="text" ng-module="name"/></p>
-			<p>职&#x3000;位 : <input type="text" ng-module="zhiwei"/></p>
-			<p>账&#x3000;号 : <input type="text" ng-module="user"/></p>
-			<p>密&#x3000;码 : <input type="password" ng-module="pass"/></p>
-			<p>手机号 : <input type="tel" ng-module="tel"/></p>
-			<p>地&#x3000;点 : <select name="" class="dj-io">
-				<option value="beijing">北京</option>
-				<option value="shanghai">上海</option>
-				<option value="shanxi">山西</option>
+			<p>姓&#x3000;名 : <input type="text" ng-model="name"/></p>
+			<p>职&#x3000;位 : <input type="text" ng-model="zhiwei"/></p>
+			<p>部&#x3000;门: <input type="text" ng-model="bumen"/></p>
+			<p>账&#x3000;号 : <input type="text" ng-model="user"/></p>
+			<p>密&#x3000;码 : <input type="password" ng-model="pass"/></p>
+			<p>手机号 : <input type="tel" ng-model="tel"/></p>
+			<p>地&#x3000;点 : 
+				<select name="" class="dj-io"ng-model="didian">
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="山西">山西</option>
 			</select></p>
 			
 			<button class="j btn btn-primary btn-sm"ng-click="tj()">提交</button>
