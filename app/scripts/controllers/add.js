@@ -9,22 +9,36 @@
  */
 angular.module('teamGroupApp')
   .controller('addCtrl', function($scope,$http,$state){
-  	
+  	$scope.g = false;
+  	$scope.gg = true;
   	$scope.f = true;
-  	$scope.arr =[]
+  	$scope.arr =[];
+  	
+  	
+  	$scope.xuigai = function(e,b){//修改
+//		console.log(b)
+//		console.log($scope.arr[this.$index])
+  		$scope.i=e
+  		$scope.g = true;
+  		$scope.gg = false;
+  	}
+  	$scope.wc = function(){
+  		$scope.g = false;
+  	$scope.gg = true;
+  	}
 	$http({
 		 		url:"http://"+ip+"/users",
 		 		method:"get",
 		 	}).then(function(data){
-		 		console.log(data)
-		 		$scope.arr =data.data
+//		 		console.log(data)
+		 		$scope.arr =data.data;
 		 		
 		 	})
     $scope.x = false;
   $scope.tj = function(){
   	$http({
 		 		url:"http://"+ip+"/users",
-		 		method:"POST",
+		 		method:"post",
 		 		data:{
 		 				username:$scope.user,
 		 				bumen:$scope.bumen,
@@ -33,6 +47,7 @@ angular.module('teamGroupApp')
 		 				tel:$scope.tel,
 		 				zhiwei:$scope.zhiwei,
 		 				xingming:$scope.name,
+		 				state:$scope.zhangtai
 		 				
 		 		}
 		 	}).then(function(data){
@@ -43,19 +58,21 @@ angular.module('teamGroupApp')
 				$scope.pass=""
 				$scope.tel=""
 				$scope.bumen=""
+				$scope.x = false;
+				$scope.f = true;
 	
 		 	})
   }
   
   
-  
-  $scope.sc = function(){
+ 
+  $scope.sc = function(a,index){
   	$http({
-		 		url:"http://"+ip+"/users",
-		 		method:"get",
-		 	}).then(function(data){
-//		 		console.log(data)
-		 		$scope.arr =data.data
+		 		url:"http://"+ip+"/users/"+a,
+		 		method:"delete",
+		 }).then(function(data){	
+		 	console.log(data)
+		 	$scope.arr.splice(index,1)
 		 	})
   }
   

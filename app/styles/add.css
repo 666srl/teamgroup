@@ -60,7 +60,7 @@ body{
 }
 .dj-xq>span:first-child{
 	margin-left: .5rem;
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 
 .dj-bj{
@@ -90,7 +90,7 @@ input{
 	margin-top: .5rem;
 }
 .dj-xq button{
-	margin-right: .5rem;
+	margin-right: .3rem;
 }
 .dj-btn{
 	margin-left: 5.2rem;
@@ -140,4 +140,19 @@ button{
 .j{
 	margin-top: .5rem;
 }
-
+.dx{
+	
+	display: none;
+}
+.show{
+	display: inline-block !important;
+}
+.hidd{
+	display: none;
+}
+.dj-dx{
+	width: 3rem;
+	border-radius: .2rem;
+	height: 1rem;
+	margin-left: .5rem;
+}
