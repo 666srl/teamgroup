@@ -8,7 +8,7 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('transferCtrl', ["$scope","$http",function ($scope,$http) {
+  .controller('transferCtrl',function ($scope,$http) {
     $scope.shenqing = function(){
     	
     	$http({
@@ -25,4 +25,4 @@ angular.module('teamGroupApp')
     		console.log(data);
     	})
     }
-  }]);
+  });
