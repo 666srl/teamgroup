@@ -9,13 +9,48 @@
  */
 angular.module('teamGroupApp')
   .controller('homepageCtrl', function ($scope,$http,$state) {
+  	$scope.jia = true;
+  	$http({//+号的显隐
+  			url:"http://"+ip+"/users/"+localStorage.loid,
+  			method:"get"
+  		}).then(function(e){
+  			console.log(e);
+  			$scope.arr = e.data;
+  			localStorage.zt = e.data.state;
+  			if (e.data.state == '1') {
+				$scope.jia = true;
+  			}else {
+  				$scope.jia = false;
+  			}
+  		})
+  	
+  	$scope.ts = function(){//news
+  			if (localStorage.zt == '1') {
+				$state.go("boss")
+  			}else {
+  				$state.go("staff")
+  			}
+  	}
+  	
+  	
+  	
+  	
 	$scope.num = 0;
-  	$scope.srl = function(){
+  	$scope.srl = function(){//个人信息显隐
   		$scope.num++;
   		if ($scope.num%2 == 1) {
   			$(".srl-showtop").css("opacity",1).css("z-index","99");
   		} else{
-  			$(".srl-showtop").css("opacity",0).css("z-index","-1");  		}
+  			$(".srl-showtop").css("opacity",0).css("z-index","-1");
+  		}
+  		$scope.arr = [];
+  		$http({
+  			url:"http://"+ip+"/users/"+localStorage.loid,
+  			method:"get"
+  		}).then(function(e){
+//			console.log(e);
+  			$scope.arr = e.data;
+  		})
   	}
     $scope.tj = function(){ //职位调动
     	$state.go("add")
@@ -36,5 +71,16 @@ angular.module('teamGroupApp')
     $scope.tx = function(){ //日常调休
     	$state.go("vacation")
     }
+    
+    $scope.back = function(){
+    	localStorage.clear();
+    	$state.go("login")
+    }
+    
+    
+    
+    
+    
+    
     
   });

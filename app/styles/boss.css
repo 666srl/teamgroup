@@ -12,9 +12,13 @@ body{
 	height:2.5rem;
 	font-size:0.8rem;
 	border-bottom:1px solid white;
-	line-height:1.5rem;
+	line-height:2.5rem;
 	text-align:center;
 	color:white;
+	background:blue;
+	position:fixed;
+	left:0px;
+	top:0px;
 }
 .boss_prompt{
 	width:0.55rem;
@@ -40,6 +44,14 @@ body{
 	background: white;
 	transform-origin:left center;
 	transform:rotate(-45deg);
+}
+.boss_content{
+	position:absolute;
+	left:0px;
+	top:2.5rem;
+	height:calc(100vh - 4rem);
+    width:100%;
+    overflow:auto;	
 }
 .boss_staff{
 	margin-left:0.5rem;
@@ -76,6 +88,14 @@ body{
 	margin-top:0.5rem;
 }
 .boss_staff>p:nth-child(4){
+	width:5rem;
+	height:1rem;
+	float:left;
+	line-height:1rem;
+	margin-top:0.5rem;
+	margin-left:0.5rem;
+}
+.boss_staff>p:nth-child(5){
 	width:5rem;
 	margin-top:3.5rem;
 	height:1rem;
