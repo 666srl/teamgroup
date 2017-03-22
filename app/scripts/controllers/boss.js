@@ -13,20 +13,20 @@ angular.module('teamGroupApp')
 		$scope.arr = [];
 		$http({
 			url: "http://" + ip + "/apply-for",
-			method: "get",
+			method: "get", 
 		}).then(function(e) {
 			console.log(e.data)
 			$scope.arr = e.data
-			console.log($scope.arr[2].uid);
 			var index = 0;
 			for(var i = 0; i < $scope.arr.length; i++) {
 				index = i;
 				console.log($scope.arr[index].uid)
 				$http({
-					url: "http://" + ip + "$scope.arr[index].uid",
+					url: "http://" + ip + "/users/"+$scope.arr[index].uid,
 					method: "get",
-				}).then(function(sa) {
+				}).then(function(sa){
 					console.log(sa)
+					
 				})
 
 			}
