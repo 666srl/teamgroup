@@ -11,7 +11,14 @@
 	font-family: "微软雅黑";
 	color: white;
 }
-
+.jiantou{
+	width: 0.8rem;
+	height: 0.8rem;
+	
+	float: left;
+	margin-left: 0.5rem;
+	margin-top: 0.8rem;
+}
 .pj_head:after {
 	width: 0.55rem;
 	height: 0.1rem;
