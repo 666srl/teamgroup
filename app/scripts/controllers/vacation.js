@@ -53,7 +53,8 @@ angular.module('teamGroupApp')
 	    		$scope.yc=false
 	    		$scope.yy=""
 			  	$scope.starts=""
-			  	$scope.dates=""
+			  	$scope.dates="";
+			  	$state.go("homepage")
 	    	},function(error){
 	    		alert("请求失败，联系后台技术人员")
 	    	})
@@ -68,6 +69,6 @@ angular.module('teamGroupApp')
 	  	$scope.dates=""
     }
    	$scope.tx_fh=function(){
-   		$state.go("homepage")
+   		$state.go("homepage");
    	}
   });
