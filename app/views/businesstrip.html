@@ -1,19 +1,24 @@
 <div class="gtf_ccsq" ng-controller="businesstripCtrl">
 	<div class="ccsq_header">
-		<span><a href="javescript:;"><</a></span>
+		<span><a href="javascript:;" ng-click="sqqx()"><</a></span>
 		<span class="ccsq">出差申请</span>
 	</div>
 	<form action="">
 		<div class="ccsq_main">
-			<p>XX公司</p><p>姓名：{{id}}</p>
+			<p>北京三里屯有限公司</p><p>姓名：<span>{{arr_cssq.xingming}}</span></p>
 			<ul>
-				<li><span>手机：</span><input type="text" ng-model="tel" name="phone"/></li>
-				<li><span>日期：</span><input type="text" ng-model="date" name="riqi"/></li>
-				<li><span>报告：</span><textarea name="" rows="" cols="" no-model="text" name="area"></textarea></li>
-				<li class="but"><button class="btn btn-primary btn-sm"
-	>提交</button><button class="btn btn-primary btn-sm">取消</button></li>
+				<li><span>手机：{{arr_cssq.tel}}</span></li>
+				<li><span>开始：</span><input type="date" ng-model="start" name="stars"/></li>
+				<li><span>结束：</span><input type="date" ng-model="end" name="ends"/></li>
+				<li></li>
+				<li><span>报告：</span><textarea name="" rows="" cols="" ng-model="text" name="area" ></textarea></li>
+				<li class="but"><button type="button" class="btn btn-primary btn-sm" ng-click="sq_tj()">提交</button><button type="button" class="btn btn-primary btn-sm" ng-click="sq_qx()">取消</button></li>
 			</ul>
-			
+		</div>
+		<div class="yc" ng-show="yc">
+			<div class="yc_box">
+				<button type="button" class="btn btn-primary btn-sm" ng-click="yc_qd()">确定</button><button type="button" class="btn btn-primary btn-sm" ng-click="yc_qx()">取消</button>
+			</div>
 		</div>
 	</form>
 </div>
