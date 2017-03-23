@@ -60,6 +60,6 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   	}
   	
 
-  	}
+  	})
   
 
