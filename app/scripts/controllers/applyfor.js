@@ -8,42 +8,51 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('applyforCtrl',function($scope,$http){
-	$scope.arr = [];
-	$http({
-			url:"http://"+ip+"/users/"+localStorage.loid,
+	.controller('applyforCtrl', function($scope, $http,$state) {
+		$scope.arr = [];
+		$http({
+			url: "http://" + ip + "/users/" + localStorage.loid,
+			method: "get",
 
-			method:"get",
-			
-		}).then(function(tada){
+		}).then(function(tada) {
 			//console.log(tada)
 			$scope.arr = tada.data;
+			sessionStorage.xingming = tada.data.xingming;
+			sessionStorage.tel = tada.data.tel;
+			sessionStorage.zhiwei = tada.data.zhiwei;
+
 		})
-	$scope.send = function(){
-		if($scope.coms ==''||$scope.money ==''||$scope.months == ''|| $scope.date == ''){
+		$scope.send = function() {
+			if($('#xm').val() == '' || $('#yf').val() == '' || $('#rq').val() == '' || $('#je').val() == '') {
 				alert("请将信息填写完整")
-			}else{
-				
-		$http({	
-			url:"http://"+ip+"/apply-for",
-			method:"post",
-			data:{
-				xiangmumingcheng:$scope.coms,
-				jine:$scope.money,
-				yuefen:$scope.months,
-				shijian:$scope.date,
-				status:1,
-				uid:localStorage.loid
+			} else {
+
+				$http({
+					url: "http://" + ip + "/apply-for",
+					method: "post",
+					data: {
+						xiangmumingcheng: $('#xm').val(),
+						jine: $('#je').val(),
+						yuefen: $('#yf').val(),
+						shijian: $('#rq').val(),
+						status: 1,
+						uid: localStorage.loid,
+						xingming: sessionStorage.xingming,
+						tel: sessionStorage.tel,
+						zhiwei: sessionStorage.zhiwei,
+
+					}
+				}).then(function(data) {
+					//console.log(data)
+					$scope.coms = '';
+					$scope.money = '';
+					$scope.months = '';
+					$scope.date = '';
+				})
+
 			}
-		}).then(function(data){
-			//console.log(data)
-			$scope.coms = '';
-			$scope.money = '';
-			$scope.months = '';
-			$scope.date = '';
-		})
-	
-			}	
-			}
-  });
-		
+		}
+		$scope.fh = function(){
+			$state.go("homepage")
+		}
+	});

@@ -67,7 +67,7 @@ body{
 	margin-top:1.5rem;
 }
 .leave_btn input:nth-child(1){
-	margin-left:4rem;
+	margin-left:3rem;
 }
 .leave_qianjia span{
 	display:block;
@@ -81,7 +81,7 @@ body{
 	margin-top:0.5rem;
 }
 .leave_btn input:nth-child(2){
-	margin-left:4rem;
+	margin-left:2rem;
 }
 .leave_btn>input{
 	color:white;

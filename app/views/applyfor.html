@@ -1,14 +1,15 @@
 <div ng-controller="applyforCtrl">
 	<div class="ly-head">
-		<div class="boss_prompt"></div>
+		<div class="boss_prompt" ng-click="fh()"></div>
 		<h1>报&nbsp;销</h1>
 	</div>
 	<div class="ly_xq">
 			<p>姓&#X3000;名 : <span>{{arr.xingming}}</span></p>
 			<p>部&#X3000;门 : <span>{{arr.bumen}}</span></p>
-			<p>项&#X3000;目 : <input type="text" ng-model="coms"/></p>
+			<p>电&#X3000;话 : <span>{{arr.tel}}</span></p>
+			<p>项&#X3000;目 : <input type="text" id="xm" ng-model="coms"/></p>
 			<p>月&#X3000;份 :
-				<select ng-model="months">
+			<select id="yf">
 				<option value="1月">1月</option>
 				<option value="2月">2月</option>
 				<option value="3月">3月</option>
@@ -23,8 +24,8 @@
 				<option value="12月">12月</option>
 			</select>
 			</p>
-			<p>日&#X3000;期 : <input type="text" ng-model="date"/></p>
-			<p>金&#X3000;额 : <input type="text" ng-model="money"/></p>
+			<p>日&#X3000;期 : <input id="rq" type="text" ng-model="date"/></p>
+			<p>金&#X3000;额 : <input id="je" type="text" ng-model="money"/></p>
 			<button class="go btn btn-primary btn-sm" ng-click="send()">提交</button>
 			<button class="go end btn btn-primary btn-sm" ng-click="noSend()">取消</button>
 	</div>

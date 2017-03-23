@@ -1,19 +1,27 @@
 <div ng-controller="bossCtrl" class="boss_wrapper">
 	    <div class="boss_header">
 		    <div class="boss_prompt"></div>
-		          请假 leave</div>
+		          请假 leave
+	    </div>
 		    <div class="leave_content">
-		    	<p>姓&#x3000;&#x3000;名：<input type="text" ng-model="xingming"><p>
-		    	<p>部&#x3000;&#x3000;门：<input type="text" ng-model="bumen"><p>
-		    	<p>岗&#x3000;&#x3000;位：<input type="text" ng-model="gangwei"><p>
-		    	<p class="leave_qianjia">请假类别：<span><input type="radio" name="jiaa">事假
-		    	       <input type="radio" name="jiaa">病假
-		    	       <input type="radio" name="jiaa">丧假</span>
-		    	       <span><input type="radio" name="jiaa">婚假
-		    	       <input type="radio" name="jiaa">工伤
-		    	       <input type="radio" name="jiaa">其他</span></p>
+		    	<p>姓&#x3000;&#x3000;名：<span>{{arr.xingming}}</span><p>
+		    	<p>部&#x3000;&#x3000;门：<span>{{arr.bumen}}</span><p>
+		    	<p>职&#x3000;&#x3000;位：<span>{{arr.zhiwei}}</span><p>
+		    	<p class="leave_qianjia" ng-model="lei">请假类别：
+		    		<span>
+		    			<input type="radio" name="jiaa" value="事假" ng-model="alllei">事假
+		    	       <input type="radio" name="jiaa" value="病假" ng-model="alllei">病假
+		    	       <input type="radio" name="jiaa" value="丧假" ng-model="alllei">丧假
+		    		</span>
+		    	     <span>
+		    	     	<input type="radio" name="jiaa" value="婚假" ng-model="alllei">婚假
+		    	       <input type="radio" name="jiaa" value="工伤" ng-model="alllei">工伤
+		    	       <input type="radio" name="jiaa" value="其他" ng-model="alllei">其他
+		    	     </span>
+		    	</p>
 		    	<p>请假事由：<textarea ng-model="yuanyin"></textarea></p>
-		    	<p>时&#x3000;&#x3000;间：<input type="date" name="date" ng-model="shijian"></p>
+		    	<p>开始时间：<input type="text" ng-model="begin"></p>
+		    	<p>结束时间：<input type="text" ng-model="ends"></p>
 		    	<p class="leave_btn">
 		    		<input type="button" class="btn btn-primary btn-sm" value="提交" ng-cilck="aa()">
 		    		<input type="button" class="btn btn-primary btn-sm" value="取消"></p>
