@@ -7,10 +7,6 @@
  * # MainCtrl
  * Controller of the teamGroupApp
  */
-<<<<<<< HEAD
-angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http){
-
-=======
 angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$state){
 	$scope.back = function(){
 		$state.go("homepage");
@@ -62,19 +58,6 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   		}
   		
 		
-  	}
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
->>>>>>> origin/master
-  		
+  	}		
   	})
 
