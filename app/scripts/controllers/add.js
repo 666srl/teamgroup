@@ -85,7 +85,6 @@ $scope.arr.push(data.data)
 		 }).then(function(data){	
 //		 	console.log(data)
 		 	$scope.arr.splice(index,1);
-		
 			
 		 	})
  
