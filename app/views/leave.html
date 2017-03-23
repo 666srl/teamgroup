@@ -1,5 +1,29 @@
 <div ng-controller="leaveCtrl" class="boss_wrapper">
 	    <div class="boss_header">
+<<<<<<< HEAD
+		    <div class="boss_prompt"></div>
+		          请假 leave
+	    </div>
+		    <div class="leave_content">
+		    	<p>姓&#x3000;&#x3000;名：<span>{{arr.xingming}}</span><p>
+		    	<p>部&#x3000;&#x3000;门：<span>{{arr.bumen}}</span><p>
+		    	<p>职&#x3000;&#x3000;位：<span>{{arr.zhiwei}}</span><p>
+		    	<p class="leave_qianjia" ng-model="lei">请假类别：
+		    		<span>
+		    			<input type="radio" name="jiaa" value="事假" ng-model="alllei">事假
+		    	       <input type="radio" name="jiaa" value="病假" ng-model="alllei">病假
+		    	       <input type="radio" name="jiaa" value="丧假" ng-model="alllei">丧假
+		    		</span>
+		    	     <span>
+		    	     	<input type="radio" name="jiaa" value="婚假" ng-model="alllei">婚假
+		    	       <input type="radio" name="jiaa" value="工伤" ng-model="alllei">工伤
+		    	       <input type="radio" name="jiaa" value="其他" ng-model="alllei">其他
+		    	     </span>
+		    	</p>
+		    	<p>请假事由：<textarea ng-model="yuanyin"></textarea></p>
+		    	<p>开始时间：<input type="text" ng-model="begin"></p>
+		    	<p>结束时间：<input type="text" ng-model="ends"></p>
+=======
 		    <div class="boss_prompt" ng-click="back()"></div>
 		          请假 leave</div>
 		    <div class="leave_content">
@@ -21,6 +45,7 @@
 		    	<p>请假事由：<textarea ng-model="liyou"></textarea></p>
 		    	<p>起始时间：<input type="date" name="date" ng-model="shijian1"></p>
 		    	<p>截止时间：<input type="date" name="date" ng-model="shijian2"></p>
+>>>>>>> origin/master
 		    	<p class="leave_btn">
 		    		<input type="button" class="btn btn-primary btn-sm" value="提交" ng-click="submit()">
 		    		<input type="button" class="btn btn-primary btn-sm" value="取消"></p>

@@ -44,7 +44,8 @@ angular.module('teamGroupApp')
 						diaorudidian: $('#didian').val(),
 						diaoruyuanyin: $('#yuanyin').val(),
 						status:1,
-						uid:localStorage.loid
+						uid:localStorage.loid,
+						time:$scope.sqsj
 					}
 				}).then(function(data) {
 					console.log(data);

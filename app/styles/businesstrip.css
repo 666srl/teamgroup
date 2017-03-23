@@ -10,7 +10,9 @@
 }
 .gtf_ccsq .ccsq_header{
 	font-size: .8rem;
-	padding: 2% 5%;
+	padding:0 5%;
+	height: 2.5rem;
+	line-height: 2.5rem;
 	border-bottom: .1rem solid #E0E0E0;
 }
 .gtf_ccsq .ccsq_header span{
@@ -18,6 +20,8 @@
 }
 .gtf_ccsq .ccsq_header span a{
 	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
 }
 .gtf_ccsq .ccsq_header .ccsq{
 	margin-left: 35%;
@@ -48,6 +52,7 @@
 	border-radius: .2rem;
 	text-indent: 5%;
 	color: #000;
+	height: 3.5rem;
 }
 .ccsq_main ul li span{
 	vertical-align: top;
@@ -59,4 +64,24 @@
 }
 .ccsq_main ul .but{
 	text-align: center;
+}
+.gtf_ccsq .yc{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.6);
+	position: absolute;
+	top: 0;
+}
+.gtf_ccsq .yc .yc_box{
+	width: 70%;
+	height: 5rem;
+	background: #000088;
+	position: relative;
+	top: 5rem;
+	left: 15%;
+	text-align: center;
+	line-height: 5rem;
+}
+.gtf_ccsq .yc .yc_box .btn{
+	margin: 2%;
 }

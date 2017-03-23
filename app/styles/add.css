@@ -1,3 +1,6 @@
+body{
+	height: auto;
+}
 .dj-bg{
 	background: rgba(255,255,255,0.3);
 	height: 100%;
@@ -57,13 +60,14 @@
 }
 .dj-xq>span:first-child{
 	margin-left: .5rem;
+	margin-right: 1rem;
 }
 
 .dj-bj{
 	
 	border: 0;
 	width: 2rem;
-	
+	float: right;
 	border-radius: .2rem;
 }
 .dj-xq {
@@ -86,7 +90,7 @@ input{
 	margin-top: .5rem;
 }
 .dj-xq button{
-	margin-right: .5rem;
+	margin-right: .3rem;
 }
 .dj-btn{
 	margin-left: 5.2rem;
@@ -103,6 +107,9 @@ input{
 	height: 1.2rem;
 	border: 0;
 }
+.dj-io option{
+	color: #000;
+}
 button{
 	background: #fff;
 }
@@ -115,11 +122,10 @@ button{
 .dj-add{
 	width: 100%;
 	/*border: 1px solid #fff;*/
-	margin-top: 3rem;
+	margin-top: 1rem;
 	padding-left: 1rem;
 	padding: .2rem 0 .2rem 1rem;
 }
-
 .tj{
 	color: #000;
 	width: 3rem;
@@ -132,5 +138,32 @@ button{
 	margin-left: .3rem;
 }
 .j{
+	margin-top: .5rem;
+}
+.dx{
+	
+	display: none;
+}
+.show{
+	display: inline-block !important;
+}
+.hidd{
+	display: none;
+}
+.dj-dx{
+	width: 3rem;
+	border-radius: .2rem;
+	height: 1rem;
+	margin-left: .5rem;
+}
+.djj p{
+	margin-top: .5rem;
+	/*width: 90%;
+	/*height: 90vh;*/
+	/*background:rgba(0,0,0,0.7) ;
+	position: absolute;
+	top: 3rem;*/*/
+}
+.wc{
 	margin-top: .5rem;
 }
