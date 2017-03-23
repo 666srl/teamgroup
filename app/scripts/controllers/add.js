@@ -88,11 +88,7 @@ $scope.arr.push(data.data)
 		
 			
 		 	})
-<<<<<<< HEAD
-//		 	
-=======
-		 	
->>>>>>> origin/master
+
 //		 	 	$http({//报销里的信息
 //		 		url:"http://"+ip+"/apply-for/"+a,
 //		 		method:"delete",
@@ -125,13 +121,7 @@ $scope.arr.push(data.data)
 //		 	}).then(function(){
 //		 		
 //		 	})
-<<<<<<< HEAD
-//		 	
-=======
-		 	
->>>>>>> origin/master
-		 	
-		 
+		 		 
   }
   
   
