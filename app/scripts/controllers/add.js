@@ -61,6 +61,7 @@ angular.module('teamGroupApp')
 		 		}
 		 	}).then(function(data){
 //		 		console.log(data)
+$scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
 				$scope.user=""
@@ -70,6 +71,7 @@ angular.module('teamGroupApp')
 				$scope.x = false;
 				$scope.f = true;
 				$scope.arr.push(data.data)
+
 		 	})
   }
   
@@ -86,7 +88,11 @@ angular.module('teamGroupApp')
 		
 			
 		 	})
+<<<<<<< HEAD
 //		 	
+=======
+		 	
+>>>>>>> origin/master
 //		 	 	$http({//报销里的信息
 //		 		url:"http://"+ip+"/apply-for/"+a,
 //		 		method:"delete",
@@ -119,7 +125,11 @@ angular.module('teamGroupApp')
 //		 	}).then(function(){
 //		 		
 //		 	})
+<<<<<<< HEAD
 //		 	
+=======
+		 	
+>>>>>>> origin/master
 		 	
 		 
   }
