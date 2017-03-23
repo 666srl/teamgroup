@@ -1,13 +1,13 @@
 body{
 	font-family:微软雅黑;
 }
-.staff_wrapper{
+.boss_wrapper{
 	width:16rem;
 	height:100vh;
 	background: url(../images/timg.jpg) no-repeat;
 	background-size:cover; 	
 }
-.staff_header{
+.boss_header{
 	width:16rem;
 	height:2.5rem;
 	font-size:0.8rem;
@@ -15,15 +15,18 @@ body{
 	line-height:2.5rem;
 	text-align:center;
 	color:white;
+	position:fixed;
+	left:0px;
+	top:0px;
 }
-.staff_prompt{
+.boss_prompt{
 	width:0.55rem;
 	height:0.6rem;
 	margin-left:0.53rem;
 	position:relative;
 	top:1.3rem;
 }
-.staff_prompt:after{
+.boss_prompt:after{
 	width:0.55rem;
 	height:0.1rem;
 	position:absolute;
@@ -32,7 +35,7 @@ body{
 	transform-origin:left center;
 	transform:rotate(45deg);
 }
-.staff_prompt:before{
+.boss_prompt:before{
 	width:0.55rem;
 	height:0.1rem;
 	position:absolute;
@@ -42,8 +45,10 @@ body{
 	transform:rotate(-45deg);
 }
 .staff_staff{
+	width:calc(100% - 1rem);
 	margin-left:0.5rem;
-	margin-right:0.5rem;
+	position:absolute;
+	top:2.5rem;
 	height:7rem;
 	margin-top:1rem;
 	font-size:0.6rem;
