@@ -167,3 +167,9 @@ button{
 .wc{
 	margin-top: .5rem;
 }
+
+.rund {
+	border-radius: 0.2rem;
+	height: 1rem;
+	font-size: .6rem;
+}
