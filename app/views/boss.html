@@ -4,7 +4,7 @@
 		信息提示</div>
 		<div class="boss_content">		
 	<div class="boss_staff" ng-repeat="xin in arr">
-<!--		<div ng-class="{'boss_1':$index==i}">-->
+		<!--<div ng-class="{'boss_1':$index==i}">-->
 		<p>姓名：{{xin.xingming}}</p>
 		<p>职位：{{xin.zhiwei}}</p>
 		<p>手机号：{{xin.tel}}</p>			
@@ -45,7 +45,7 @@
 		<p>姓名：{{xin4.xingming}}</p>
 		<p>职位：{{xin4.zhiwei}}</p>
 		<p>手机号：{{xin4.tel}}</p>			
-		<p>时间：{{xin4.shijian}}</p>
+		<p>时间：{{xin4.time | date:"yyyy/M/d"}}</p>
 		<p>部门：{{xin4.diaorugangwei}}&#x3000;到&#x3000;{{xin4.diaorubumen}}</p>
 	    <p>原因：{{xin4.diaoruyuanyin}}</p>
 		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi4(xin4.id)">
