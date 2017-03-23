@@ -37,6 +37,9 @@ angular.module('teamGroupApp')
   			alert("请填写完整")
   		}else{
   			$scope.yc=true
+  			$scope.start="";
+			$scope.end="";
+			$scope.text="";
   		}
   		$scope.yc_qx=function(){
   			$scope.yc=false
