@@ -8,6 +8,9 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('staffCtrl', function ($scope,$http) {
+  .controller('staffCtrl', function ($scope,$http,$state) {
+  	    $scope.gogo=function(){
+  	    	$state.go("homepage")
+  	    }
      
   });

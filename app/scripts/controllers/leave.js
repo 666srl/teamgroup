@@ -58,15 +58,11 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   		}
  
   	}
-<<<<<<< HEAD
-=======
-  	
-  	
+
   	$scope.qx = function(){
   		$state.go("homepage");
   	}
 
->>>>>>> origin/master
   	})
   
 
