@@ -8,6 +8,6 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('staffCtrl', function () {
+  .controller('staffCtrl', function ($scope,$http) {
     
   });

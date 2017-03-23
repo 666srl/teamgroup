@@ -56,7 +56,7 @@ body{
 .boss_staff{
 	margin-left:0.5rem;
 	margin-right:0.5rem;
-	height:7rem;
+	height:8rem;
 	margin-top:1rem;
 	font-size:0.6rem;
 	border:1px solid white;
@@ -88,16 +88,15 @@ body{
 	margin-top:0.5rem;
 }
 .boss_staff>p:nth-child(4){
-	width:5rem;
+	width:15rem;
 	height:1rem;
-	float:left;
+	clear:both;
 	line-height:1rem;
-	margin-top:0.5rem;
-	margin-left:0.5rem;
+	margin-top:3.3rem;
 }
 .boss_staff>p:nth-child(5){
-	width:5rem;
-	margin-top:3.5rem;
+	width:14.5rem;
+	margin-top:.4rem;
 	height:1rem;
 	line-height:1rem;
 	margin-left:0.1rem;
@@ -106,4 +105,73 @@ body{
 	float:left;
 	margin-top:0.5rem;
 	margin-left:3rem;
+}
+
+
+
+.boss_staff1{
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+	height:9.5rem;
+	margin-top:1rem;
+	font-size:0.6rem;
+	border:1px solid white;
+	color:white;
+}
+.boss_staff1>p:nth-child(1){
+	width:6rem;
+	height:1rem;
+	line-height:1rem;
+	float:left;
+	margin-left:0.1rem;
+	margin-top:0.5rem;
+}
+.boss_staff1>p:nth-child(2){
+	width:5rem;
+	height:1rem;
+	line-height:1rem;
+	margin-left:1.5rem;
+	float:left;
+	margin-top:0.5rem;
+}
+.boss_staff1>p:nth-child(3){
+	width:7rem;
+	line-height:1rem;
+	clear:both;
+	height:1rem;
+	float:left;
+	margin-left:0.1rem;
+	margin-top:0.5rem;
+}
+.boss_staff1>p:nth-child(4){
+	width:15rem;
+	height:1rem;
+	clear:both;
+	line-height:1rem;
+	margin-top:3.3rem;
+}
+.boss_staff1>p:nth-child(5){
+	width:14.5rem;
+	margin-top:.4rem;
+	height:1rem;
+	line-height:1rem;
+	margin-left:0.1rem;
+}
+.boss_staff1>p:nth-child(6){
+	width:14.5rem;
+	margin-top:.4rem;
+	height:1rem;
+	line-height:1rem;
+	margin-left:0.1rem;
+}
+.boss_staff1 input{
+	float:left;
+	margin-top:0.5rem;
+	margin-left:3rem;
+}
+.boss_1{
+	display:none;
+}
+.boss_a{
+	display:none;
 }

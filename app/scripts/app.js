@@ -3,7 +3,7 @@
 /**
  * @ngdoc overview
  * @name teamGroupApp
- * @description
+ * @description/
  * # teamGroupApp
  *
  * Main module of the application.
