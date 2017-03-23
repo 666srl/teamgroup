@@ -50,6 +50,7 @@
 .tx_main ul li textarea{
 	width: 11rem;
 	border-radius: .2rem;
+	height: 5rem;
 	text-indent: 5%;
 	color: #000;
 }
