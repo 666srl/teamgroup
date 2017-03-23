@@ -1,30 +1,38 @@
 <div ng-controller="transferCtrl" class="pj-bj">
 	<div class="pj_head">
+		<div class="jiantou" ng-click="jiantou()"></div>
 		职位调动
 	</div>
 	<div class="pj_center">
-		<p>姓&#X3000;&nbsp;&nbsp;&nbsp;名：<span></span></p>
-		<p>现住部门：<span></span></p>
-		<p>现在岗位：<span></span></p>
+		<p>姓&#X3000;&nbsp;&nbsp;&nbsp;名：<span>{{arr.xingming}}</span></p>
+		<p>现住部门：<span>{{arr.bumen}}</span></p>
+		<p>现在职位：<span>{{arr.zhiwei}}</span></p>
 		<p>调入地点：
-			<select name="">
-				<option value="">ddd</option>
+			<select name="" id="didian">
+				
+				<option value="北京" >北京</option>
+				<option value="上海">上海</option>
+				<option value="广州">广州</option>
 			</select>
 		</p>
 		<p>调入部门：
-			<select name="">
-				<option value="">ddd</option>
+			<select name="" id="bm">
+				<option value="一部">一部</option>
+				<option value="二部">二部</option>
+				<option value="三部">三部</option>
 			</select>
 		</p>
-		<p>调入岗位：
-			<select name="">
-				<option value="">ddd</option>
+		<p>调入职位：
+			<select name="" id="gangwei">
+				<option value="web">web</option>
+				<option value="ui">ui</option>
+				<option value="电商">电商</option>
 			</select>
 		</p>
-		<p class="pp"><span class="sq">申请调入</span><textarea name="" rows="" cols="" class="wenben"></textarea></p>
+		<p class="pp"><span class="sq">申请调入</span><textarea class="wenben" ng-model="yuanyin" id="yuanyin"></textarea></p>
 		<input type="button" value="取消" class="btn btn-primary btn-sm"
  />
-		<input type="button" value="申请" class="btn btn-primary btn-sm"
+		<input type="button" value="申请" class="btn btn-primary btn-sm" ng-click="tj()"
  />
 
 	</div>
