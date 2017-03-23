@@ -7,14 +7,13 @@
  * # MainCtrl
  * Controller of the teamGroupApp
  */
-angular.module('teamGroupApp')
+     angular.module('teamGroupApp')
   .controller('addCtrl', function($scope,$http,$state){
   	$scope.g = false;
   	$scope.gg = true;
   	$scope.f = true;
   	$scope.arr =[];
   	$scope.text1="asd"
-  	
   	$scope.xuigai = function(e,b){//修改
   		$scope.i=b
   		$scope.g = true;
@@ -61,7 +60,7 @@ angular.module('teamGroupApp')
 		 		}
 		 	}).then(function(data){
 //		 		console.log(data)
-$scope.arr.push(data.data)
+                    $scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
 				$scope.user=""
