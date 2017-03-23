@@ -48,11 +48,15 @@ angular.module('teamGroupApp')
 					$scope.money = '';
 					$scope.months = '';
 					$scope.date = '';
+					$state.go("homepage");
 				})
 
 			}
 		}
 		$scope.fh = function(){
-			$state.go("homepage")
+			$state.go("homepage");
+		}
+		$scope.noSend = function(){
+			$state.go("homepage");
 		}
 	});

@@ -55,7 +55,7 @@ angular.module('teamGroupApp')
     	}
     }).then(function(e){
     	localStorage.loid = e.data.uid;
-//  	console.log(e);
+    	console.log(e);
     	$http({
     		url:"http://"+ip+"/users/"+localStorage.loid,
     		method:"get"
