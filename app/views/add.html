@@ -1,36 +1,74 @@
 <div ng-controller="addCtrl" >
 	<div class="dj-zzc">
 		<div class="dj_top">
-		<div class="boss_prompt"></div>
+		<div class="boss_prompt" ng-click="tuichu()"></div>
 		<p>添加员工信息</p>
 	</div>
 	</div>
 	<div class="dj-content">
-		<div class="dj-list">
-			<p class="dj-xq">
-				<span>姓名: <span>杜江</span></span>
-				<span>职位: <span>web开发</span></span>
-				<button class="dj-bj btn-primary btn-sm">修改</button>
-				<button class="dj-bj btn-primary btn-sm">删除</button>
-			</p>
-			<p>
-				<button class="dj-btn btn-primary btn-sm" ng-click="xs()" >添加员工</button>
+		<div class="dj-list" ng-show="f">
+			<div  ng-repeat="a in arr" ng-show="gg">
+				<div ng-class="{'dx':$index==i}" class="dj-xq"><!--信息的每一条-->
+				<span> 
+					<span >姓名: {{a.xingming}}</span>
+				</span>
+				<span>
+					<span >职位: {{a.zhiwei}}</span>
+				</span>
+				<button class="dj-bj btn-primary btn-sm" ng-click="sc(a.id,$index)" >删除</button>
+			
+				<button class="dj-bj btn-primary btn-sm"  ng-click="xuigai(a,$index)">修改</button>
+				
+				</div>
+			</div>
+			    <div ng-show="jgr" class="djj"><!--修改的信息-->
+					<p><span>姓名 : </span></span><input type="text" ng-model="abc.xingming"  class="dj-dx"/></p>
+					<p><span>职位 : </span><span></span><input type="text" ng-model="abc.zhiwei"  class="dj-dx"/></p>
+					
+			<p>部&#x3000;门: <input type="text" ng-model="abc.bumen"/></p>
+			
+			
+			<p>手机号 : <input type="tel" ng-model="abc.tel"/></p>
+			<p>地&#x3000;点 : 
+				<select name="" class="dj-io"ng-model="abc.didian">
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="山西">山西</option>
+			</select></p>
+			<p>状&#x3000;态 : 
+				<select name="" class="dj-io"ng-model="abc.state">
+				<option value="1">管理者</option>
+				<option value="0">员工</option>
+				
+			</select></p>
+					<button ng-click="fn(abc.id)" class="btn-primary btn-sm wc">完成</button>
+				</div>
+			<p> 
+				<button class="dj-btn btn-primary btn-sm" ng-click="xs()" ng-show="gg">添加员工</button>
 			</p>
 			
 		</div>
 		<div class="dj-add" ng-show="x">
-			<p>姓&#X3000;名 : <input type="text"  /></p>
-			<p>职&#X3000;位 : <input type="text" /></p>
-			<p>账&#X3000;号 : <input type="text" /></p>
-			<p>密&#X3000;码 : <input type="password" /></p>
-			<p>手机号 : <input type="tel" /></p>
-			<p>地&#X3000;点 : <select name="" class="dj-io">
-				<option >北京</option>
-				<option >上海</option>
-				<option >山西</option>
-			</select></p>
+			<p>姓&#x3000;名 : <input type="text" ng-model="name"/></p>
+			<p>职&#x3000;位 : <input type="text" ng-model="zhiwei"/></p>
+			<p>部&#x3000;门: <input type="text" ng-model="bumen"/></p>
+			<p>账&#x3000;号 : <input type="text" ng-model="user"/></p>
+			<p>密&#x3000;码 : <input type="password" ng-model="pass"/></p>
 			
-			<button class="j btn btn-primary btn-sm">提交</button>
+			<p>手机号 : <input type="tel" ng-model="tel"/></p>
+			<p>地&#x3000;点 : 
+				<select name="" class="dj-io"ng-model="didian">
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="山西">山西</option>
+			</select></p>
+			<p>状&#x3000;态 : 
+				<select name="" class="dj-io"ng-model="zhangtai">
+				<option value="1">管理者</option>
+				<option value="0">员工</option>
+			</select>
+			</p>
+			<button class="j btn btn-primary btn-sm"ng-click="tj()">提交</button>
 			<button class="j la btn btn-primary btn-sm" ng-click="qx()">取消</button>
 		</div>
 	</div>
