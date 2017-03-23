@@ -5,6 +5,7 @@
 	font-size: 0.8rem;
 	/*background: rgba(255,255,255,.3);*/
 }
+.dd{display: none;}
 .srl_top {
 	height: 2.5rem;
 	line-height: 2.5rem;
