@@ -8,6 +8,7 @@
  * Controller of the teamGroupApp
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 angular.module('teamGroupApp')
 .controller('leaveCtrl',function($scope,$http){
   $scope.arr = [];
@@ -36,6 +37,10 @@ angular.module('teamGroupApp')
   		$scope.begin = '';
   		$scope.ends = '';
   		$scope.yuanyin = '';
+=======
+angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http){
+
+>>>>>>> origin/master
 =======
 angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$state){
 	$scope.back = function(){
@@ -100,6 +105,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   	
   	
   	
+>>>>>>> origin/master
   		
 >>>>>>> origin/master
   	})
