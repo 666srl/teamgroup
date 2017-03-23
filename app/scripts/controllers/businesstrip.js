@@ -64,12 +64,14 @@ angular.module('teamGroupApp')
 				$scope.start="";
 				$scope.end="";
 				$scope.text="";
+				$state.go("homepage")
 	  		},function(error){
 	  			//alert('请求失败')
 	  		})
   		}
-  		$scope.sq_qx=function(){
+  		
+  	}
+  	$scope.sq_qx=function(){
   			$state.go("homepage")
   		}
-  	}
   });

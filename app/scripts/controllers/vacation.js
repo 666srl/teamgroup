@@ -54,6 +54,7 @@ angular.module('teamGroupApp')
 	    		$scope.yy=""
 			  	$scope.starts=""
 			  	$scope.dates=""
+			  	$state.go("homepage")
 	    	},function(error){
 	    		alert("请求失败，联系后台技术人员")
 	    	})
