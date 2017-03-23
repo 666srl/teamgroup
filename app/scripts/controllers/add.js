@@ -13,18 +13,26 @@ angular.module('teamGroupApp')
   	$scope.gg = true;
   	$scope.f = true;
   	$scope.arr =[];
-  	
+  	$scope.text1="asd"
   	
   	$scope.xuigai = function(e,b){//修改
-//		console.log(b)
-//		console.log($scope.arr[this.$index])
-  		$scope.i=e
+  		$scope.i=b
   		$scope.g = true;
-  		$scope.gg = false;
+  	$scope.jgr=true
+  	$scope.gg = false;
+  	$scope.abc=e
   	}
-  	$scope.wc = function(){
-  		$scope.g = false;
-  	$scope.gg = true;
+  	$scope.fn=function(e){
+  		$http({
+  			url:"http://"+ip+"/users/"+e,
+  			method:"put",
+  			data:$scope.abc
+  		}).then(function(){
+  			
+  			$scope.jgr=false
+  			$scope.gg=true
+  			$scope.i=-1;
+  		})
   	}
 	$http({
 		 		url:"http://"+ip+"/users",
@@ -36,6 +44,7 @@ angular.module('teamGroupApp')
 		 	})
     $scope.x = false;
   $scope.tj = function(){
+  	                     //添加员工
   	$http({
 		 		url:"http://"+ip+"/users",
 		 		method:"post",
@@ -60,20 +69,59 @@ angular.module('teamGroupApp')
 				$scope.bumen=""
 				$scope.x = false;
 				$scope.f = true;
-	
+				$scope.arr.push(data)
 		 	})
   }
   
   
  
   $scope.sc = function(a,index){
-  	$http({
+  	                          //删除
+  	$http({//user里的信息
 		 		url:"http://"+ip+"/users/"+a,
 		 		method:"delete",
 		 }).then(function(data){	
-		 	console.log(data)
-		 	$scope.arr.splice(index,1)
+//		 	console.log(data)
+		 	$scope.arr.splice(index,1);
+		
+			
 		 	})
+		 	
+		 	 	$http({//报销里的信息
+		 		url:"http://"+ip+"/apply-for/"+a,
+		 		method:"delete",
+		 	}).then(function(data){
+		 		console.log(data)
+		 		
+		 	})
+			$http({//请假里的信息
+		 		url:"http://"+ip+"/leave/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	$http({//职位调动里的信息
+		 		url:"http://"+ip+"/transfer/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	$http({//调休里的信息
+		 		url:"http://"+ip+"/vacation/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	
+		 	$http({//出差里的信息
+		 		url:"http://"+ip+"/businesstrip/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	
+		 	
+		 
   }
   
   
@@ -91,4 +139,56 @@ angular.module('teamGroupApp')
   $scope.tuichu = function(){
   	$state.go("homepage")
   }
+  
+
+  $scope.wc = function(a){ //完成
+  		                  
+  		
+  	
+		  console.log($scope.text1)
+  	
+	$http({
+		 		url:"http://"+ip+"/users/"+a,
+		 		method:"post",
+		 		data:{
+		 				zhiwei:$scope.zhiwei1,
+		 				xingming:$scope.xingming,
+		 				
+		 		}
+		 	}).then(function(data){
+		 		console.log(data)
+		 		
+		 	})
+		 	
+		 	
+		$scope.g = false;
+  		$scope.gg = true;
+  	}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   });
+
+
+
+
+
+
+
