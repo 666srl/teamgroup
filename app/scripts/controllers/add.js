@@ -22,7 +22,9 @@
   	$scope.gg = false;
   	$scope.abc=e
   	}
-  	
+  	$scope.qa = function(){
+  		$scope.ts = false;
+  	}
   	$scope.fn=function(e){
   		$http({
   			url:"http://"+ip+"/users/"+e,
