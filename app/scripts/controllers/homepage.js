@@ -9,7 +9,7 @@
  */
 angular.module('teamGroupApp')
   .controller('homepageCtrl', function ($scope,$http,$state) {
-  	$scope.jia = true;
+  	$scope.jia = false;
   	$http({//+号的显隐
   			url:"http://"+ip+"/users/"+localStorage.loid,
   			method:"get"

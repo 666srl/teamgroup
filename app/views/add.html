@@ -7,7 +7,7 @@
 	</div>
 	<div class="dj-content">
 		<div class="dj-list" ng-show="f">
-			<div  ng-repeat="a in arr" ng-show="gg">
+			<div ng-repeat="a in arr" ng-show="gg">
 				<div ng-class="{'dx':$index==i}" class="dj-xq"><!--信息的每一条-->
 				<span> 
 					<span >姓名: {{a.xingming}}</span>
@@ -16,7 +16,6 @@
 					<span >职位: {{a.zhiwei}}</span>
 				</span>
 				<button class="dj-bj btn-primary btn-sm" ng-click="sc(a.id,$index)" >删除</button>
-			
 				<button class="dj-bj btn-primary btn-sm"  ng-click="xuigai(a,$index)">修改</button>
 				
 				</div>

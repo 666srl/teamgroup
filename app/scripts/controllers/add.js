@@ -60,7 +60,7 @@
 		 		}
 		 	}).then(function(data){
 //		 		console.log(data)
-                    $scope.arr.push(data.data)
+               $scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
 				$scope.user=""
@@ -69,7 +69,7 @@
 				$scope.bumen=""
 				$scope.x = false;
 				$scope.f = true;
-				$scope.arr.push(data.data)
+				
 
 		 	})
   }
