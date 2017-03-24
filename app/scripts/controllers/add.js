@@ -12,6 +12,7 @@
   	$scope.g = false;
   	$scope.gg = true;
   	$scope.f = true;
+  	$scope.ts = false;
   	$scope.arr =[];
   	$scope.text1="asd"
   	$scope.xuigai = function(e,b){//修改
@@ -20,6 +21,9 @@
   	$scope.jgr=true
   	$scope.gg = false;
   	$scope.abc=e
+  	}
+  	$scope.qa = function(){
+  		$scope.ts = false;
   	}
   	$scope.fn=function(e){
   		$http({
@@ -42,6 +46,9 @@
 		 		
 		 	})
     $scope.x = false;
+    $scope.qq = function(){
+    	$scope.ts = true;
+    }
   $scope.tj = function(){
   	                     //添加员工
   	$http({
@@ -60,7 +67,8 @@
 		 		}
 		 	}).then(function(data){
 //		 		console.log(data)
-               $scope.arr.push(data.data)
+
+                  $scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
 				$scope.user=""
@@ -83,7 +91,13 @@
 		 		method:"delete",
 		 }).then(function(data){	
 //		 	console.log(data)
+            
 		 	$scope.arr.splice(index,1);
+<<<<<<< HEAD
+=======
+		 	$scope.ts = false;
+		
+>>>>>>> origin/master
 			
 		 	})
  
@@ -101,7 +115,7 @@
   	$scope.f = true;
   	
   }
-  $scope.tuichu = function(){
+  $scope.jiantou = function(){
   	$state.go("homepage")
   }
   
