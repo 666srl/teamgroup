@@ -19,7 +19,7 @@ angular.module('teamGroupApp')
     })
     .then(function(req){
     	$scope.arr_tx=req.data
-    	console.log(req)
+    	//console.log(req)
     	sessionStorage.xingming=req.data.xingming
 		sessionStorage.tel=req.data.tel
 		sessionStorage.zhiwei=req.data.zhiwei
@@ -28,7 +28,7 @@ angular.module('teamGroupApp')
     })
     $scope.tx_tj=function(){
     	if($scope.yy==""||$scope.starts==""||$scope.dates==""){
-    		alert("请检查填写")
+    		$scope.kong_yc=true
     	}else{
     		$scope.yc=true
     	}
@@ -53,13 +53,13 @@ angular.module('teamGroupApp')
 	    		$scope.yc=false
 	    		$scope.yy=""
 			  	$scope.starts=""
-			  	$scope.dates="";
+			  	$scope.dates=""
 			  	$state.go("homepage")
 	    	},function(error){
 	    		alert("请求失败，联系后台技术人员")
 	    	})
     }
-    $scope.jiantou=function(){
+    $scope.tx_qx=function(){
     	$state.go("homepage")
     }
    	$scope.yc_qx=function(){
@@ -69,6 +69,6 @@ angular.module('teamGroupApp')
 	  	$scope.dates=""
     }
    	$scope.tx_fh=function(){
-   		$state.go("homepage");
+   		$state.go("homepage")
    	}
   });

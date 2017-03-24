@@ -36,14 +36,13 @@
 	
 }
 .tx_main ul li{
-	margin-bottom: .9rem;
+	margin-bottom: .7rem;
 }
 .tx_main p{
-	margin-bottom: .9rem;
+	margin-bottom: .7rem;
 }
 .tx_main ul li input{
 	width:11rem;
-	height: 1.2rem;
 	border-radius: .2rem;
 	text-indent: 5%;
 	color: #000;
@@ -61,7 +60,7 @@
 .tx_main ul li button{
 	width: 2.2rem;
 	height: 1.2rem;
-	margin: .5rem;
+	margin: .2rem;
 }
 .tx_main ul .but{
 	text-align: center;
@@ -82,6 +81,16 @@
 	left: 15%;
 	text-align: center;
 	line-height: 5rem;
+}
+.gtf_tx .yc .kong_box{
+	width: 70%;
+	height: 5rem;
+	background: #000088;
+	position: relative;
+	top: 5rem;
+	left: 15%;
+	text-align: center;
+	line-height: 2.5rem;
 }
 .gtf_tx .yc .yc_box .btn{
 	margin: 2%;

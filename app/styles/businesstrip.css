@@ -36,10 +36,10 @@
 	
 }
 .ccsq_main ul li{
-	margin-bottom: .9rem;
+	margin-bottom: .7rem;
 }
 .ccsq_main p{
-	margin-bottom: .9rem;
+	margin-bottom: .7rem;
 }
 .ccsq_main ul li input{
 	width:11rem;
@@ -65,7 +65,7 @@
 .ccsq_main ul .but{
 	text-align: center;
 }
-.gtf_ccsq .yc{
+.gtf_ccsq .yc,.gtf_ccsq .kong{
 	width: 100%;
 	height: 100%;
 	background:rgba(0,0,0,.6);
@@ -81,6 +81,17 @@
 	left: 15%;
 	text-align: center;
 	line-height: 5rem;
+}
+.gtf_ccsq .kong .yc_box{
+	width: 70%;
+	height: 5rem;
+	background: #000088;
+	position: relative;
+	top: 5rem;
+	left: 15%;
+	text-align: center;
+	font-size: .6rem;
+	line-height: 2.5rem;
 }
 .gtf_ccsq .yc .yc_box .btn{
 	margin: 2%;
