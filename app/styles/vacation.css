@@ -36,13 +36,14 @@
 	
 }
 .tx_main ul li{
-	margin-bottom: .7rem;
+	margin-bottom: .9rem;
 }
 .tx_main p{
-	margin-bottom: .7rem;
+	margin-bottom: .9rem;
 }
 .tx_main ul li input{
 	width:11rem;
+	height: 1.2rem;
 	border-radius: .2rem;
 	text-indent: 5%;
 	color: #000;
@@ -60,7 +61,7 @@
 .tx_main ul li button{
 	width: 2.2rem;
 	height: 1.2rem;
-	margin: .2rem;
+	margin: .5rem;
 }
 .tx_main ul .but{
 	text-align: center;

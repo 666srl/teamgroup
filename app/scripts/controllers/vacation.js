@@ -59,7 +59,7 @@ angular.module('teamGroupApp')
 	    		alert("请求失败，联系后台技术人员")
 	    	})
     }
-    $scope.tx_qx=function(){
+    $scope.jiantou=function(){
     	$state.go("homepage")
     }
    	$scope.yc_qx=function(){

@@ -13,7 +13,7 @@ angular.module('teamGroupApp')
   	$scope.start="";
 	$scope.end="";
 	$scope.text="";
-	$scope.sqqx=function(){
+	$scope.jiantou=function(){
 		$scope.start="";
 		$scope.end="";
 		$scope.text="";

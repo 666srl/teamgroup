@@ -13,11 +13,11 @@
 	color: white;
 }
 .jiantou{
-	width: 0.8rem;
+	width: 0.5rem;
 	height: 0.8rem;
 	
 	float: left;
-	margin-left: 0.5rem;
+	-margin-left: 0.5rem;
 	margin-top: 0.8rem;
 }
 .pj_head:after {
@@ -94,6 +94,7 @@
 	height: 1.2rem;
 	border-radius: 0.3rem;
 	color: #000;
+	font-size: 0.6rem;
 }
 .pj_center select option{
 	

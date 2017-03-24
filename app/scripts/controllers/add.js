@@ -136,7 +136,7 @@
   	$scope.f = true;
   	
   }
-  $scope.tuichu = function(){
+  $scope.jiantou = function(){
   	$state.go("homepage")
   }
   
