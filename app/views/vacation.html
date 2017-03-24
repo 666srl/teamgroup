@@ -5,17 +5,23 @@
 	</div>
 	<div class="tx_main">
 		<p>申请人：{{arr_tx.xingming}}</p>
-		<p>职位：{{arr_tx.zhiwei}}</p>
+		<p>职&#X3000;位：{{arr_tx.zhiwei}}</p>
 		<ul>
-			<li><span>原因：</span><textarea name="" rows="" cols="" ng-model="yy"></textarea></li>
-			<li><span>开始：</span><input type="date" / ng-model="starts"></li>
-			<li><span>结束：</span><input type="date" / ng-model="dates"></li>
-			<li class="but"><button type="button" class="btn btn-primary btn-sm" ng-click="tx_tj()">提交</button><button type="button" class="btn btn-primary btn-sm" ng-click="tx_qx()">取消</button></li> 
+			<li><span>原&#X3000;因：</span><textarea name="" rows="" cols="" ng-model="yy"></textarea>
+			<li><span>开&#X3000;始：</span><input type="date"ng-model="starts" / >
+			<li><span>结&#X3000;束：</span><input type="date"ng-model="dates" / >
+			<li class="but"><button type="button" class="btn btn-primary btn-sm" ng-click="tx_tj()">提交<tton><button type="button" class="btn btn-primary btn-sm" ng-click="tx_qx()">取消<botton> 
 		</ul>
 	</div>
 	<div class="yc" ng-show="yc">
 			<div class="yc_box">
-				<button type="button" class="btn btn-primary btn-sm" ng-click="yc_qd()">确定</button><button type="button" class="btn btn-primary btn-sm" ng-click="yc_qx()">取消</button>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="yc_qd()">确定<tton><button type="button" class="btn btn-primary btn-sm" ng-click="yc_qx()">取消<botton>
 			</div>
-		</div>
+	</div>
+	<div class="kong" ng-show="kong_yc">
+			<div class="yc_box">
+				<p>请检查您的信息是否填写完整</p>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="kong_qx()">确定<botton>
+			</div>
+	</div>
 </div>

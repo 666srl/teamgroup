@@ -8,7 +8,7 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('businesstripCtrl',function($scope,$http,$state){
+  .controller('businesstripCtrl',function($scope,$http,$state,$interval){
   	$scope.arr_cssq=[];
   	$scope.start="";
 	$scope.end="";
@@ -23,7 +23,7 @@ angular.module('teamGroupApp')
   		url:"http://"+ip+"/users/"+localStorage.loid,
   		method:'get'
   	}).then(function(rep){
-//		console.log(rep)
+		//console.log(rep)
 		$scope.arr_cssq=rep.data;
 		sessionStorage.xingming=rep.data.xingming
 		sessionStorage.tel=rep.data.tel
@@ -32,14 +32,11 @@ angular.module('teamGroupApp')
 		alert('请求失败')
 	})
   	$scope.sq_tj=function(){
-  		console.log($scope.start|$scope.end)
+  		//console.log($scope.start|$scope.end)
   		if($scope.start==""||$scope.end==""||$scope.text==""){
-  			alert("请填写完整")
+    		$scope.kong_yc=true
   		}else{
   			$scope.yc=true
-  			$scope.start="";
-			$scope.end="";
-			$scope.text="";
   		}
   		$scope.yc_qx=function(){
   			$scope.yc=false
@@ -60,6 +57,7 @@ angular.module('teamGroupApp')
 	  			}
 	  		})
 	  		.then(function(e){
+	  			//console.log(e)
 				$scope.yc=false
 				$scope.start="";
 				$scope.end="";
@@ -73,5 +71,8 @@ angular.module('teamGroupApp')
   	}
   	$scope.sq_qx=function(){
   			$state.go("homepage")
-  		}
+  	}
+  	$scope.kong_qx=function(){
+  		$scope.kong_yc=false
+  	}
   });

@@ -8,7 +8,7 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$state){
-	$scope.back = function(){
+	$scope.jiantou = function(){
 		$state.go("homepage");
 	}
 	
