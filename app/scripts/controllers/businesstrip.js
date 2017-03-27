@@ -64,7 +64,7 @@ angular.module('teamGroupApp')
 				$scope.text="";
 				$state.go("homepage")
 	  		},function(error){
-	  			//alert('请求失败')
+	  			alert('请求失败')
 	  		})
   		}
   		
