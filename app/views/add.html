@@ -14,7 +14,7 @@
 					<span >姓名: {{a.xingming}}</span>
 				
 				
-					<span >职位: {{a.zhiwei}}</span>
+					<span class="ll">职位: {{a.zhiwei}}</span>
 				
 				<button class="dj-bj btn-primary btn-sm" ng-click="qq()" >删除</button>
 			
@@ -30,40 +30,33 @@
 			</button>
 		    </div>
 		</div>
-				
 				</div>
-		       
 			</div>
-			
 			    <div ng-show="jgr" class="djj"><!--修改的信息-->
 					<p><span>姓&#x3000;名 :</span></span><input type="text" ng-model="abc.xingming"  class="dj-dx"/></p>
-					<p><span>职&#x3000;位 :</span><span></span><input type="text" ng-model="abc.zhiwei"  class="dj-dx"/></p>
+					<p><span>职&#x3000;位 :</span><span></span><input type="text" ng-model="abc.zhiwei"  class="dj-dx"/></p>	
 					
-			<p>部&#x3000;门: <input type="text" ng-model="abc.bumen" class="dj-dx"/></p>
-			
-			
-			<p>手机号 :<input type="tel" ng-model="abc.tel" class="dj-dx we"/></p>
-			<p>地&#x3000;点 :&#x3000;<select name="" class="dj-io rund" ng-model="abc.didian">
-				<option value="北京">北京</option>
-				<option value="上海">上海</option>
-				<option value="山西">山西</option>
-			</select></p>
+					<p>部&#x3000;门: <input type="text" ng-model="abc.bumen" class="dj-dx"/></p>
+					<p>手机号 :<input type="tel" ng-model="abc.tel" class="dj-dx we"/></p>
+					<p>地&#x3000;点 :&#x3000;<select name="" class="dj-io rund" ng-model="abc.didian">
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="山西">山西</option>
+					</select></p>
 			<p>状&#x3000;态 :&#x3000;<select name="" class="dj-io rund" ng-model="abc.state">
 				<option value="1">管理者</option>
 				<option value="0">员工</option>
-				
 			</select></p>
 					<button ng-click="fn(abc.id)" class="j btn btn-primary btn-sm wc">完成</button>
 				</div>
 			<p> 
 				<button class="dj-btn btn-primary btn-sm" ng-click="xs()" ng-show="gg">添加员工</button>
 			</p>
-			
 		</div>
-		
-		
 		<div class="dj-add" ng-show="x">
 			<p>姓&#x3000;名 :&#x3000;<input type="text" ng-model="name"/></p>
+			<p><span class="zp">照&#x3000;片 :&#x3000;</span><span class="pic"></span>
+			<span class="ee">+<input type="file" class="ss" /></span></p>
 			<p>职&#x3000;位 :&#x3000;<input type="text" ng-model="zhiwei"/></p>
 			<p>部&#x3000;门 :&#x3000;<input type="text" ng-model="bumen"/></p>
 			<p>账&#x3000;号 :&#x3000;<input type="text" ng-model="user"/></p>
@@ -79,6 +72,7 @@
 				<option value="0">员工</option>
 			</select>
 			</p>
+			
 			<button class="j btn btn-primary btn-sm" ng-click="tj()">提交</button>
 			<button class="j la btn btn-primary btn-sm" ng-click="qx()">取消</button>
 		</div>
