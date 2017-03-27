@@ -23,7 +23,7 @@ angular.module('teamGroupApp')
   		url:"http://"+ip+"/users/"+localStorage.loid,
   		method:'get'
   	}).then(function(rep){
-		//console.log(rep)
+		console.log(rep)
 		$scope.arr_cssq=rep.data;
 		sessionStorage.xingming=rep.data.xingming
 		sessionStorage.tel=rep.data.tel
