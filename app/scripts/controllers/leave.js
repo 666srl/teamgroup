@@ -11,7 +11,6 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
 	$scope.jiantou = function(){
 		$state.go("homepage");
 	}
-	
 	$scope.arr = [];
   	$http({
   		url:"http://"+ip+"/users/"+localStorage.loid,
@@ -54,15 +53,12 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
 			$scope.text1 = '';
 			$state.go("homepage");
 		})
-  			
-  		}
- 
   	}
-
+  	}
   	$scope.qx = function(){
   		$state.go("homepage");
   	}
 
-  	}
+  	})
   
 

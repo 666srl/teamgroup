@@ -32,9 +32,6 @@ angular.module('teamGroupApp')
   			}
   	}
   	
-  	
-  	
-  	
 	$scope.num = 0;
   	$scope.srl = function(){//个人信息显隐
   		$scope.num++;
@@ -55,10 +52,8 @@ angular.module('teamGroupApp')
     $scope.tj = function(){ //添加
     	$state.go("add");
     }
-    
     $scope.zw = function(){ //职位调动
     	$state.go("transfer");
-    	
     }
     $scope.qj = function(){ //请假
     	$state.go("leave")
