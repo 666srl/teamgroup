@@ -28,7 +28,7 @@ angular.module('teamGroupApp')
     })
     $scope.tx_tj=function(){
     	if($scope.yy==""||$scope.starts==""||$scope.dates==""){
-    		alert("请检查填写")
+    		$scope.kong_yc=true
     	}else{
     		$scope.yc=true
     	}
@@ -70,5 +70,9 @@ angular.module('teamGroupApp')
     }
    	$scope.tx_fh=function(){
    		$state.go("homepage")
+   	}
+   	$scope.kong_qx=function(){
+   		$scope.kong_yc=false
+   		
    	}
   });

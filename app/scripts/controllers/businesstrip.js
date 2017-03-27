@@ -8,7 +8,7 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp')
-  .controller('businesstripCtrl',function($scope,$http,$state){
+  .controller('businesstripCtrl',function($scope,$http,$state,$interval){
   	$scope.arr_cssq=[];
   	$scope.start="";
 	$scope.end="";
@@ -34,7 +34,7 @@ angular.module('teamGroupApp')
   	$scope.sq_tj=function(){
   		//console.log($scope.start|$scope.end)
   		if($scope.start==""||$scope.end==""||$scope.text==""){
-  			alert("请填写完整")
+    		$scope.kong_yc=true
   		}else{
   			$scope.yc=true
   		}
@@ -71,5 +71,8 @@ angular.module('teamGroupApp')
   	}
   	$scope.sq_qx=function(){
   			$state.go("homepage")
-  		}
+  	}
+  	$scope.kong_qx=function(){
+  		$scope.kong_yc=false
+  	}
   });
