@@ -17,11 +17,12 @@ body {
 	margin-top: 2rem;
 }
 .srl-show {
-	width: 100%;
+	width: 90%;
 	height: 8rem;
 	background: rgba(0,0,0,0.9);
 	position: absolute;
 	top: 20%;
+	left: 5%;
 }
 .srl-show p {
 	margin: 2rem;

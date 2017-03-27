@@ -53,7 +53,7 @@ angular.module('teamGroupApp')
 
 			}
 		}
-		$scope.fh = function(){
+		$scope.jiantou = function(){
 			$state.go("homepage");
 		}
 		$scope.noSend = function(){

@@ -1,6 +1,4 @@
-body{
-	height: auto;
-}
+
 .dj-bg{
 	background: rgba(255,255,255,0.3);
 	height: 100%;
@@ -47,7 +45,10 @@ body{
 	transform-origin:left center;
 	transform:rotate(-45deg);
 }
-
+.height{
+	
+	
+}
 .dj-content{
 	font-size: .6rem;
 	color: #fff;
@@ -55,25 +56,27 @@ body{
 	width: 90%;
 	margin: 0 auto;
 }
-.dj-xq>span{
+
+.dj-xq>span:nth-child(1){
+	display: inline-block;
+	width: 3.4rem;
 	margin-right: .7rem;
-}
-.dj-xq>span:first-child{
-	margin-left: .5rem;
-	margin-right: 1rem;
+	
 }
 
 .dj-bj{
-	
+	height: 1.5rem !important;
 	border: 0;
-	width: 2rem;
+	width: 16%;
+	
 	float: right;
 	border-radius: .2rem;
 }
 .dj-xq {
 	border-bottom: 1px solid #fff;
-	height: 1.5rem;
+	height: 2rem;
 	padding: .2rem 0 .2rem 0;
+	line-height: 1.5rem;
 }
 input{
 	color: #000;
@@ -91,6 +94,7 @@ input{
 }
 .dj-xq button{
 	margin-right: .3rem;
+	
 }
 .dj-btn{
 	margin-left: 5.2rem;
@@ -158,18 +162,47 @@ button{
 }
 .djj p{
 	margin-top: .5rem;
-	/*width: 90%;
-	/*height: 90vh;*/
-	/*background:rgba(0,0,0,0.7) ;
-	position: absolute;
-	top: 3rem;*/*/
+	margin-left: .5rem;
+	
 }
 .wc{
 	margin-top: .5rem;
+	margin-left: .5rem;
 }
 
 .rund {
 	border-radius: 0.2rem;
 	height: 1rem;
 	font-size: .6rem;
+}
+.we{
+	width: 4rem !important;
+}
+.tishi{
+	width: 11rem;
+	height: 5rem;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	padding-top: 1rem;
+	margin: 0 auto;
+	position: absolute;
+	
+	top:calc(50% - 5.5rem);
+	/*left:calc(50% - 2.5rem);*/
+	/*position: absolute;
+	top:;*/
+	left: 16%;
+}
+.zz{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	background:rgba(0,0,0,0.5);
+}
+.tishi p{
+	color: #000;
+	
 }

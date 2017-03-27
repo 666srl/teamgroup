@@ -7,20 +7,23 @@
  * # MainCtrl
  * Controller of the teamGroupApp
  */
-angular.module('teamGroupApp')
+     angular.module('teamGroupApp')
   .controller('addCtrl', function($scope,$http,$state){
   	$scope.g = false;
   	$scope.gg = true;
   	$scope.f = true;
+  	$scope.ts = false;
   	$scope.arr =[];
   	$scope.text1="asd"
-  	
   	$scope.xuigai = function(e,b){//修改
   		$scope.i=b
   		$scope.g = true;
   	$scope.jgr=true
   	$scope.gg = false;
   	$scope.abc=e
+  	}
+  	$scope.qa = function(){
+  		$scope.ts = false;
   	}
   	$scope.fn=function(e){
   		$http({
@@ -43,6 +46,9 @@ angular.module('teamGroupApp')
 		 		
 		 	})
     $scope.x = false;
+    $scope.qq = function(){
+    	$scope.ts = true;
+    }
   $scope.tj = function(){
   	                     //添加员工
   	$http({
@@ -61,7 +67,8 @@ angular.module('teamGroupApp')
 		 		}
 		 	}).then(function(data){
 //		 		console.log(data)
-$scope.arr.push(data.data)
+
+                  $scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
 				$scope.user=""
@@ -71,6 +78,7 @@ $scope.arr.push(data.data)
 				$scope.x = false;
 				$scope.f = true;
 				
+
 		 	})
   }
   
@@ -83,46 +91,13 @@ $scope.arr.push(data.data)
 		 		method:"delete",
 		 }).then(function(data){	
 //		 	console.log(data)
+            
 		 	$scope.arr.splice(index,1);
-		
+		 	$scope.ts = false;
+
 			
 		 	})
-		 	
-//		 	 	$http({//报销里的信息
-//		 		url:"http://"+ip+"/apply-for/"+a,
-//		 		method:"delete",
-//		 	}).then(function(data){
-//		 		console.log(data)
-//		 		
-//		 	})
-//			$http({//请假里的信息
-//		 		url:"http://"+ip+"/leave/"+a,
-//		 		method:"delete",
-//		 	}).then(function(){
-//		 		
-//		 	})
-//		 	$http({//职位调动里的信息
-//		 		url:"http://"+ip+"/transfer/"+a,
-//		 		method:"delete",
-//		 	}).then(function(){
-//		 		
-//		 	})
-//		 	$http({//调休里的信息
-//		 		url:"http://"+ip+"/vacation/"+a,
-//		 		method:"delete",
-//		 	}).then(function(){
-//		 		
-//		 	})
-//		 	
-//		 	$http({//出差里的信息
-//		 		url:"http://"+ip+"/businesstrip/"+a,
-//		 		method:"delete",
-//		 	}).then(function(){
-//		 		
-//		 	})
-		 	
-		 	
-		 
+ 
   }
   
   
@@ -137,7 +112,7 @@ $scope.arr.push(data.data)
   	$scope.f = true;
   	
   }
-  $scope.tuichu = function(){
+  $scope.jiantou = function(){
   	$state.go("homepage")
   }
   
@@ -165,22 +140,6 @@ $scope.arr.push(data.data)
 		$scope.g = false;
   		$scope.gg = true;
   	}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   

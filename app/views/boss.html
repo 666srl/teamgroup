@@ -10,8 +10,8 @@
 		<p>手机号：{{xin.tel}}</p>			
 		<p>时间：{{xin.time1|date:"yyyy/M/d"}}&#x3000;-&#x3000;{{xin.time2|date:"yyyy/M/d"}}</p>
 	    <p>原因：{{xin.liyou}}</p>
-		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi(xin.id,$index)" ng-class="{'boss_a':$index==i}">
-		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi(xin.id,$index)" ng-class="{'boss_a':$index==i}">
+		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi(xin.id,$index)">
+		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi(xin.id,$index)">
 		<!--</div>-->
 	</div>
 	<div class="boss_staff" ng-repeat="xin1 in arr1">
