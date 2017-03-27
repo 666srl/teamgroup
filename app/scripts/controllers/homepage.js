@@ -23,7 +23,6 @@ angular.module('teamGroupApp')
   				$scope.jia = false;
   			}
   		})
-  	
   	$scope.ts = function(){//news
   			if (localStorage.zt == '1') {
 				$state.go("boss")
@@ -72,11 +71,5 @@ angular.module('teamGroupApp')
     	localStorage.clear();
     	$state.go("login")
     }
-    
-    
-    
-    
-    
-    
     
   });
