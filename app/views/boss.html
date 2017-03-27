@@ -3,47 +3,47 @@
 		<div class="boss_prompt" ng-click="go()"></div>
 		信息提示</div>
 		<div class="boss_content">		
-	<div class="boss_staff" ng-repeat="xin in arr">
+	<div class="boss_staff" ng-repeat="xin in arr6">
 		<p>姓名：{{xin.xingming}}</p>
 		<p>职位：{{xin.zhiwei}}</p>
 		<p>手机号：{{xin.tel}}</p>	
 		<p>类型：{{lei1}}</p>
 		<p>时间：{{xin.time1|date:"yyyy/M/d"}}&#x3000;-&#x3000;{{xin.time2|date:"yyyy/M/d"}}</p>
 	    <p>原因：{{xin.liyou}}</p>
-		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi(xin.id)">
-		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi(xin.id)"> 
+		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi(xin.id,$index)">
+		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi(xin.id,$index)"> 
 	</div>
-	<div class="boss_staff" ng-repeat="xin1 in arr1">
+	<div class="boss_staff" ng-repeat="xin1 in arr8">
 		<p>姓名：{{xin1.xingming}}</p>
 		<p>职位：{{xin1.zhiwei}}</p>
 		<p>手机号：{{xin1.tel}}</p>	
 		<p>类型：{{lei2}}</p>
 		<p>时间：{{xin1.shijian}}</p>
 	    <p>原因：{{xin1.xiangmumingcheng}}</p>
-		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi1(xin1.id)">
-		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi1(xin1.id)">
+		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi1(xin1.id,$index)">
+		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi1(xin1.id,$index)">
 	</div>
-		<div class="boss_staff" ng-repeat="xin2 in arr2">
+		<div class="boss_staff" ng-repeat="xin2 in arr10">
 		<p>姓名：{{xin2.xingming}}</p>
 		<p>职位：{{xin2.zhiwei}}</p>
 		<p>手机号：{{xin2.tel}}</p>	
 		<p>类型：{{lei3}}</p>
 		<p>时间：{{xin2.time1|date:"yyyy/M/d"}}&#x3000;-&#x3000;{{xin2.time2|date:"yyyy/M/d"}}</p>
 	    <p>原因：{{xin2.baogao}}</p>
-		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi2(xin2.id)">
-		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi2(xin2.id)">
+		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi2(xin2.id,$index)">
+		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi2(xin2.id,$index)">
 	</div>
-		<div class="boss_staff" ng-repeat="xin3 in arr3">
+		<div class="boss_staff" ng-repeat="xin3 in arr12">
 		<p>姓名：{{xin3.xingming}}</p>
 		<p>职位：{{xin3.zhiwei}}</p>
 		<p>手机号：{{xin3.tel}}</p>	
 		<p>类型：{{lei4}}</p>
 		<p>时间：{{xin3.time1|date:"yyyy/M/d"}}&#x3000;-&#x3000;{{xin3.time2|date:"yyyy/M/d"}}</p>
 	    <p>原因：{{xin3.yuanyin}}</p>
-		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi3(xin3.id)">
-		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi3(xin3.id)">
+		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi3(xin3.id,$index)">
+		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi3(xin3.id,$index)">
 	</div>
-		<div class="boss_staff1" ng-repeat="xin4 in arr4">
+		<div class="boss_staff1" ng-repeat="xin4 in arr14">
 		<p>姓名：{{xin4.xingming}}</p>
 		<p>职位：{{xin4.zhiwei}}</p>
 		<p>手机号：{{xin4.tel}}</p>	
@@ -51,8 +51,8 @@
 		<p>时间：{{xin4.time | date:"yyyy/M/d"}}</p>
 		<p>部门：{{xin4.diaorugangwei}}&#x3000;到&#x3000;{{xin4.diaorubumen}}</p>
 	    <p>原因：{{xin4.diaoruyuanyin}}</p>
-		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi4(xin4.id)">
-		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi4(xin4.id)">
+		<input type="button" value="同意" class="btn btn-warning btn-sm" ng-click="tongyi4(xin4.id,$index)">
+		<input type="button" value="不同意" class="btn btn-warning btn-sm" ng-click="butongyi4(xin4.id,$index)">
 	</div>
 		</div>
 </div>     

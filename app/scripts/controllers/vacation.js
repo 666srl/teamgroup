@@ -19,7 +19,7 @@ angular.module('teamGroupApp')
     })
     .then(function(req){
     	$scope.arr_tx=req.data
-    	//console.log(req)
+    	console.log(req)
     	sessionStorage.xingming=req.data.xingming
 		sessionStorage.tel=req.data.tel
 		sessionStorage.zhiwei=req.data.zhiwei
@@ -49,7 +49,7 @@ angular.module('teamGroupApp')
 	    		}
 	    	})
 	    	.then(function(ev){
-	    		//console.log(ev)
+	    		console.log(ev)
 	    		$scope.yc=false
 	    		$scope.yy=""
 			  	$scope.starts=""
