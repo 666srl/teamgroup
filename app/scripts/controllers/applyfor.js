@@ -66,7 +66,7 @@ angular.module('teamGroupApp')
 					}
 				}).then(function(data) {
 					
-					//console.log(data)
+					console.log(data)
 					$scope.coms = '';
 					$scope.money = '';
 					$scope.months = '';
