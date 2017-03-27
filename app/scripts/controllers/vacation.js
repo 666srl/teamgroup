@@ -49,7 +49,7 @@ angular.module('teamGroupApp')
 	    		}
 	    	})
 	    	.then(function(ev){
-	    		//console.log(ev)
+	    		console.log(ev)
 	    		$scope.yc=false
 	    		$scope.yy=""
 			  	$scope.starts=""
