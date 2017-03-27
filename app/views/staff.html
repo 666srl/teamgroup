@@ -1,13 +1,67 @@
 <div ng-controller="staffCtrl" class="staff_wrapper">
-	<div class="boss_header">
-		<div class="boss_prompt" ng-click="gogo()"></div>
+	<div class="staff_header">
+		<div class="staff_prompt" ng-click="gogo()"></div>
 		员工信息提示</div>
-		<div class="staff_staff">
-			<p><img src="../images/staff.gif"</p>
-			<p>亲，您的申请已经通过！</p>
-		</div>
-		<div class="staff_staff">
-			<p><img src="../images/staff_1.gif"</p>
-			<p>亲，您的申请未能通过！</p>
+		<div class="staff_content">
+			<div ng-repeat="xi in arrb"></div>
+		    <div class="staff_staff" ng-show="a">
+			    <p>提示：{{la1}}&#x3000;</p>
+			    <p><img src="../images/staff.gif"</p>
+			    <p>您的{{shua2}}条{{la1}}申请已经通过！</p>
+		     </div>
+		    <div class="staff_staff" ng-show="b">
+			    <p>提示：{{la1}}&#x3000;</p>
+			    <p><img src="../images/staff__1.gif"</p>
+			    <p>您的{{shua1}}条{{la1}}申请未能通过！</p>
+		    </div>
+		   
+		    <div ng-repeat="xi2 in arra"></div>
+		    <div class="staff_staff" ng-show="c">
+			    <p>提示：{{la2}}&#x3000;</p>
+			    <p><img src="../images/staff.gif"</p>
+			    <p>您的{{shub2}}条{{la2}}申请已经通过！</p>
+		     </div>
+		    <div class="staff_staff" ng-show="d">
+			    <p>提示：{{la2}}&#x3000;</p>
+			    <p><img src="../images/staff__1.gif"</p>
+			    <p>您的{{shub1}}条{{la2}}申请未能通过！</p>
+		    </div>
+		    
+		    <div ng-repeat="xi3 in arrc"></div>
+		    <div class="staff_staff" ng-show="e">
+			    <p>提示：{{la3}}&#x3000;</p>
+			    <p><img src="../images/staff.gif"</p>
+			    <p>您的{{shuc2}}条{{la3}}申请已经通过！</p>
+		     </div>
+		    <div class="staff_staff" ng-show="f">
+			    <p>提示：{{la3}}&#x3000;</p>
+			    <p><img src="../images/staff__1.gif"</p>
+			    <p>您的{{shuc1}}条{{la3}}申请未能通过！</p>
+		    </div>
+		    
+		    <div ng-repeat="xi4 in arrd"></div>
+		    <div class="staff_staff" ng-show="g">
+			    <p>提示：{{la4}}&#x3000;</p>
+			    <p><img src="../images/staff.gif"</p>
+			    <p>您的{{shud2}}条{{la4}}申请已经通过！</p>
+		     </div>
+		    <div class="staff_staff" ng-show="h">
+			    <p>提示：{{la4}}&#x3000;</p>
+			    <p><img src="../images/staff__1.gif"</p>
+			    <p>您的{{shud1}}条{{la4}}申请未能通过！</p>
+		    </div>
+		    
+		    <div ng-repeat="xi5 in arre"></div>
+		    <div class="staff_staff" ng-show="i">
+			    <p>提示：{{la5}}&#x3000;</p>
+			    <p><img src="../images/staff.gif"</p>
+			    <p>您的{{shue2}}条{{la5}}申请已经通过！</p>
+		     </div>
+		    <div class="staff_staff" ng-show="j">
+			    <p>提示：{{la5}}&#x3000;</p>
+			    <p><img src="../images/staff__1.gif"</p>
+			    <p>您的{{shue1}}条{{la5}}申请未能通过！</p>
+		    </div>
+		    
 		</div>
 </div>
