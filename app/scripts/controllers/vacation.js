@@ -71,4 +71,8 @@ angular.module('teamGroupApp')
    	$scope.tx_fh=function(){
    		$state.go("homepage")
    	}
+   	$scope.kong_qx=function(){
+   		$scope.kong_yc=false
+   		
+   	}
   });

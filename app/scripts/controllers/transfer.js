@@ -61,4 +61,8 @@ angular.module('teamGroupApp')
 		
 		
 
+
+	$scope.back = function(){
+		$state.go("homepage");
+	}
 	});

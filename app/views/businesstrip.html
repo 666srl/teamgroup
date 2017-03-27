@@ -1,6 +1,6 @@
 <div class="gtf_ccsq" ng-controller="businesstripCtrl">
 	<div class="ccsq_header">
-		<span><a href="javascript:;" ng-click="sqqx()"><</a></span>
+		<span><a href="javascript:;" ng-click="sqqx()">&lt;</a></span>
 		<span class="ccsq">出差申请</span>
 	</div>
 	<form action="">
@@ -12,7 +12,7 @@
 				<li><span>结束：</span><input type="date" ng-model="end" name="ends"/>
 				<li>
 				<li><span>报告：</span><textarea name="" rows="" cols="" ng-model="text" name="area" ></textarea>
-				<li class="but"><button type="button" class="btn btn-primary btn-sm" ng-click="sq_tj()">提交<tton><button type="button" class="btn btn-primary btn-sm" ng-click="sq_qx()">取消<botton><>
+				<li class="but"><button type="button" class="btn btn-primary btn-sm" ng-click="sq_tj()">提交<tton><button type="button" class="btn btn-primary btn-sm" ng-click="sq_qx()">取消<botton>
 			</ul>
 		</div>
 		<div class="yc" ng-show="yc">
@@ -24,6 +24,12 @@
 			<div class="yc_box">
 				<p>请检查您的信息是否填写完整</p>
 				<button type="button" class="btn btn-primary btn-sm" ng-click="kong_qx()">确定<button>
+			</div>
+		</div>
+		<div class="kong" ng-show="kong_yc">
+			<div class="yc_box">
+				<p>请核实您的信息</p>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="kong_qx()">确定</button> 
 			</div>
 		</div>
 	</form>
