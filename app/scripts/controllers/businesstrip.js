@@ -57,7 +57,7 @@ angular.module('teamGroupApp')
 	  			}
 	  		})
 	  		.then(function(e){
-	  			//console.log(e)
+	  			console.log(e)
 				$scope.yc=false
 				$scope.start="";
 				$scope.end="";
