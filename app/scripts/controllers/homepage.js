@@ -23,7 +23,6 @@ angular.module('teamGroupApp')
   				$scope.jia = false;
   			}
   		})
-  	
   	$scope.ts = function(){//news
   			if (localStorage.zt == '1') {
 				$state.go("boss")
@@ -31,9 +30,6 @@ angular.module('teamGroupApp')
   				$state.go("staff")
   			}
   	}
-  	
-  	
-  	
   	
 	$scope.num = 0;
   	$scope.srl = function(){//个人信息显隐
@@ -55,10 +51,8 @@ angular.module('teamGroupApp')
     $scope.tj = function(){ //添加
     	$state.go("add");
     }
-    
     $scope.zw = function(){ //职位调动
     	$state.go("transfer");
-    	
     }
     $scope.qj = function(){ //请假
     	$state.go("leave")
@@ -77,11 +71,5 @@ angular.module('teamGroupApp')
     	localStorage.clear();
     	$state.go("login")
     }
-    
-    
-    
-    
-    
-    
     
   });
