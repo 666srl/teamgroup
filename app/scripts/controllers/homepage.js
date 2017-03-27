@@ -9,12 +9,12 @@
  */
 angular.module('teamGroupApp')
   .controller('homepageCtrl', function ($scope,$http,$state) {
-  	$scope.jia = true;
+  	$scope.jia = false;
   	$http({//+号的显隐
   			url:"http://"+ip+"/users/"+localStorage.loid,
   			method:"get"
   		}).then(function(e){
-  			console.log(e);
+			console.log(e);
   			$scope.arr = e.data;
   			localStorage.zt = e.data.state;
   			if (e.data.state == '1') {
@@ -52,12 +52,13 @@ angular.module('teamGroupApp')
   			$scope.arr = e.data;
   		})
   	}
-    $scope.tj = function(){ //职位调动
-    	$state.go("add")
+    $scope.tj = function(){ //添加
+    	$state.go("add");
     }
     
     $scope.zw = function(){ //职位调动
-    	$state.go("transfer")
+    	$state.go("transfer");
+    	
     }
     $scope.qj = function(){ //请假
     	$state.go("leave")

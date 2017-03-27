@@ -65,7 +65,7 @@
 .tx_main ul .but{
 	text-align: center;
 }
-.gtf_tx .yc{
+.gtf_tx .yc,.gtf_tx .kong{
 	width: 100%;
 	height: 100%;
 	background:rgba(0,0,0,.6);
@@ -81,6 +81,17 @@
 	left: 15%;
 	text-align: center;
 	line-height: 5rem;
+}
+.gtf_tx .kong .yc_box{
+	width: 70%;
+	height: 5rem;
+	background: #000088;
+	position: relative;
+	top: 5rem;
+	left: 15%;
+	text-align: center;
+	font-size: .6rem;
+	line-height: 2.5rem;
 }
 .gtf_tx .yc .yc_box .btn{
 	margin: 2%;

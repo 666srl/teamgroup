@@ -84,6 +84,7 @@
 		 		}
 		 	}).then(function(data){
 //		 		console.log(data)
+
                   $scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
@@ -95,7 +96,14 @@
 				$scope.x = false;
 				$scope.f = true;
 				
+<<<<<<< HEAD
   	                    })
+=======
+
+		 	})
+  }
+  
+>>>>>>> origin/master
   
   }
   }
@@ -107,12 +115,25 @@
 		 }).then(function(data){	
 //		 	console.log(data)
 		 	$scope.arr.splice(index,1);
+<<<<<<< HEAD
 		 	$scope.ts = false;	
 		 	})
 		 
 		 	
 		 	 	
  }
+=======
+		 	$scope.ts = false;
+
+			
+		 	})
+ 
+  }
+  
+  
+  
+  
+>>>>>>> origin/master
   $scope.xs = function(){
   	$scope.x = true;
   	$scope.f = false;
@@ -122,7 +143,7 @@
   	$scope.f = true;
   	
   }
-  $scope.tuichu = function(){
+  $scope.jiantou = function(){
   	$state.go("homepage")
   }
   $scope.wc = function(a){ //完成
@@ -143,8 +164,16 @@
 		 	
 		$scope.g = false;
   		$scope.gg = true;
+<<<<<<< HEAD
   }
 
+=======
+  	}
+  
+  
+  
+  
+>>>>>>> origin/master
   });
 
 

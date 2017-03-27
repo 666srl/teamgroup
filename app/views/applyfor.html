@@ -1,7 +1,7 @@
 <div ng-controller="applyforCtrl">
-	<div class="ly-head">
-		<div class="boss_prompt" ng-click="fh()"></div>
-		<h1>报&nbsp;销</h1>
+	<div class="pj_head">
+		<div class="jiantou" ng-click="jiantou()"></div>
+		报销
 	</div>
 	<div class="ly_xq">
 			<p>姓&#X3000;名 : <span>{{arr.xingming}}</span></p>
@@ -29,4 +29,17 @@
 			<button class="go btn btn-primary btn-sm" ng-click="send()">提交</button>
 			<button class="go end btn btn-primary btn-sm" ng-click="noSend()">取消</button>
 	</div>
+	<div class="zz" ng-show="wz">
+		<div class="tan">
+			<p>请输入完整信息</p>
+			<button class="go btn btn-primary btn-sm" ng-click="xs()">确定</button>
+		</div>
+	</div>
+	<div class="zz" ng-show="sz">
+		<div class="tan">
+			<p>请输入数字</p>
+			<button class="go btn btn-primary btn-sm" ng-click="xs()">确定</button>
+		</div>
+	</div>
+	
 </div>

@@ -26,10 +26,14 @@ angular.module('teamGroupApp')
 
 		})
 		$scope.yuanyin = "";
+		$scope.zzc_show=false;
 		$scope.tj = function() {
 			console.log($scope.didian == "")
 			if($scope.yuanyin == "") {
-				alert("请输入")
+				$scope.zzc_show=true;
+				$scope.qr=function(){
+					$scope.zzc_show=false;
+				}
 			} else {
 				$http({
 					url: "http://" + ip + "/transfer",
@@ -54,5 +58,11 @@ angular.module('teamGroupApp')
 			}
 
 		}
+		
+		
 
+
+	$scope.back = function(){
+		$state.go("homepage");
+	}
 	});

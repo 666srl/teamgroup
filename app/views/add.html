@@ -1,12 +1,13 @@
 <div ng-controller="addCtrl" >
 	<div class="dj-zzc">
-		<div class="dj_top">
-		<div class="boss_prompt" ng-click="tuichu()"></div>
-		<p>添加员工信息</p>
+	<div class="pj_head">
+		<div class="jiantou" ng-click="jiantou()"></div>
+		添加员工信息
 	</div>
 	</div>
 	<div class="dj-content">
 		<div class="dj-list" ng-show="f">
+
 			<div  ng-repeat="a in arr" ng-show="gg" class="height">
 				<div ng-class="{'dx':$index==i}" class="dj-xq"><!--信息的每一条-->
 					
@@ -14,10 +15,14 @@
 					<span >姓名: {{a.xingming}}</span>
 				
 				
+<<<<<<< HEAD
 					<span class="ll">职位: {{a.zhiwei}}</span>
+=======
+					<span >职位: {{a.zhiwei}}</span>
+
+>>>>>>> origin/master
 				
 				<button class="dj-bj btn-primary btn-sm" ng-click="qq()" >删除</button>
-			
 				<button class="dj-bj btn-primary btn-sm"  ng-click="xuigai(a,$index)">修改</button>
 				<div ng-show="ts" class="zz">
 			<div  class="tishi">
@@ -36,6 +41,7 @@
 					<p><span>姓&#x3000;名 :</span></span><input type="text" ng-model="abc.xingming"  class="dj-dx"/></p>
 					<p><span>职&#x3000;位 :</span><span></span><input type="text" ng-model="abc.zhiwei"  class="dj-dx"/></p>	
 					
+<<<<<<< HEAD
 					<p>部&#x3000;门: <input type="text" ng-model="abc.bumen" class="dj-dx"/></p>
 					<p>手机号 :<input type="tel" ng-model="abc.tel" class="dj-dx we"/></p>
 					<p>地&#x3000;点 :&#x3000;<select name="" class="dj-io rund" ng-model="abc.didian">
@@ -43,6 +49,19 @@
 						<option value="上海">上海</option>
 						<option value="山西">山西</option>
 					</select></p>
+=======
+
+			<p>部&#x3000;门: <input type="text" ng-model="abc.bumen" class="dj-dx"/></p>
+
+			
+			
+			<p>手机号 :<input type="tel" ng-model="abc.tel" class="dj-dx we"/></p>
+			<p>地&#x3000;点 :&#x3000;<select name="" class="dj-io rund" ng-model="abc.didian">
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="山西">山西</option>
+			</select></p>
+>>>>>>> origin/master
 			<p>状&#x3000;态 :&#x3000;<select name="" class="dj-io rund" ng-model="abc.state">
 				<option value="1">管理者</option>
 				<option value="0">员工</option>
