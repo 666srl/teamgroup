@@ -7,8 +7,21 @@
  * # MainCtrl
  * Controller of the teamGroupApp
  */
-     angular.module('teamGroupApp')
-  .controller('addCtrl', function($scope,$http,$state){
+
+   angular.module('teamGroupApp')
+  .controller('addCtrl', function($scope,$http,$state){  
+  	$('.ss')[0].addEventListener("change",function(){
+        var file = this.files[0];  
+        console.log(file)
+        var reader = new FileReader();   
+        reader.readAsDataURL(file);   
+        reader.onload = function(e){ 
+        	console.log(this.result);
+        	$('.pic').html('<img src="'+this.result+'">')
+        console.log(this.result); //就是base64  
+       $scope.to = this.result;
+		}   
+  },false)	
   	$scope.g = false;
   	$scope.gg = true;
   	$scope.f = true;
@@ -51,7 +64,9 @@
     }
   $scope.tj = function(){
   	                     //添加员工
-  	$http({
+  	                     
+  	                     		$http({
+  	                     			
 		 		url:"http://"+ip+"/users",
 		 		method:"post",
 		 		data:{
@@ -62,8 +77,8 @@
 		 				tel:$scope.tel,
 		 				zhiwei:$scope.zhiwei,
 		 				xingming:$scope.name,
-		 				state:$scope.zhangtai
-		 				
+		 				state:$scope.zhangtai,
+		 				img:$scope.to,
 		 		}
 		 	}).then(function(data){
 //		 		console.log(data)
@@ -75,6 +90,7 @@
 				$scope.pass=""
 				$scope.tel=""
 				$scope.bumen=""
+				$scope.img = ""
 				$scope.x = false;
 				$scope.f = true;
 				
@@ -91,18 +107,44 @@
 		 		method:"delete",
 		 }).then(function(data){	
 //		 	console.log(data)
-            
 		 	$scope.arr.splice(index,1);
-		 	$scope.ts = false;
-
-			
+		 	$scope.ts = false;	
 		 	})
- 
-  }
-  
-  
-  
-  
+		 $http({//报销里的信息
+		 		url:"http://"+ip+"/apply-for/"+a,
+		 		method:"delete",
+		 	}).then(function(data){
+		 		console.log(data)
+
+		 	})
+			$http({//请假里的信息
+		 		url:"http://"+ip+"/leave/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	$http({//职位调动里的信息
+		 		url:"http://"+ip+"/transfer/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	$http({//调休里的信息
+		 		url:"http://"+ip+"/vacation/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	
+		 	$http({//出差里的信息
+		 		url:"http://"+ip+"/businesstrip/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		  	
+ }
+
   $scope.xs = function(){
   	$scope.x = true;
   	$scope.f = false;
@@ -115,14 +157,8 @@
   $scope.jiantou = function(){
   	$state.go("homepage")
   }
-  
-
   $scope.wc = function(a){ //完成
-  		                  
   		
-  	
-		  console.log($scope.text1)
-  	
 	$http({
 		 		url:"http://"+ip+"/users/"+a,
 		 		method:"post",
@@ -139,11 +175,8 @@
 		 	
 		$scope.g = false;
   		$scope.gg = true;
-  	}
-  
-  
-  
-  
+  }
+
   });
 
 
