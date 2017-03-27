@@ -32,7 +32,7 @@ angular.module('teamGroupApp')
 		alert('请求失败')
 	})
   	$scope.sq_tj=function(){
-  		//console.log($scope.start|$scope.end)
+  		console.log($scope.start|$scope.end)
   		if($scope.start==""||$scope.end==""||$scope.text==""){
     		$scope.kong_yc=true
   		}else{
