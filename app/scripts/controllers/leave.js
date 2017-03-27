@@ -58,8 +58,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   		}
  
   	}
-  	
-  	
+
   	$scope.qx = function(){
   		$state.go("homepage");
   	}
