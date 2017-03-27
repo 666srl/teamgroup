@@ -63,6 +63,6 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   		$state.go("homepage");
   	}
 
-  	}
+}
   
 
