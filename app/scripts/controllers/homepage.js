@@ -52,12 +52,13 @@ angular.module('teamGroupApp')
   			$scope.arr = e.data;
   		})
   	}
-    $scope.tj = function(){ //职位调动
-    	$state.go("add")
+    $scope.tj = function(){ //添加
+    	$state.go("add");
     }
     
     $scope.zw = function(){ //职位调动
-    	$state.go("transfer")
+    	$state.go("transfer");
+    	
     }
     $scope.qj = function(){ //请假
     	$state.go("leave")

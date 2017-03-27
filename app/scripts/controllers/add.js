@@ -93,11 +93,8 @@
 //		 	console.log(data)
             
 		 	$scope.arr.splice(index,1);
-<<<<<<< HEAD
-=======
 		 	$scope.ts = false;
-		
->>>>>>> origin/master
+
 			
 		 	})
  
