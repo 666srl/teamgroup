@@ -22,12 +22,23 @@ angular.module('teamGroupApp')
 			sessionStorage.zhiwei = tada.data.zhiwei;
 
 		})
+		$scope.xs = function(){
+			$scope.wz = false;
+			$scope.sz = false;
+		}
+		$scope.wz = false;
+		$scope.sz = false;
 		$scope.send = function() {
 			if($('#xm').val() == '' || $('#yf').val() == '' || $('#rq').val() == '' || $('#je').val() == '') {
-				alert("请将信息填写完整")
+				$scope.wz = true;
 			} else {
 
-				$http({
+				
+				var oN1 = $('#rq').val();
+				var oN2 = $('#je').val();
+				var z =  /^[0-9]*$/;
+				if(z.test(oN1)&&z.test(oN2)){
+					$http({
 					url: "http://" + ip + "/apply-for",
 					method: "post",
 					data: {
@@ -50,9 +61,15 @@ angular.module('teamGroupApp')
 					$scope.date = '';
 					$state.go("homepage");
 				})
+			
+				}else{
+					$scope.sz = true;
+				}
+				
 
 			}
 		}
+		
 		$scope.jiantou = function(){
 			$state.go("homepage");
 		}

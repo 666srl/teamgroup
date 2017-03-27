@@ -81,3 +81,30 @@ select{
 option{
 	color: #000;
 }
+.zz{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.7);
+}
+.zz>.tan{
+	position: absolute;
+	top: 33%;
+	width: 11rem;
+	height: 5rem;
+	background: white;
+	color: #000;
+	text-align: center;
+	left: 15%;
+}
+.zz>.tan p{
+	color: #000;
+	font-size: 0.9rem;
+	margin-top: 0.8rem;
+}
+.zz>.tan button{
+	margin-top: 0.7rem;
+	
+}
