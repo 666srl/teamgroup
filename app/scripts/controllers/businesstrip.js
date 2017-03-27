@@ -23,7 +23,7 @@ angular.module('teamGroupApp')
   		url:"http://"+ip+"/users/"+localStorage.loid,
   		method:'get'
   	}).then(function(rep){
-		//console.log(rep)
+		console.log(rep)
 		$scope.arr_cssq=rep.data;
 		sessionStorage.xingming=rep.data.xingming
 		sessionStorage.tel=rep.data.tel
@@ -32,7 +32,7 @@ angular.module('teamGroupApp')
 		alert('请求失败')
 	})
   	$scope.sq_tj=function(){
-  		//console.log($scope.start|$scope.end)
+  		console.log($scope.start|$scope.end)
   		if($scope.start==""||$scope.end==""||$scope.text==""){
     		$scope.kong_yc=true
   		}else{
@@ -57,7 +57,7 @@ angular.module('teamGroupApp')
 	  			}
 	  		})
 	  		.then(function(e){
-	  			//console.log(e)
+	  			console.log(e)
 				$scope.yc=false
 				$scope.start="";
 				$scope.end="";
