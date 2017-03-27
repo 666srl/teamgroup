@@ -64,9 +64,7 @@
     }
   $scope.tj = function(){
   	                     //添加员工
-  	                     if($scope.user ==""||$scope.bumen ==""||$scope.pass ==""||$scope.zhiwei ==""||$scope.name ==""||$scope.to ==""){
-  	                     	alert("亲属")
-  	                     }else{
+  	                     
   	                     		$http({
   	                     			
 		 		url:"http://"+ip+"/users",
@@ -96,17 +94,12 @@
 				$scope.x = false;
 				$scope.f = true;
 				
-<<<<<<< HEAD
-  	                    })
-=======
 
 		 	})
   }
   
->>>>>>> origin/master
   
-  }
-  }
+ 
   $scope.sc = function(a,index){
   	                          //删除
   	$http({//user里的信息
@@ -115,25 +108,11 @@
 		 }).then(function(data){	
 //		 	console.log(data)
 		 	$scope.arr.splice(index,1);
-<<<<<<< HEAD
 		 	$scope.ts = false;	
 		 	})
-		 
-		 	
-		 	 	
+		  	
  }
-=======
-		 	$scope.ts = false;
 
-			
-		 	})
- 
-  }
-  
-  
-  
-  
->>>>>>> origin/master
   $scope.xs = function(){
   	$scope.x = true;
   	$scope.f = false;
@@ -164,16 +143,8 @@
 		 	
 		$scope.g = false;
   		$scope.gg = true;
-<<<<<<< HEAD
   }
 
-=======
-  	}
-  
-  
-  
-  
->>>>>>> origin/master
   });
 
 
