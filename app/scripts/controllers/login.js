@@ -29,7 +29,7 @@ angular.module('teamGroupApp')
 		
 		if($scope.password == ''){
 			$scope.yz = true;
-			$scope.nr = "请输入密码";
+			$scope.nr = "温馨提示：请输入密码";
 		}
 		else {
 			if (reg.test($scope.password) == false) {
@@ -66,7 +66,7 @@ angular.module('teamGroupApp')
     	
     },function(){
     	$scope.yz = true;
-		$scope.nr = "用户不存在";
+		$scope.nr = "温馨提示：用户不存在";
     })
 
 }

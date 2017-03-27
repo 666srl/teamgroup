@@ -82,6 +82,16 @@
 	text-align: center;
 	line-height: 5rem;
 }
+.gtf_tx .yc .kong_box{
+	width: 70%;
+	height: 5rem;
+	background: #000088;
+	position: relative;
+	top: 5rem;
+	left: 15%;
+	text-align: center;
+	line-height: 2.5rem;
+}
 .gtf_tx .yc .yc_box .btn{
 	margin: 2%;
 }

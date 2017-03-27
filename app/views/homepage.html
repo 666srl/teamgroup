@@ -1,16 +1,19 @@
 <div ng-controller="homepageCtrl" class="srl-bg">
 	<div class="srl_top">
-		<p class="srl-left" ng-click="srl()"><img src="../images/mu.gif"/></p>
-		<p class="srl-right" ng-show="jia"><img src="../images/add.gif"/ ng-click="tj()"></p>
+		<p class="srl-left" ng-click="srl()"><img src="images/mu.gif"/></p>
+
+		<p class="srl-right" ng-show="jia"><img src="images/add.gif"/ ng-click="tj()"></p>
 		<p class="srl-right a" ng-click="ts()">news</p>
 		
 	</div>
 	<div class="srl-showtop" ><!--隐藏的个人信息-->
-		<p>姓名：<span>{{arr.xingming}}</span></p>
+		<p>姓&#x3000;&#x3000;名：<span>{{arr.xingming}}</span></p>
+		<p>手机号码：<span>{{arr.tel}}</span></p>
 		<p>现任部门：<span>{{arr.bumen}}</span></p>
 		<p>现任职位：<span>{{arr.zhiwei}}</span></p>
 		<p>就职地点：<span>{{arr.didian}}</span></p>
 		<button class="btn btn-primary btn-sm" ng-click="back()">退出登录</button>
+		<div class="pic"><img ng-src="{{arr.img}}"/></div>
 	</div>
 	<div class="srl-content">
 		<div class="srl-text a" ng-click="zw()">职位调动</div>
