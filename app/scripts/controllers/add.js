@@ -110,6 +110,38 @@
 		 	$scope.arr.splice(index,1);
 		 	$scope.ts = false;	
 		 	})
+		 $http({//报销里的信息
+		 		url:"http://"+ip+"/apply-for/"+a,
+		 		method:"delete",
+		 	}).then(function(data){
+		 		console.log(data)
+
+		 	})
+			$http({//请假里的信息
+		 		url:"http://"+ip+"/leave/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	$http({//职位调动里的信息
+		 		url:"http://"+ip+"/transfer/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	$http({//调休里的信息
+		 		url:"http://"+ip+"/vacation/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
+		 	
+		 	$http({//出差里的信息
+		 		url:"http://"+ip+"/businesstrip/"+a,
+		 		method:"delete",
+		 	}).then(function(){
+		 		
+		 	})
 		  	
  }
 
