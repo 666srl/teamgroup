@@ -1,4 +1,4 @@
-<div ng-controller="addCtrl" >
+<div ng-controller="addCtrl">
 	<div class="dj-zzc">
 	<div class="pj_head">
 		<div class="jiantou" ng-click="jiantou()"></div>
@@ -68,7 +68,7 @@
 			<p>部&#x3000;门 :&#x3000;<input type="text" ng-model="bumen"/></p>
 			<p>账&#x3000;号 :&#x3000;<input type="text" ng-model="user"/></p>
 			<p>密&#x3000;码 :&#x3000;<input type="password" ng-model="pass"/></p>
-			<p>手机号 :&#x3000;<input type="tel" ng-model="tel"/></p>
+			<p>手机号 :&#x3000;<input type="tel" ng-model="tel" id="tel"/></p>
 			<p>地&#x3000;点 :&#x3000;<select name="" class="dj-io"ng-model="didian">
 				<option value="北京">北京</option>
 				<option value="上海">上海</option>
@@ -84,4 +84,12 @@
 			<button class="j la btn btn-primary btn-sm" ng-click="qx()">取消</button>
 		</div>
 	</div>
+	<div ng-show="tel1" class="zz">
+			<div  class="tishi">
+			<p>请输入正确的手机号</p>
+			<button ng-click="o()" class="j btn btn-primary btn-sm wc">
+				确定
+			</button>
+		    </div>
+		</div>
 </div>
