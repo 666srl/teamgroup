@@ -9,7 +9,7 @@
  */
 angular.module('teamGroupApp')
   .controller('businesstripCtrl',function($scope,$http,$state,$interval){
-  if(localStorage.Storage == undefined){
+  if(localStorage.loid == undefined){
 		$state.go("login");
   }else{
   	$scope.arr_cssq=[];

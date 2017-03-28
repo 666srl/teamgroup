@@ -9,7 +9,7 @@
  */
 angular.module('teamGroupApp')
 	.controller('transferCtrl', function($scope, $http, $state) {
-	if(localStorage.Storage == undefined){
+	if(localStorage.loid == undefined){
 		$state.go("login");
   }else{
 		$scope.jiantou = function() {

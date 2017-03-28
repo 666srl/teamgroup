@@ -10,7 +10,7 @@
 angular.module('teamGroupApp')
   .controller('vacationCtrl', function ($scope,$http,$state) {
   	
-  	if(localStorage.Storage == undefined){
+  	if(localStorage.loid == undefined){
 		$state.go("login");
   	}else {
   	$scope.arr_tx=[];

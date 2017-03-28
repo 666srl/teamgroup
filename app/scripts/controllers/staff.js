@@ -9,7 +9,7 @@
  */
 angular.module('teamGroupApp')
 	.controller('staffCtrl', function($scope, $http, $state) {
-		if(localStorage.Storage == undefined){
+		if(localStorage.loid == undefined){
 		$state.go("login");
   }else{
 		$scope.a, $scope.b, $scope.c, $scope.d, $scope.e, $scope.f, $scope.g, $scope.h, $scope.i, $scope.j = false;

@@ -9,7 +9,7 @@
  */
 angular.module('teamGroupApp')
   .controller('homepageCtrl', function ($scope,$http,$state) {
-  	if(localStorage.Storage == undefined){
+  	if(localStorage.loid == undefined){
 		$state.go("login");
   }else{
   	$scope.jia = false;
