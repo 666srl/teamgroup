@@ -45,10 +45,7 @@
 }
 .ly_xq{
 	width: 100%;
-	/*border: 1px solid #fff;*/
-	margin-top: 1.5rem;
-	padding-left: 1rem;
-	padding: 0rem 0 .2rem 1rem;
+	padding-left:3.8rem;
 	font-size: .6rem;
 	color: #000;
 }
@@ -73,15 +70,15 @@ p.ye input{
 .go{
 	color: #fff;
 	width: 3rem;
+	margin-left:0.6rem;
 	border-radius: .2rem;
 	height: 1.3rem;
-	border: 0;
 	margin-top: 1.5rem;
 	line-height: 0.5rem;
 	font-size: .6rem;
 }
 .end{
-	margin-left: .3rem;
+	margin-left:1rem;
 }
 select{
 	color: #000;
