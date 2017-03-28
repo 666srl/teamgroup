@@ -36,16 +36,19 @@
 	
 }
 .ccsq_main ul li{
-	margin-bottom: .7rem;
+	margin-bottom: .9rem;
 }
 .ccsq_main p{
-	margin-bottom: .7rem;
+	margin-bottom: .9rem;
 }
 .ccsq_main ul li input{
 	width:11rem;
 	border-radius: .2rem;
 	text-indent: 5%;
 	color: #000;
+	font-size: 0.6rem;
+	line-height: 0.6rem;
+	padding: 0.1rem 0;
 }
 .ccsq_main ul li textarea{
 	width: 11rem;

@@ -78,16 +78,19 @@
 	padding: .2rem 0 .2rem 0;
 	line-height: 1.5rem;
 }
-input{
+/*input{
 	color: #000;
 	border: none;
-	padding-left: .3rem;
+    padding: 0.5rem 0.4rem;
 	
-}
+}*/
 .dj-add input{
 	width: 6rem;
-	height: 1.2rem;
+	
 	border-radius: .2rem;
+	font-size: 0.6rem;
+	line-height: 0.6rem;
+	padding: 0.15rem 0;
 }
 .dj-add p{
 	margin-top: .5rem;
@@ -128,7 +131,7 @@ button{
 	/*border: 1px solid #fff;*/
 	margin-top: 1rem;
 	padding-left: 1rem;
-	padding: .2rem 0 .2rem 1rem;
+	padding: .2rem 0 .2rem 2rem;
 }
 .tj{
 	color: #000;
@@ -139,10 +142,10 @@ button{
 	margin-top: .5rem;
 }
 .la{
-	margin-left: .3rem;
+	margin-left: .6rem;
 }
 .j{
-	margin-top: .5rem;
+	margin-top: 1.1rem;
 }
 .dx{
 	
