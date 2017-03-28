@@ -33,7 +33,6 @@ angular.module('teamGroupApp')
   				$state.go("staff")
   			}
   	}
-  	
 	$scope.num = 0;
   	$scope.srl = function(){//个人信息显隐
   		$scope.num++;
