@@ -10,6 +10,9 @@
 
 angular.module('teamGroupApp')
 	.controller('bossCtrl', function($scope, $http, $state) {
+	if(localStorage.loid == undefined){
+		$state.go("login");
+  }else {
 		$scope.go = function() {
 			$state.go("homepage")
 		}
@@ -59,12 +62,12 @@ angular.module('teamGroupApp')
 		}).then(function(e) {
 			$scope.arr = e.data
 			$scope.lei1 = "请假";
-			console.log($scope.arr)
+//			console.log($scope.arr)
 			for(var i = 0; i < $scope.arr.length; i++) {
-				console.log(i)
+//				console.log(i)
 				if(localStorage.loid == $scope.arr[i].uid && localStorage.zt == $scope.arr[i].status) {
 					$scope.arr5.push($scope.arr[i]);
-					console.log($scope.arr5)
+//					console.log($scope.arr5)
 				}
 			}
 			for(var i = 0; i < $scope.arr.length; i++) {
@@ -235,6 +238,7 @@ angular.module('teamGroupApp')
 				data: {
 					status: 0
 				}
+
 			})
 			$http({
 				url: "http://" + ip + "/apply-for/" + a,
@@ -348,5 +352,6 @@ angular.module('teamGroupApp')
 				$scope.arr14.splice(index,1)
 			})
 			
+		}
 		}
 	});

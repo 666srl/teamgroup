@@ -5,27 +5,42 @@
 	list-style: none;
 	color: #fff;
 }
-.gtf_tx{
-	
-}
 .gtf_tx .tx_header{
-	font-size: .8rem;
-	padding:0 5%;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	border-bottom: .1rem solid #E0E0E0;
+	width:16rem;
+	height:2.5rem;
+	font-size:0.8rem;
+	border-bottom:1px solid white;
+	line-height:1.5rem;
+	text-align:center;
+	color:white;
 }
-.gtf_tx .tx_header span{
-	display: inline-block;
+.va_prompt{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:0.53rem;
+	position:relative;
+	top:1.3rem;
 }
-.gtf_tx .tx_header span a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 1rem;
+.va_prompt:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.va_prompt:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
 }
 .gtf_tx .tx_header .tx{
 	margin-left: 35%;
-	
 }
 .tx_main{
 	font-size: .6rem;
@@ -63,36 +78,41 @@
 	margin: .2rem;
 }
 .tx_main ul .but{
-	text-align: center;
+	margin-top:1.5rem;
+	margin-left:2.7rem;
+}
+.but>button:nth-child(2){
+	margin-left:3rem;
 }
 .gtf_tx .yc,.gtf_tx .kong{
 	width: 100%;
 	height: 100%;
-	background:rgba(0,0,0,.6);
+	background:rgba(0,0,0,.7);
 	position: absolute;
-	top: 0;
+	top:0;
 }
 .gtf_tx .yc .yc_box{
+	position:absolute;
+	left:15%;
+	top:30%;
 	width: 70%;
 	height: 5rem;
-	background: #000088;
-	position: relative;
-	top: 5rem;
-	left: 15%;
+	background:white;
 	text-align: center;
 	line-height: 5rem;
 }
 .gtf_tx .kong .yc_box{
 	width: 70%;
 	height: 5rem;
-	background: #000088;
+	background:white;
 	position: relative;
-	top: 5rem;
-	left: 15%;
+	top:30%;
+	left:15%;
 	text-align: center;
 	font-size: .6rem;
 	line-height: 2.5rem;
 }
-.gtf_tx .yc .yc_box .btn{
-	margin: 2%;
+.yc_box>p{
+	font-size:0.7rem;
+	color:black;
 }

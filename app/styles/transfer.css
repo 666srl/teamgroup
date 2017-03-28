@@ -1,8 +1,6 @@
-
 .pj-bj {
 	height: 100%;
 }
-
 .pj_head {
 	height: 2.5rem;
 	border-bottom: 1px solid white;
@@ -12,30 +10,28 @@
 	font-family: "微软雅黑";
 	color: white;
 }
-.jiantou{
+.jiantou {
 	width: 0.5rem;
 	height: 0.8rem;
-	
 	float: left;
-	-margin-left: 0.5rem;
+	margin-left:1rem;
 	margin-top: 0.8rem;
 }
 .pj_head:after {
 	width: 0.55rem;
 	height: 0.1rem;
 	position: absolute;
-	left: 0.5rem;
+	left: 1rem;
 	top: 0.99rem;
 	content: "";
 	background: white;
 	transform: rotate(-45deg);
 }
-
 .pj_head:before {
 	width: 0.55rem;
 	height: 0.1rem;
 	position: absolute;
-	left: 0.5rem;
+	left: 1rem;
 	top: 1.35rem;
 	content: "";
 	background: white;
@@ -49,9 +45,10 @@
 	font-size: 0.6rem;
 	font-family: "微软雅黑";
 }
-
 .pj_center p {
 	line-height: 2.0rem;
+	font-size: 0.6rem;
+	margin-left:1.5rem;
 }
 
 .pj_center p>span {
@@ -61,25 +58,32 @@
 }
 
 .pj_center .wenben {
-	width: 11.3rem;
-	height: 9rem;
-	float: right;
-	margin-right: 1.0rem;
-	margin-top: -0.9rem;
+	width:8.6rem;
+	height:5rem;
+	float:left;
+	margin-left:3.3rem;
+	margin-top:-0.4rem;
 	font-family: "微软雅黑";
 	color: #000;
 } 
+.tra_bth{
+	width:8rem;
+	margin-left:3.5rem;
+	float:left;
+	margin-top:1.5rem;
+}
+.tra_bth>input:nth-child(2){
+	margin-left:4rem;
+}
 
 .pj_center .pp {
 	float: left;
 	margin-top: 0.8rem;
 }
-
 .pj_center .sq {
 	margin-top: -0.5rem;
 	float: left;
 }
-
 .pj_center>input {
 	margin-top: 0.9rem;
 	font-size: 0.6rem;
@@ -88,7 +92,6 @@
 	float: right;
 	margin-right: 1.2rem;
 }
-
 .pj_center select {
 	width: 3.5rem;
 	height: 1.2rem;
@@ -96,37 +99,47 @@
 	color: #000;
 	font-size: 0.6rem;
 }
-.pj_center select option{
-	
+.pj_center select option {
 	color: #000;
 }
-.sqsj{width: 5.0rem;
-height: 1.2rem;
-margin-left: 0.8rem;
-border-radius: 0.3rem;}
-.zzc{position: absolute;
+.sqsj {
+	width: 5.0rem;
+	height: 1.2rem;
+	margin-left: 0.2rem;
+	border-radius: 0.3rem;
+	color: #000;
+	padding: 0.1rem 0;
+	font-size: 0.6rem;
+	line-height: 0.6rem;
+}
+.zzc {
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100vh;
+	z-index:100;
 	background: rgba(0,0,0,0.7);
 }
-.zzc>.zzc_l{
+
+.zzc>.zzc_l {
 	position: absolute;
+	left: 15%;
 	top: 33%;
 	width: 11rem;
 	height: 5rem;
 	background: white;
 	color: #000;
-	text-align: center;
-	left: 15%;
+	text-align: center;	
 }
-.zzc>.zzc_l p{
+
+.zzc>.zzc_l span{
 	color: #000;
-	font-size: 0.9rem;
+	display:block;
+	font-size: 0.7rem;
 	margin-top: 0.8rem;
 }
-.zzc>.zzc_l button{
+
+.zzc>.zzc_l button {
 	margin-top: 0.7rem;
-	
 }

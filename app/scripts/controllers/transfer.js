@@ -9,7 +9,9 @@
  */
 angular.module('teamGroupApp')
 	.controller('transferCtrl', function($scope, $http, $state) {
-
+	if(localStorage.loid == undefined){
+		$state.go("login");
+  }else{
 		$scope.jiantou = function() {
 			$state.go("homepage")
 		}
@@ -28,7 +30,7 @@ angular.module('teamGroupApp')
 		$scope.yuanyin = "";
 		$scope.zzc_show=false;
 		$scope.tj = function() {
-			console.log($scope.didian == "")
+//			console.log($scope.didian == "")
 			if($scope.yuanyin == "") {
 				$scope.zzc_show=true;
 				$scope.qr=function(){
@@ -52,7 +54,7 @@ angular.module('teamGroupApp')
 						time:$scope.sqsj
 					}
 				}).then(function(data) {
-					console.log(data);
+//					console.log(data);
 					$state.go("homepage");
 				})
 			}
@@ -64,5 +66,6 @@ angular.module('teamGroupApp')
 
 	$scope.back = function(){
 		$state.go("homepage");
+	}
 	}
 	});

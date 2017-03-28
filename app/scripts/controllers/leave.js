@@ -8,6 +8,9 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$state){
+	if(localStorage.loid == undefined){
+		$state.go("login");
+  }else{
 	$scope.jiantou = function(){
 		$state.go("homepage");
 	}
@@ -16,7 +19,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   		url:"http://"+ip+"/users/"+localStorage.loid,
       	method:"get"
   	}).then(function(e){
-		console.log(e)
+//		console.log(e)
   		$scope.arr = e.data;
   		sessionStorage.xingming = e.data.xingming;
   		sessionStorage.tel = e.data.tel;
@@ -29,7 +32,10 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   	$scope.shijian2 ='';
   	$scope.submit = function(){//提交按钮
   		if($scope.text1 == "" ||$scope.liyou ==""||$scope.shijian1 =="" ||$scope.shijian2 == ""){
-  			alert(1)
+  			$scope.zzc_show=true;
+  			$scope.qr=function(){
+					$scope.zzc_show=false;
+				}
   		}else{
 			$http({
 			url:"http://"+ip+"/leave",
@@ -46,7 +52,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
 				uid:localStorage.loid
 			}
 		}).then(function(e){
-			console.log(e);
+//			console.log(e);
 			$scope.shijian1 = '';
 			$scope.shijian2 = '';
 			$scope.liyou = '';
@@ -58,7 +64,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   	$scope.qx = function(){
   		$state.go("homepage");
   	}
-
+}
   	})
 
   

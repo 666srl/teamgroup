@@ -1,17 +1,16 @@
-
 .srl-bg {
 	height: 100vh;
 	font-family: "微软雅黑";
 	font-size: 0.8rem;
-	/*background: rgba(255,255,255,.3);*/
 }
-.dd{display: none;}
+.dd{
+	display: none;
+	}
 .srl_top {
 	height: 2.5rem;
 	line-height: 2.5rem;
 	padding: 0 1rem;
 	position: relative;
-	/*border-bottom: 1px solid white;*/
 }
 .srl_top p {
 	display: inline-block;
@@ -24,9 +23,12 @@
 	margin-right: 2rem;
 	color: white;
 }
-.srl-left {float: left;}
-.srl-right {float: right;}
-	
+.srl-left {
+	float: left;
+	}
+.srl-right {
+	float: right;
+	}
 .picc {
 	width:5rem;
 	height: 6rem;
@@ -35,7 +37,9 @@
 	right: 1rem;
 	top: 1rem;
 }
-.picc img {width: 100%; height: 100%;}
+.picc img {
+	width: 100%; height: 100%;
+	}
 .srl_top p img{
 	width: 100%;
 	height: 100%;
@@ -54,7 +58,6 @@
 	opacity: 0;
 }
 .srl-content {
-	/*position: relative;*/
 	width: 100%;
 	margin-top: 2rem;
 }
@@ -62,8 +65,7 @@
 	width: 5rem;
 	height: 5rem;
 	line-height: 5rem;
-	/*transform: skew(-30deg);*/
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.7);
 	text-align: center;
 	position: absolute;
 	border-radius: 50%;

@@ -10,16 +10,20 @@
 
    angular.module('teamGroupApp')
   .controller('addCtrl', function($scope,$http,$state){  
+  	if(localStorage.loid == undefined){
+		$state.go("login");
+  }else{
   	$('.ss')[0].addEventListener("change",function(){
         var file = this.files[0];  
-        console.log(file)
+//      console.log(file)
         var reader = new FileReader();   
         reader.readAsDataURL(file);   
         reader.onload = function(e){ 
-        	console.log(this.result);
+//      	console.log(this.result);
         	$('.pic').html('<img src="'+this.result+'">')
            console.log(this.result); //就是base64  
             $scope.to = this.result;
+
 		}   
   },false)	
   	$scope.g = false;
@@ -56,7 +60,7 @@
 		 		url:"http://"+ip+"/users",
 		 		method:"get",
 		 	}).then(function(data){
-		 		console.log(data)
+//		 		console.log(data)
 		 		$scope.arr =data.data;
 		 		
 		 	})
@@ -87,8 +91,6 @@
 		 				img:$scope.to,
 		 		}
 		 	}).then(function(data){
-		 		
-		 		console.log(data)
 
                 $scope.arr.push(data.data)
 		 		$scope.name=""
@@ -123,7 +125,7 @@
 		 		url:"http://"+ip+"/users/"+a,
 		 		method:"delete",
 		 }).then(function(data){	
-		 	console.log(data)
+//		 	console.log(data)
 		 	$scope.arr.splice(index,1);
 		 	$scope.ts = false;	
 		 	})
@@ -132,42 +134,37 @@
 		 		url:"http://"+ip+"/apply-for/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-		 		
-		 		console.log(data)
+
 
 		 	})
 			$http({//请假里的信息
 		 		url:"http://"+ip+"/leave/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-		 		
-		 		console.log(data)
-		 		
+
+//		 		console.log(data)
+
 		 	})
 		 	$http({//职位调动里的信息
 		 		url:"http://"+ip+"/transfer/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-		 		
-		 		console.log(data)
-		 		
+
 		 	})
 		 	$http({//调休里的信息
 		 		url:"http://"+ip+"/vacation/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-		 		
-		 		console.log(data)
-		 		
+
+//		 		console.log(data)
+
 		 	})
 		 	
 		 	$http({//出差里的信息
 		 		url:"http://"+ip+"/businesstrip/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-		 		
-		 		console.log(data)
-		 		
+
 		 	})
  }
 
@@ -195,7 +192,7 @@
 		 				
 		 		}
 		 	}).then(function(data){
-		 		console.log(data)
+//		 		console.log(data)
 		 		
 		 	})
 		 	
@@ -203,7 +200,7 @@
 		$scope.g = false;
   		$scope.gg = true;
   }
-
+}
   });
 
 

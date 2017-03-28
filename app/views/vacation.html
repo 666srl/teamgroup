@@ -1,21 +1,25 @@
 <div class="gtf_tx" ng-controller="vacationCtrl">
 	<div class="tx_header">
-		<span><a href="javescript:;" ng-click="tx_fh()"><</a></span>
-		<span class="tx">调休</span>
+		<div class="va_prompt" ng-click="tx_fh()"></div>
+		 调休
 	</div>
 	<div class="tx_main">
 		<p>申请人：{{arr_tx.xingming}}</p>
-		<p>职位：{{arr_tx.zhiwei}}</p>
+		<p>职&#x3000;位：{{arr_tx.zhiwei}}</p>
 		<ul>
-			<li><span>原因：</span><textarea name="" rows="" cols="" ng-model="yy"></textarea></li>
-			<li><span>开始：</span><input type="date"ng-model="starts" / ></li>
-			<li><span>结束：</span><input type="date"ng-model="dates" / ></li>
-			<li class="but"><button type="button" class="btn btn-primary btn-sm" ng-click="tx_tj()">提交</button><button type="button" class="btn btn-primary btn-sm" ng-click="tx_qx()">取消</button></li> 
+			<li><span>原&#x3000;因：</span><textarea name="" rows="" cols="" ng-model="yy"></textarea></li>
+			<li><span>开&#x3000;始：</span><input type="date"ng-model="starts" / ></li>
+			<li><span>结&#x3000;束：</span><input type="date"ng-model="dates" / ></li>
+			<li class="but">
+				<button type="button" class="btn btn-primary btn-sm" ng-click="tx_tj()">提交</button>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="tx_qx()">取消</button>
+			</li> 
 		</ul>
 	</div>
 	<div class="yc" ng-show="yc">
 			<div class="yc_box">
-				<button type="button" class="btn btn-primary btn-sm" ng-click="yc_qd()">确定</button><button type="button" class="btn btn-primary btn-sm" ng-click="yc_qx()">取消</button>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="yc_qd()">确定</button>
+				<button type="button" class="btn btn-primary btn-sm" ng-click="yc_qx()">取消</button>
 			</div>
 	</div>
 	<div class="kong" ng-show="kong_yc">

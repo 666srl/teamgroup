@@ -40,7 +40,9 @@
 	position: absolute;
 	opacity: 0;
 }
-.pic img {width: 100%; height: 100%;}
+.pic img {
+	width: 100%; height: 100%;
+	}
 .zp{
 	float: left;
 }
@@ -84,14 +86,11 @@
 	width: 90%;
 	margin: 0 auto;
 }
-
 .dj-xq>span:nth-child(1){
 	display: inline-block;
 	width: 3.4rem;
-	margin-right: .7rem;
-	
+	margin-right: .7rem;	
 }
-
 .dj-bj{
 	height: 1.5rem !important;
 	border: 0;
@@ -106,16 +105,12 @@
 	padding: .2rem 0 .2rem 0;
 	line-height: 1.5rem;
 }
-input{
-	color: #000;
-	border: none;
-	padding-left: .3rem;
-	
-}
 .dj-add input{
-	width: 6rem;
-	height: 1.2rem;
+	width: 6rem;	
 	border-radius: .2rem;
+	font-size: 0.6rem;
+	line-height: 0.6rem;
+	padding: 0.15rem 0;
 }
 .dj-add p{
 	margin-top: .5rem;
@@ -127,10 +122,8 @@ input{
 .dj-btn{
 	margin-left: 5.2rem;
 	margin-top: .8rem;
-	
 	width:3.5rem !important;
 	border: 0;
-	
 	border-radius: .2rem;
 }
 .dj-io{
@@ -153,10 +146,9 @@ button{
 }
 .dj-add{
 	width: 100%;
-	/*border: 1px solid #fff;*/
 	margin-top: 1rem;
 	padding-left: 1rem;
-	padding: .2rem 0 .2rem 1rem;
+	padding: .2rem 0 .2rem 2rem;
 }
 .tj{
 	color: #000;
@@ -167,10 +159,10 @@ button{
 	margin-top: .5rem;
 }
 .la{
-	margin-left: .3rem;
+	margin-left: .6rem;
 }
 .j{
-	margin-top: .5rem;
+	margin-top: 1.1rem;
 }
 .dx{
 	
