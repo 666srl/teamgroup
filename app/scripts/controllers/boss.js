@@ -10,6 +10,10 @@
 
 angular.module('teamGroupApp')
 	.controller('bossCtrl', function($scope, $http, $state) {
+		
+	if(localStorage.Storage == undefined){
+		$state.go("login");
+  }else {
 		$scope.go = function() {
 			$state.go("homepage")
 		}
@@ -180,4 +184,5 @@ angular.module('teamGroupApp')
 						}
 					})
 				}
+		}
 	});

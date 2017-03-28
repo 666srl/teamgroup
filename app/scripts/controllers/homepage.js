@@ -9,6 +9,9 @@
  */
 angular.module('teamGroupApp')
   .controller('homepageCtrl', function ($scope,$http,$state) {
+  	if(localStorage.Storage == undefined){
+		$state.go("login");
+  }else{
   	$scope.jia = false;
   	$http({//+号的显隐
   			url:"http://"+ip+"/users/"+localStorage.loid,
@@ -71,5 +74,5 @@ angular.module('teamGroupApp')
     	localStorage.clear();
     	$state.go("login")
     }
-    
+   } 
   });

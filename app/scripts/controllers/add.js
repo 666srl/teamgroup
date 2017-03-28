@@ -10,6 +10,9 @@
 
    angular.module('teamGroupApp')
   .controller('addCtrl', function($scope,$http,$state){  
+  	if(localStorage.Storage == undefined){
+		$state.go("login");
+  }else{
   	$('.ss')[0].addEventListener("change",function(){
         var file = this.files[0];  
         console.log(file)
@@ -176,7 +179,7 @@
 		$scope.g = false;
   		$scope.gg = true;
   }
-
+}
   });
 
 

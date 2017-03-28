@@ -9,7 +9,9 @@
  */
 angular.module('teamGroupApp')
 	.controller('applyforCtrl', function($scope, $http, $state) {
-
+	if(localStorage.Storage == undefined){
+		$state.go("login");
+  }else{
 		$scope.arr = [];
 
 		$http({
@@ -93,4 +95,5 @@ angular.module('teamGroupApp')
 			$state.go("homepage");
 
 		}
+	}	
 	});

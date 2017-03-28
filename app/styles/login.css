@@ -23,6 +23,7 @@ body {
 	position: absolute;
 	top: 20%;
 	left: 5%;
+	border-radius: 15%;
 }
 .srl-show p {
 	margin: 2rem;

@@ -9,6 +9,9 @@
  */
 angular.module('teamGroupApp')
   .controller('businesstripCtrl',function($scope,$http,$state,$interval){
+  if(localStorage.Storage == undefined){
+		$state.go("login");
+  }else{
   	$scope.arr_cssq=[];
   	$scope.start="";
 	$scope.end="";
@@ -75,4 +78,5 @@ angular.module('teamGroupApp')
   	$scope.kong_qx=function(){
   		$scope.kong_yc=false
   	}
+  }
   });

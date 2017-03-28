@@ -8,6 +8,9 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$state){
+	if(localStorage.Storage == undefined){
+		$state.go("login");
+  }else{
 	$scope.jiantou = function(){
 		$state.go("homepage");
 	}
@@ -58,7 +61,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   	$scope.qx = function(){
   		$state.go("homepage");
   	}
-
+}
   	})
 
   
