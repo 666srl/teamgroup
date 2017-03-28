@@ -57,7 +57,7 @@
 		 		url:"http://"+ip+"/users",
 		 		method:"get",
 		 	}).then(function(data){
-//		 		console.log(data)
+		 		console.log(data)
 		 		$scope.arr =data.data;
 		 		
 		 	})
@@ -67,9 +67,10 @@
     }
   $scope.tj = function(){
   	                     //添加员工
-  	                     
-  	                     		$http({
-  	                     			
+  	                     if($scope.name ==""){
+  	                     	alert(1)
+  	                     }else{
+  	                     	$http({    			
 		 		url:"http://"+ip+"/users",
 		 		method:"post",
 		 		data:{
@@ -84,9 +85,9 @@
 		 				img:$scope.to,
 		 		}
 		 	}).then(function(data){
-//		 		console.log(data)
+		 		console.log(data)
 
-                  $scope.arr.push(data.data)
+                $scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
 				$scope.user=""
@@ -96,9 +97,11 @@
 				$scope.img = ""
 				$scope.x = false;
 				$scope.f = true;
-				
-
 		 	})
+  	                     }
+  	         	
+  	         
+  	                     		
   }
   
   
@@ -109,7 +112,7 @@
 		 		url:"http://"+ip+"/users/"+a,
 		 		method:"delete",
 		 }).then(function(data){	
-//		 	console.log(data)
+		 	console.log(data)
 		 	$scope.arr.splice(index,1);
 		 	$scope.ts = false;	
 		 	})
@@ -123,27 +126,27 @@
 			$http({//请假里的信息
 		 		url:"http://"+ip+"/leave/"+a,
 		 		method:"delete",
-		 	}).then(function(){
-		 		
+		 	}).then(function(data){
+		 		console.log(data)
 		 	})
 		 	$http({//职位调动里的信息
 		 		url:"http://"+ip+"/transfer/"+a,
 		 		method:"delete",
-		 	}).then(function(){
-		 		
+		 	}).then(function(data){
+		 		console.log(data)
 		 	})
 		 	$http({//调休里的信息
 		 		url:"http://"+ip+"/vacation/"+a,
 		 		method:"delete",
-		 	}).then(function(){
-		 		
+		 	}).then(function(data){
+		 		console.log(data)
 		 	})
 		 	
 		 	$http({//出差里的信息
 		 		url:"http://"+ip+"/businesstrip/"+a,
 		 		method:"delete",
-		 	}).then(function(){
-		 		
+		 	}).then(function(data){
+		 		console.log(data)
 		 	})
 		  	
  }

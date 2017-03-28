@@ -20,7 +20,7 @@ angular.module('teamGroupApp')
 			method: "get",
 
 		}).then(function(tada) {
-			console.log(tada)
+			//console.log(tada)
 			$scope.arr = tada.data;
 			sessionStorage.xingming = tada.data.xingming;
 			sessionStorage.tel = tada.data.tel;
@@ -68,7 +68,7 @@ angular.module('teamGroupApp')
 						}
 					}).then(function(data) {
 
-						console.log(data)
+						//console.log(data)
 						$scope.coms = '';
 						$scope.money = '';
 						$scope.months = '';
