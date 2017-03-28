@@ -107,8 +107,6 @@ angular.module('teamGroupApp')
 
 		})
 		
-		
-		
 			$http({
 			url: "http://" + ip + "/transfer/?uid="+localStorage.loid,
 			method: "get",

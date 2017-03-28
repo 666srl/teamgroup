@@ -1,10 +1,11 @@
-
 .srl-bg {
 	height: 100vh;
 	font-family: "微软雅黑";
 	font-size: 0.8rem;
 }
-.dd{display: none;}
+.dd{
+	display: none;
+	}
 .srl_top {
 	height: 2.5rem;
 	line-height: 2.5rem;
@@ -22,9 +23,12 @@
 	margin-right: 2rem;
 	color: white;
 }
-.srl-left {float: left;}
-.srl-right {float: right;}
-	
+.srl-left {
+	float: left;
+	}
+.srl-right {
+	float: right;
+	}
 .picc {
 	width:5rem;
 	height: 6rem;
@@ -33,7 +37,9 @@
 	right: 1rem;
 	top: 1rem;
 }
-.picc img {width: 100%; height: 100%;}
+.picc img {
+	width: 100%; height: 100%;
+	}
 .srl_top p img{
 	width: 100%;
 	height: 100%;

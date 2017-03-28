@@ -5,35 +5,44 @@
 	list-style: none;
 	color: #fff;
 }
-.gtf_ccsq{
-	
+.bu_prompt{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:1rem;
+	position:relative;
+	top:1.3rem;
+}
+.bu_prompt:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.bu_prompt:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
 }
 .gtf_ccsq .ccsq_header{
-	font-size: .8rem;
-	padding:0 5%;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	border-bottom: .1rem solid #E0E0E0;
-}
-.gtf_ccsq .ccsq_header span{
-	display: inline-block;
-}
-.gtf_ccsq .ccsq_header span a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 1rem;
-}
-.gtf_ccsq .ccsq_header .ccsq{
-	margin-left: 35%;
-	
+	width:16rem;
+	height:2.5rem;
+	font-size:0.8rem;
+	border-bottom:1px solid white;
+	line-height:1.5rem;
+	text-align:center;
+	color:white;
 }
 .ccsq_main{
 	font-size: .6rem;
 	padding: 0 8%;
 	margin: 1rem 0 0;
-}
-.ccsq_main ul{
-	
 }
 .ccsq_main ul li{
 	margin-bottom: .9rem;
@@ -71,7 +80,7 @@
 .gtf_ccsq .yc,.gtf_ccsq .kong{
 	width: 100%;
 	height: 100%;
-	background:rgba(0,0,0,.7);
+	background:rgba(0,0,0,.5);
 	position: absolute;
 	top: 0;
 }
@@ -93,7 +102,6 @@
 	position: relative;
 	top:30%;
 	left: 15%;
-	
 	text-align: center;
 	font-size: .6rem;
 	line-height: 2.5rem;

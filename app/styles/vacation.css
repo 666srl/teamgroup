@@ -6,23 +6,41 @@
 	color: #fff;
 }
 .gtf_tx .tx_header{
-	font-size: .8rem;
-	padding-left:0.5rem;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	border-bottom: .1rem solid #E0E0E0;
+	width:16rem;
+	height:2.5rem;
+	font-size:0.8rem;
+	border-bottom:1px solid white;
+	line-height:1.5rem;
+	text-align:center;
+	color:white;
 }
-.gtf_tx .tx_header span{
-	display: inline-block;
+.va_prompt{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:0.53rem;
+	position:relative;
+	top:1.3rem;
 }
-.gtf_tx .tx_header span a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 1rem;
+.va_prompt:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.va_prompt:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
 }
 .gtf_tx .tx_header .tx{
 	margin-left: 35%;
-	
 }
 .tx_main{
 	font-size: .6rem;

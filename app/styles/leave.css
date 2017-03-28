@@ -1,5 +1,6 @@
 body{
-	font-family:微软雅黑 ;}
+	font-family:微软雅黑 ;
+	}
 .boss_wrapper{
 	width:16rem;
 	height:100vh;
@@ -24,7 +25,6 @@ body{
 	background: white;
 	color: #000;
 	text-align: center;
-	
 }
 .zzc>.zzc_l span{
 	color: #000;
@@ -33,8 +33,7 @@ body{
 	margin-top: 0.8rem;
 }
 .zzc>.zzc_l button{
-	margin-top: 0.7rem;
-	
+	margin-top: 0.7rem;	
 }
 .boss_header{
 	width:16rem;
