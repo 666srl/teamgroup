@@ -1,4 +1,3 @@
-
 .pj-bj {
 	height: 100%;
 }
@@ -12,12 +11,14 @@
 	font-family: "微软雅黑";
 	color: white;
 }
-.jiantou{
+
+.jiantou {
 	width: 0.5rem;
 	height: 0.8rem;
 	float: left;
 	margin-top: 0.8rem;
 }
+
 .pj_head:after {
 	width: 0.55rem;
 	height: 0.1rem;
@@ -50,7 +51,11 @@
 
 .pj_center p {
 	line-height: 2.0rem;
+<<<<<<< HEAD
 	margin-left:1.5rem;
+=======
+	font-size: 0.6rem;
+>>>>>>> origin/master
 }
 
 .pj_center p>span {
@@ -67,6 +72,7 @@
 	margin-top:-0.4rem;
 	font-family: "微软雅黑";
 	color: #000;
+<<<<<<< HEAD
 } 
 .tra_bth{
 	width:8rem;
@@ -77,6 +83,10 @@
 .tra_bth>input:nth-child(2){
 	margin-left:4rem;
 }
+=======
+}
+
+>>>>>>> origin/master
 .pj_center .pp {
 	float: left;
 	margin-top: 0.8rem;
@@ -86,7 +96,6 @@
 	margin-top: -0.5rem;
 	float: left;
 }
-
 .pj_center>input {
 	margin-top: 0.9rem;
 	font-size: 0.6rem;
@@ -103,18 +112,21 @@
 	color: #000;
 	font-size: 0.6rem;
 }
-.pj_center select option{
-	
+.pj_center select option {
 	color: #000;
 }
-.sqsj{
+.sqsj {
 	width: 5.0rem;
-    height: 1.2rem;
-    margin-left: 0.2rem;
-    border-radius: 0.3rem;
-    }
-.zzc{
-	position:absolute;
+	height: 1.2rem;
+	margin-left: 0.8rem;
+	border-radius: 0.3rem;
+	color: #000;
+	padding: 0.1rem 0;
+	font-size: 0.6rem;
+	line-height: 0.6rem;
+}
+.zzc {
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -122,7 +134,8 @@
 	z-index:100;
 	background: rgba(0,0,0,0.7);
 }
-.zzc>.zzc_l{
+
+.zzc>.zzc_l {
 	position: absolute;
 	left: 15%;
 	top: 33%;
@@ -130,16 +143,16 @@
 	height: 5rem;
 	background: white;
 	color: #000;
-	text-align: center;
-	
+	text-align: center;	
 }
+
 .zzc>.zzc_l span{
 	color: #000;
 	display:block;
 	font-size: 0.9rem;
 	margin-top: 0.8rem;
 }
-.zzc>.zzc_l button{
+
+.zzc>.zzc_l button {
 	margin-top: 0.7rem;
-	
 }
