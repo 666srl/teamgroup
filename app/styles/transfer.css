@@ -15,9 +15,7 @@
 .jiantou{
 	width: 0.5rem;
 	height: 0.8rem;
-	
 	float: left;
-	-margin-left: 0.5rem;
 	margin-top: 0.8rem;
 }
 .pj_head:after {
@@ -52,6 +50,7 @@
 
 .pj_center p {
 	line-height: 2.0rem;
+	margin-left:1.5rem;
 }
 
 .pj_center p>span {
@@ -61,15 +60,23 @@
 }
 
 .pj_center .wenben {
-	width: 11.3rem;
-	height: 9rem;
-	float: right;
-	margin-right: 1.0rem;
-	margin-top: -0.9rem;
+	width:8.6rem;
+	height:5rem;
+	float:left;
+	margin-left:3.3rem;
+	margin-top:-0.4rem;
 	font-family: "微软雅黑";
 	color: #000;
 } 
-
+.tra_bth{
+	width:8rem;
+	margin-left:3.5rem;
+	float:left;
+	margin-top:1.5rem;
+}
+.tra_bth>input:nth-child(2){
+	margin-left:4rem;
+}
 .pj_center .pp {
 	float: left;
 	margin-top: 0.8rem;
@@ -100,29 +107,35 @@
 	
 	color: #000;
 }
-.sqsj{width: 5.0rem;
-height: 1.2rem;
-margin-left: 0.8rem;
-border-radius: 0.3rem;}
-.zzc{position: absolute;
+.sqsj{
+	width: 5.0rem;
+    height: 1.2rem;
+    margin-left: 0.2rem;
+    border-radius: 0.3rem;
+    }
+.zzc{
+	position:absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100vh;
+	z-index:100;
 	background: rgba(0,0,0,0.7);
 }
 .zzc>.zzc_l{
 	position: absolute;
+	left: 15%;
 	top: 33%;
 	width: 11rem;
 	height: 5rem;
 	background: white;
 	color: #000;
 	text-align: center;
-	left: 15%;
+	
 }
-.zzc>.zzc_l p{
+.zzc>.zzc_l span{
 	color: #000;
+	display:block;
 	font-size: 0.9rem;
 	margin-top: 0.8rem;
 }

@@ -26,36 +26,36 @@ body {
 }
 .srl-show p {
 	margin: 2rem;
-	color: white;
+	color: white; 
 	display: inline-block;
 }
 .srl-tu{
-width:1.8rem;
-height:1.5rem;
-position:relative;
-top:-1rem;
-right: 0rem;
-float: right;
+    width:1.8rem;
+    height:1.5rem;
+    position:relative;
+    top:-1rem;
+    right: 0rem;
+    float: right;
 }
 .srl-tu:after{
-width:1rem;
-height:0.1rem;
-position:absolute;
-top: 0.3rem;
-left: 0.5rem;
-content:"";
-background: white;
-transform-origin:left center;
-transform:rotate(45deg);
+    width:1rem;
+    height:0.1rem;
+    position:absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    content:"";
+    background: white;
+    transform-origin:left center;
+    transform:rotate(45deg);
 }
 .srl-tu:before{
-width:1rem;
-height:0.1rem;
-position:absolute;
-top: 1rem;
-left: 0.5rem;
-content:"";
-background: white;
-transform-origin:left center;
-transform:rotate(-45deg);
+    width:1rem;
+    height:0.1rem;
+    position:absolute;
+    top: 1rem;
+    left: 0.5rem;
+    content:"";
+    background: white;
+    transform-origin:left center;
+    transform:rotate(-45deg);
 }

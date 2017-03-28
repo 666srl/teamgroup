@@ -1,4 +1,10 @@
 <div ng-controller="leaveCtrl" class="boss_wrapper">
+	<div class="zzc" ng-show="zzc_show">
+		<div class="zzc_l">
+			<span>请输入内容</span>
+			<button ng-click="qr()" class="btn btn-primary btn-sm">确认</button>		
+		</div>
+	</div>
 	<div class="pj_head">
 		<div class="jiantou" ng-click="jiantou()"></div>
 		请假
@@ -22,7 +28,7 @@
 		    	       <i class="leave_a"></i>其他
 		    	       </span>
 								</p>
-								<p><span class="sq">请假事由</span><textarea ng-model="liyou" class="liyou"></textarea></p>
+								<p><span class="sq">请假事由：</span><textarea ng-model="liyou" class="liyou"></textarea></p>
 								<p>起始时间：<input type="date" name="date" ng-model="shijian1" class="qj"></p>
 								<p>截止时间：<input type="date" name="date" ng-model="shijian2" class="qj"></p>
 								<p class="leave_btn">
