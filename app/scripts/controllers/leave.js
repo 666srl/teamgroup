@@ -8,16 +8,18 @@
  * Controller of the teamGroupApp
  */
 angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$state){
+	if(localStorage.loid == undefined){
+		$state.go("login");
+  }else{
 	$scope.jiantou = function(){
 		$state.go("homepage");
 	}
-	
 	$scope.arr = [];
   	$http({
   		url:"http://"+ip+"/users/"+localStorage.loid,
       	method:"get"
   	}).then(function(e){
-		console.log(e)
+//		console.log(e)
   		$scope.arr = e.data;
   		sessionStorage.xingming = e.data.xingming;
   		sessionStorage.tel = e.data.tel;
@@ -41,28 +43,26 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
 				zhiwei:sessionStorage.zhiwei,
 				leibie:$scope.text1,
 				liyou:$scope.liyou,
-				time1:$scope.shijian1,
+
 				time2:$scope.shijian2,
 				status:1,
 				uid:localStorage.loid
 			}
 		}).then(function(e){
-			console.log(e);
+//			console.log(e);
 			$scope.shijian1 = '';
 			$scope.shijian2 = '';
 			$scope.liyou = '';
 			$scope.text1 = '';
 			$state.go("homepage");
 		})
-  			
-  		}
- 
   	}
-
+  	}
   	$scope.qx = function(){
   		$state.go("homepage");
   	}
-
+}
   	})
+
   
 
