@@ -32,7 +32,10 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   	$scope.shijian2 ='';
   	$scope.submit = function(){//提交按钮
   		if($scope.text1 == "" ||$scope.liyou ==""||$scope.shijian1 =="" ||$scope.shijian2 == ""){
-  			alert(1)
+  			$scope.zzc_show=true;
+  			$scope.qr=function(){
+					$scope.zzc_show=false;
+				}
   		}else{
 			$http({
 			url:"http://"+ip+"/leave",
