@@ -1,7 +1,6 @@
 .pj-bj {
 	height: 100%;
 }
-
 .pj_head {
 	height: 2.5rem;
 	border-bottom: 1px solid white;
@@ -11,30 +10,28 @@
 	font-family: "微软雅黑";
 	color: white;
 }
-
 .jiantou {
 	width: 0.5rem;
 	height: 0.8rem;
 	float: left;
+	margin-left:1rem;
 	margin-top: 0.8rem;
 }
-
 .pj_head:after {
 	width: 0.55rem;
 	height: 0.1rem;
 	position: absolute;
-	left: 0.5rem;
+	left: 1rem;
 	top: 0.99rem;
 	content: "";
 	background: white;
 	transform: rotate(-45deg);
 }
-
 .pj_head:before {
 	width: 0.55rem;
 	height: 0.1rem;
 	position: absolute;
-	left: 0.5rem;
+	left: 1rem;
 	top: 1.35rem;
 	content: "";
 	background: white;
@@ -48,14 +45,10 @@
 	font-size: 0.6rem;
 	font-family: "微软雅黑";
 }
-
 .pj_center p {
 	line-height: 2.0rem;
-<<<<<<< HEAD
-	margin-left:1.5rem;
-=======
 	font-size: 0.6rem;
->>>>>>> origin/master
+	margin-left:1.5rem;
 }
 
 .pj_center p>span {
@@ -72,7 +65,6 @@
 	margin-top:-0.4rem;
 	font-family: "微软雅黑";
 	color: #000;
-<<<<<<< HEAD
 } 
 .tra_bth{
 	width:8rem;
@@ -83,15 +75,11 @@
 .tra_bth>input:nth-child(2){
 	margin-left:4rem;
 }
-=======
-}
 
->>>>>>> origin/master
 .pj_center .pp {
 	float: left;
 	margin-top: 0.8rem;
 }
-
 .pj_center .sq {
 	margin-top: -0.5rem;
 	float: left;
@@ -104,7 +92,6 @@
 	float: right;
 	margin-right: 1.2rem;
 }
-
 .pj_center select {
 	width: 3.5rem;
 	height: 1.2rem;
@@ -118,7 +105,7 @@
 .sqsj {
 	width: 5.0rem;
 	height: 1.2rem;
-	margin-left: 0.8rem;
+	margin-left: 0.2rem;
 	border-radius: 0.3rem;
 	color: #000;
 	padding: 0.1rem 0;
@@ -149,7 +136,7 @@
 .zzc>.zzc_l span{
 	color: #000;
 	display:block;
-	font-size: 0.9rem;
+	font-size: 0.7rem;
 	margin-top: 0.8rem;
 }
 

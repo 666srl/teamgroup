@@ -15,13 +15,13 @@
   }else{
   	$('.ss')[0].addEventListener("change",function(){
         var file = this.files[0];  
-        console.log(file)
+//      console.log(file)
         var reader = new FileReader();   
         reader.readAsDataURL(file);   
         reader.onload = function(e){ 
-        	console.log(this.result);
+//      	console.log(this.result);
         	$('.pic').html('<img src="'+this.result+'">')
-        console.log(this.result); //就是base64  
+//      console.log(this.result); //就是base64  
        $scope.to = this.result;
 		}   
   },false)	

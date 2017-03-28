@@ -17,7 +17,7 @@ angular.module('teamGroupApp')
   			url:"http://"+ip+"/users/"+localStorage.loid,
   			method:"get"
   		}).then(function(e){
-			console.log(e);
+//			console.log(e);
   			$scope.arr = e.data;
   			localStorage.zt = e.data.state;
   			if (e.data.state == '1') {

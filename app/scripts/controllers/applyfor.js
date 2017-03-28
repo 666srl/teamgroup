@@ -13,7 +13,6 @@ angular.module('teamGroupApp')
 		$state.go("login");
   }else{
 		$scope.arr = [];
-
 		$http({
 
 			url: "http://" + ip + "/users/" + localStorage.loid,
@@ -28,7 +27,6 @@ angular.module('teamGroupApp')
 
 		})
 		$scope.xs = function() {
-
 			$scope.wz = false;
 			$scope.sz = false;
 		}

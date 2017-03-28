@@ -62,12 +62,12 @@ angular.module('teamGroupApp')
 		}).then(function(e) {
 			$scope.arr = e.data
 			$scope.lei1 = "请假";
-			console.log($scope.arr)
+//			console.log($scope.arr)
 			for(var i = 0; i < $scope.arr.length; i++) {
-				console.log(i)
+//				console.log(i)
 				if(localStorage.loid == $scope.arr[i].uid && localStorage.zt == $scope.arr[i].status) {
 					$scope.arr5.push($scope.arr[i]);
-					console.log($scope.arr5)
+//					console.log($scope.arr5)
 				}
 			}
 			for(var i = 0; i < $scope.arr.length; i++) {
@@ -81,7 +81,7 @@ angular.module('teamGroupApp')
 				}
 				if(has == false) {
 					$scope.arr6.push(data);
-					console.log($scope.arr6)
+//					console.log($scope.arr6)
 				}
 			}
 
@@ -94,10 +94,10 @@ angular.module('teamGroupApp')
 			$scope.arr1 = e.data
 			$scope.lei2 = "报销";
 			for(var i = 0; i < $scope.arr1.length; i++) {
-				console.log(i)
+//				console.log(i)
 				if(localStorage.loid == $scope.arr1[i].uid && localStorage.zt == $scope.arr1[i].status) {
 					$scope.arr7.push($scope.arr1[i]);
-					console.log($scope.arr7)
+//					console.log($scope.arr7)
 				}
 			}
 			for(var i = 0; i < $scope.arr1.length; i++) {
@@ -111,7 +111,7 @@ angular.module('teamGroupApp')
 				}
 				if(has == false) {
 					$scope.arr8.push(data);
-					console.log($scope.arr7)
+//					console.log($scope.arr7)
 				}
 			}
 		})
@@ -122,10 +122,10 @@ angular.module('teamGroupApp')
 			$scope.arr2 = e.data
 			$scope.lei3 = "出差";
 			for(var i = 0; i < $scope.arr2.length; i++) {
-				console.log(i)
+//				console.log(i)
 				if(localStorage.loid == $scope.arr2[i].uid && localStorage.zt == $scope.arr2[i].status) {
 					$scope.arr9.push($scope.arr2[i]);
-					console.log($scope.arr9)
+//					console.log($scope.arr9)
 				}
 			}
 			for(var i = 0; i < $scope.arr2.length; i++) {
@@ -139,7 +139,7 @@ angular.module('teamGroupApp')
 				}
 				if(has == false) {
 					$scope.arr10.push(data);
-					console.log($scope.arr10)
+//					console.log($scope.arr10)
 				}
 			}
 		})
@@ -150,10 +150,10 @@ angular.module('teamGroupApp')
 			$scope.arr3 = e.data
 			$scope.lei4 = "调休";
 			for(var i = 0; i < $scope.arr3.length; i++) {
-				console.log(i)
+//				console.log(i)
 				if(localStorage.loid == $scope.arr3[i].uid && localStorage.zt == $scope.arr3[i].status) {
 					$scope.arr11.push($scope.arr3[i]);
-					console.log($scope.arr11)
+//					console.log($scope.arr11)
 				}
 			}
 			for(var i = 0; i < $scope.arr3.length; i++) {
@@ -167,7 +167,7 @@ angular.module('teamGroupApp')
 				}
 				if(has == false) {
 					$scope.arr12.push(data);
-					console.log($scope.arr12)
+//					console.log($scope.arr12)
 				}
 			}
 		})
@@ -178,10 +178,10 @@ angular.module('teamGroupApp')
 			$scope.arr4 = e.data
 			$scope.lei5 = "职位调动";
 			for(var i = 0; i < $scope.arr4.length; i++) {
-				console.log(i)
+//				console.log(i)
 				if(localStorage.loid == $scope.arr4[i].uid && localStorage.zt == $scope.arr4[i].status) {
 					$scope.arr13.push($scope.arr4[i]);
-					console.log($scope.arr13)
+//					console.log($scope.arr13)
 				}
 			}
 			for(var i = 0; i < $scope.arr4.length; i++) {
@@ -195,7 +195,7 @@ angular.module('teamGroupApp')
 				}
 				if(has == false) {
 					$scope.arr14.push(data);
-					console.log($scope.arr14)
+//					console.log($scope.arr14)
 				}
 			}
 		})
