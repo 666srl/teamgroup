@@ -9,6 +9,10 @@
  */
 angular.module('teamGroupApp')
   .controller('vacationCtrl', function ($scope,$http,$state) {
+  	
+  	if(localStorage.loid == undefined){
+		$state.go("login");
+  	}else {
   	$scope.arr_tx=[];
   	$scope.yy=""
   	$scope.starts=""
@@ -19,13 +23,15 @@ angular.module('teamGroupApp')
     })
     .then(function(req){
     	$scope.arr_tx=req.data
-    	//console.log(req)
+    	console.log(req)
     	sessionStorage.xingming=req.data.xingming
 		sessionStorage.tel=req.data.tel
 		sessionStorage.zhiwei=req.data.zhiwei
     },function(error){
-    	alert("请求失败")
+//  	alert("请求失败")
     })
+   
+  	
     $scope.tx_tj=function(){
     	if($scope.yy==""||$scope.starts==""||$scope.dates==""){
     		$scope.kong_yc=true
@@ -49,7 +55,7 @@ angular.module('teamGroupApp')
 	    		}
 	    	})
 	    	.then(function(ev){
-	    		//console.log(ev)
+	    		console.log(ev)
 	    		$scope.yc=false
 	    		$scope.yy=""
 			  	$scope.starts=""
@@ -75,4 +81,7 @@ angular.module('teamGroupApp')
    		$scope.kong_yc=false
    		
    	}
+ }   	
+   	
+
   });

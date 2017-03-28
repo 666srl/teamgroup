@@ -10,7 +10,9 @@
 angular.module('teamGroupApp')
 	//路由
 	.controller('applyforCtrl', function($scope, $http, $state) {
-
+	if(localStorage.loid == undefined){
+		$state.go("login");
+  }else{
 		$scope.arr = [];
 
 		$http({
@@ -96,4 +98,5 @@ angular.module('teamGroupApp')
 			$state.go("homepage");
 
 		}
+	}	
 	});

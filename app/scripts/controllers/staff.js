@@ -9,6 +9,9 @@
  */
 angular.module('teamGroupApp')
 	.controller('staffCtrl', function($scope, $http, $state) {
+		if(localStorage.loid == undefined){
+		$state.go("login");
+  }else{
 		$scope.a, $scope.b, $scope.c, $scope.d, $scope.e, $scope.f, $scope.g, $scope.h, $scope.i, $scope.j = false;
 		 $scope.arra=[];$scope.arra1=[];$scope.arra2=[];
 		 $scope.arrb=[];$scope.arrb1=[];$scope.arrb2=[];
@@ -125,5 +128,5 @@ angular.module('teamGroupApp')
 			}
 
 		})
-
+}
 	});

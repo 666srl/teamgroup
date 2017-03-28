@@ -10,6 +10,9 @@
 
 angular.module('teamGroupApp')
 	.controller('bossCtrl', function($scope, $http, $state) {
+	if(localStorage.loid == undefined){
+		$state.go("login");
+  }else {
 		$scope.go = function() {
 			$state.go("homepage")
 		}
@@ -235,6 +238,7 @@ angular.module('teamGroupApp')
 				data: {
 					status: 0
 				}
+
 			})
 			$http({
 				url: "http://" + ip + "/apply-for/" + a,
@@ -348,5 +352,6 @@ angular.module('teamGroupApp')
 				$scope.arr14.splice(index,1)
 			})
 			
+		}
 		}
 	});
