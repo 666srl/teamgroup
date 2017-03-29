@@ -1,7 +1,9 @@
 <div ng-controller="staffCtrl" class="staff_wrapper">
 	<div class="staff_header">
 		<div class="staff_prompt" ng-click="gogo()"></div>
-		员工信息提示</div>
+		员工信息提示
+		<div class="staff_prompt1" ng-click="go()">详情</div>
+	</div>
 		<div class="staff_content">
 			<div ng-repeat="xi in arrb"></div>
 		    <div class="staff_staff" ng-show="a">
@@ -38,7 +40,6 @@
 			    <p><img src="../images/staff__1.gif"</p>
 			    <p>您的{{shuc1}}条{{la3}}申请未能通过！</p>
 		    </div>
-		    
 		    <div ng-repeat="xi4 in arrd"></div>
 		    <div class="staff_staff" ng-show="g">
 			    <p>提示：{{la4}}&#x3000;</p>
@@ -50,7 +51,6 @@
 			    <p><img src="../images/staff__1.gif"</p>
 			    <p>您的{{shud1}}条{{la4}}申请未能通过！</p>
 		    </div>
-		    
 		    <div ng-repeat="xi5 in arre"></div>
 		    <div class="staff_staff" ng-show="i">
 			    <p>提示：{{la5}}&#x3000;</p>
@@ -61,7 +61,6 @@
 			    <p>提示：{{la5}}&#x3000;</p>
 			    <p><img src="../images/staff__1.gif"</p>
 			    <p>您的{{shue1}}条{{la5}}申请未能通过！</p>
-		    </div>
-		    
+		    </div> 
 		</div>
 </div>
