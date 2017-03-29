@@ -27,7 +27,7 @@ angular.module('teamGroupApp')
 			$state.go("homepage")
 		}
         $scope.go = function() {
-			$state.go("homepage")
+			$state.go("detail")
 		}
 		$http({
 			url: "http://" + ip + "/leave/?uid="+localStorage.loid,

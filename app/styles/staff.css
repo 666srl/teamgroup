@@ -53,7 +53,15 @@ body{
 	transform-origin:left center;
 	transform:rotate(-45deg);
 }
-
+.staff_prompt1{
+    width:2rem;
+    height:2.5rem;
+    position:relative;
+    left:13rem;
+    font-size:0.6rem;
+    top:-1.9rem;
+    line-height:2.5rem;
+}
 .staff_staff{
 	width:calc(100% - 1rem);
 	margin-left:0.5rem;

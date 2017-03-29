@@ -1,0 +1,76 @@
+body{
+	font-family:微软雅黑;
+}
+.staff_wrapper{
+	width:16rem;
+	height:100vh;
+	background: url(../images/timg.jpg) no-repeat;
+	background-size:cover; 	
+}
+.staff_header{
+	width:16rem;
+	height:2.5rem;
+	font-size:0.8rem;
+	border-bottom:1px solid white;
+	line-height:1.5rem;
+	text-align:center;
+	color:white;
+	position:fixed;
+	left:0px;
+	top:0px;
+	z-index:99;
+}
+.staff_prompt{
+	width:0.55rem;
+	height:0.6rem;
+	margin-left:0.53rem;
+	position:relative;
+	top:1.3rem;
+}
+.staff_prompt:after{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(45deg);
+}
+.staff_prompt:before{
+	width:0.55rem;
+	height:0.1rem;
+	position:absolute;
+	content:"";
+	background: white;
+	transform-origin:left center;
+	transform:rotate(-45deg);
+}
+.staff_fu_content{
+	width:100%;
+    height:calc(100vh - 6rem);
+	overflow:auto;
+	position:absolute;
+	top:2.5rem;
+	z-index:1;
+}
+.staff_fu_content_1{
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+	height:4.5rem;
+	font-size:0.6rem;
+	color:white;
+	border:1px solid white;
+	margin-top:1rem;
+}
+.staff_fu_content_1>input{
+	display:block;
+	float:left;
+	margin-left:0.5rem;
+	margin-top:-0.8rem;
+}
+.staff_fu_content_1>p{
+	width:11rem;
+	float:left;
+	line-height:1.2rem;
+	margin-left:0.5rem;
+}
