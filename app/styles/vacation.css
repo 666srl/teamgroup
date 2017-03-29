@@ -57,13 +57,13 @@
 	margin-bottom: .7rem;
 }
 .tx_main ul li input{
-	width:11rem;
+	width:70%;
 	border-radius: .2rem;
 	text-indent: 5%;
 	color: #000;
 }
 .tx_main ul li textarea{
-	width: 11rem;
+	width: 70%;
 	border-radius: .2rem;
 	height: 5rem;
 	text-indent: 5%;
