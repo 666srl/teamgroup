@@ -53,6 +53,7 @@ body{
 	transform-origin:left center;
 	transform:rotate(-45deg);
 }
+
 .staff_staff{
 	width:calc(100% - 1rem);
 	margin-left:0.5rem;

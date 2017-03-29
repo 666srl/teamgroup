@@ -170,15 +170,11 @@
 		 		method:"post",
 		 		data:{
 		 				zhiwei:$scope.zhiwei1,
-		 				xingming:$scope.xingming,
-		 				
+		 				xingming:$scope.xingming,	 				
 		 		}
 		 	}).then(function(data){
-//		 		console.log(data)
-		 		
-		 	})
-		 	
-		 	
+//		 		console.log(data)		 		
+		 	})		 	
 		$scope.g = false;
   		$scope.gg = true;
   }
