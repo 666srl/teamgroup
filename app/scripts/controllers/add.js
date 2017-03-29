@@ -21,12 +21,15 @@
         reader.onload = function(e){ 
 //      	console.log(this.result);
         	$('.pic').html('<img src="'+this.result+'">')
-//      console.log(this.result); //就是base64  
-       $scope.to = this.result;
+           console.log(this.result); //就是base64  
+            $scope.to = this.result;
+
 		}   
   },false)	
   	$scope.g = false;
   	$scope.gg = true;
+  	
+  	
   	$scope.f = true;
   	$scope.ts = false;
   	$scope.arr =[];
@@ -66,11 +69,14 @@
     	$scope.ts = true;
     }
   $scope.tj = function(){
-  	                     //添加员工
-  	                     if($scope.name ==""){
-  	                     	alert(1)
-  	                     }else{
-  	                     	$http({    			
+  	                          //添加员工
+  	 var t=/^1[345678]\d{9}$/
+    var tel = $("#tel").val()
+   
+  	                 
+  	               	if(t.test(tel)){
+  	                     	
+	                     	$http({    			
 		 		url:"http://"+ip+"/users",
 		 		method:"post",
 		 		data:{
@@ -85,7 +91,6 @@
 		 				img:$scope.to,
 		 		}
 		 	}).then(function(data){
-//		 		console.log(data)
 
                 $scope.arr.push(data.data)
 		 		$scope.name=""
@@ -98,16 +103,24 @@
 				$scope.x = false;
 				$scope.f = true;
 		 	})
+  	                     }else{
+  	                     	$scope.tel1 = true;
+  	                     
   	                     }
-  	         	
-  	         
+  	            
+  	         $scope.o = function(){
+  	         	$scope.tel1 = false;
+  	         	$scope.tel = ""
+  	         }
   	                     		
   }
   
   
  
   $scope.sc = function(a,index){
+  	
   	                          //删除
+  	                          
   	$http({//user里的信息
 		 		url:"http://"+ip+"/users/"+a,
 		 		method:"delete",
@@ -116,44 +129,49 @@
 		 	$scope.arr.splice(index,1);
 		 	$scope.ts = false;	
 		 	})
+		 
 		 $http({//报销里的信息
 		 		url:"http://"+ip+"/apply-for/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-//		 		console.log(data)
+
 
 		 	})
 			$http({//请假里的信息
 		 		url:"http://"+ip+"/leave/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
+
 //		 		console.log(data)
+
 		 	})
 		 	$http({//职位调动里的信息
 		 		url:"http://"+ip+"/transfer/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-//		 		console.log(data)
+
 		 	})
 		 	$http({//调休里的信息
 		 		url:"http://"+ip+"/vacation/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
+
 //		 		console.log(data)
+
 		 	})
 		 	
 		 	$http({//出差里的信息
 		 		url:"http://"+ip+"/businesstrip/"+a,
 		 		method:"delete",
 		 	}).then(function(data){
-//		 		console.log(data)
+
 		 	})
-		  	
  }
 
   $scope.xs = function(){
   	$scope.x = true;
   	$scope.f = false;
+  	
   }
   $scope.qx = function(){
   	$scope.x = false;
