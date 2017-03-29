@@ -64,18 +64,25 @@
 p.ye input{
 	width: 2.5rem;
 }
+.yy button:nth-child(1){
+    float:left;
+}
+.yy button:nth-child(2){
+    float:left;
+}
 .go{
 	color: #fff;
 	width: 3rem;
 	margin-left:0.6rem;
 	border-radius: .2rem;
 	height: 1.3rem;
-	margin-top: 1.5rem;
+	margin-top: 1rem;
 	line-height: 0.5rem;
 	font-size: .6rem;
 }
-.end{
+.low{
 	margin-left:1rem;
+	margin-top: 1rem;
 }
 select{
 	color: #000;
