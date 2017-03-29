@@ -25,6 +25,11 @@ angular
   		templateUrl:"views/staff.html"
   	})
   	
+  	.state("detail",{
+  		url:"/detail",
+  		templateUrl:"views/detail.html"
+  	})
+  	
   	.state("add",{
   		url:"/add",
   		templateUrl:"views/add.html"
