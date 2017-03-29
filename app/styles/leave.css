@@ -4,7 +4,6 @@ body{
 .boss_wrapper{
 	width:16rem;
 	height:100vh;
-	background: url(../images/timg.jpg) no-repeat;
 	background-size:cover; 	
 }
 .zzc{
@@ -118,7 +117,7 @@ body{
 	margin-left:2rem;
 }
 .leave_btn>input{
-	color:white;
+	color:#000;
 }
 .leave_a {
 	display: inline-block;

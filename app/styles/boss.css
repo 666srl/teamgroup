@@ -4,7 +4,6 @@ body{
 .boss_wrapper{
 	width:16rem;
 	height:100vh;
-	background: url(../images/timg.jpg) no-repeat;
 	background-size:cover; 	
 }
 .boss_header{
@@ -59,7 +58,7 @@ body{
 	height:8rem;
 	margin-top:1rem;
 	font-size:0.6rem;
-	border:1px solid white;
+	border:1px solid #444;
 	color:white;
 }
 .boss_staff>p:nth-child(1){
@@ -123,7 +122,7 @@ body{
 	height:9.5rem;
 	margin-top:1rem;
 	font-size:0.6rem;
-	border:1px solid white;
+	border:1px solid #444444;
 	color:white;
 }
 .boss_staff1>p:nth-child(1){

@@ -13,8 +13,8 @@
 					<span class="dj-a">姓名: {{a.xingming}}</span>
 					
 					<span class="dj-b">职位: {{a.zhiwei}}</span>
-				<button class="dj-bj btn-primary btn-sm" ng-click="qq($index)" >删除</button>
-				<button class="dj-bj btn-primary btn-sm"  ng-click="xuigai(a,$index)">修改</button>
+				<button class="dj-bj btn btn-default" ng-click="qq($index)" >删除</button>
+				<button class="dj-bj btn btn-default"  ng-click="xuigai(a,$index)">修改</button>
 					<div ng-show="ts===$index" class="zz">
 						<div  class="tishi">
 							<p>确定要删除这条信息吗?</p>
@@ -50,7 +50,7 @@
 					<button ng-click="fn(abc.id)" class="j btn btn-primary btn-sm wc">完成</button>
 				</div>
 			<p> 
-				<button class="dj-btn btn-primary btn-sm" ng-click="xs()" ng-show="gg">添加员工</button>
+				<button class="dj-btn btn btn-default" ng-click="xs()" ng-show="gg">添加员工</button>
 			</p>
 		</div>
 		<div class="dj-add" ng-show="x">
@@ -73,14 +73,14 @@
 			</select>
 			</p>
 			
-			<button class="j btn btn-primary btn-sm" ng-click="tj()">提交</button>
-			<button class="j la btn btn-primary btn-sm" ng-click="qx()">取消</button>
+			<button class="j btn btn btn-default" ng-click="tj()">提交</button>
+			<button class="j la btn btn btn-default" ng-click="qx()">取消</button>
 		</div>
 	</div>
 	<div ng-show="tel1" class="zz">
 			<div  class="tishi">
 			<p>请输入正确的手机号</p>
-			<button ng-click="o()" class="j btn btn-primary btn-sm wc">
+			<button ng-click="o()" class="j btn btn btn-default wc">
 				确定
 			</button>
 		    </div>

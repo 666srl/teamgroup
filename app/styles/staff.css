@@ -4,7 +4,6 @@ body{
 .staff_wrapper{
 	width:16rem;
 	height:100vh;
-	background: url(../images/timg.jpg) no-repeat;
 	background-size:cover; 	
 }
 .staff_content{
