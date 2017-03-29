@@ -51,7 +51,7 @@
 	margin-bottom: .9rem;
 }
 .ccsq_main ul li input{
-	width:11rem;
+	width:70%;
 	border-radius: .2rem;
 	text-indent: 5%;
 	color: #000;
@@ -60,7 +60,7 @@
 	padding: 0.1rem 0;
 }
 .ccsq_main ul li textarea{
-	width: 11rem;
+	width: 70%;
 	border-radius: .2rem;
 	text-indent: 5%;
 	color: #000;

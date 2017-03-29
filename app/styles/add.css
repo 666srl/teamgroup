@@ -18,7 +18,9 @@
 	font-family: "微软雅黑";
 	font-size: .8rem;
 }
-
+input{
+	color:#000000;
+}
 .pic {
 	display: inline-block;
 	width: 6rem;
@@ -117,7 +119,6 @@
 }
 .dj-xq button{
 	margin-right: .3rem;
-	
 }
 .dj-btn{
 	margin-left: 5.2rem;
@@ -144,9 +145,21 @@ button{
 	padding-bottom: .5rem;
 	border: 1px solid #fff;
 }
+.dj-a {
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	overflow: hidden;
+}
+.dj-b {
+	display: inline-block;
+	width: 27%;
+	height: 100%;
+	overflow: hidden;
+}
 .dj-add{
 	width: 100%;
-	margin-top: 1rem;
+	margin-top: .2rem;
 	padding-left: 1rem;
 	padding: .2rem 0 .2rem 2rem;
 }

@@ -7,32 +7,25 @@
 	</div>
 	<div class="dj-content">
 		<div class="dj-list" ng-show="f">
-
+			
 			<div  ng-repeat="a in arr" ng-show="gg" class="height">
 				<div ng-class="{'dx':$index==i}" class="dj-xq"><!--信息的每一条-->
+					<span class="dj-a">姓名: {{a.xingming}}</span>
 					
-				
-					<span >姓名: {{a.xingming}}</span>
-				
-				
-
-					<span >职位: {{a.zhiwei}}</span>
-
-
-				
-				<button class="dj-bj btn-primary btn-sm" ng-click="qq()" >删除</button>
+					<span class="dj-b">职位: {{a.zhiwei}}</span>
+				<button class="dj-bj btn-primary btn-sm" ng-click="qq($index)" >删除</button>
 				<button class="dj-bj btn-primary btn-sm"  ng-click="xuigai(a,$index)">修改</button>
-				<div ng-show="ts" class="zz">
-			<div  class="tishi">
-			<p>确定要删除这条信息吗?</p>
-			<button ng-click="sc(a.id,$index)" class="j btn btn-primary btn-sm wc">
-				确定
-			</button>
-			<button class="j btn btn-primary btn-sm wc" ng-click="qa()">
-				取消
-			</button>
-		    </div>
-		</div>
+					<div ng-show="ts===$index" class="zz">
+						<div  class="tishi">
+							<p>确定要删除这条信息吗?</p>
+							<button ng-click="sc(a.id,$index)" class="j btn btn-primary btn-sm wc">
+								确定
+							</button>
+							<button class="j btn btn-primary btn-sm wc" ng-click="qa()">
+								取消
+							</button>
+		    			</div>
+					</div>
 				</div>
 			</div>
 			    <div ng-show="jgr" class="djj"><!--修改的信息-->

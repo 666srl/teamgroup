@@ -21,7 +21,7 @@
         reader.onload = function(e){ 
 //      	console.log(this.result);
         	$('.pic').html('<img src="'+this.result+'">')
-           console.log(this.result); //就是base64  
+//         console.log(this.result); //就是base64  
             $scope.to = this.result;
 
 		}   
@@ -65,8 +65,8 @@
 		 		
 		 	})
     $scope.x = false;
-    $scope.qq = function(){
-    	$scope.ts = true;
+    $scope.qq = function(a){
+    	$scope.ts = a;
     }
   $scope.tj = function(){
   	                          //添加员工
@@ -119,7 +119,7 @@
  
   $scope.sc = function(a,index){
   	
-  	                          //删除
+  	                       //删除
   	                          
   	$http({//user里的信息
 		 		url:"http://"+ip+"/users/"+a,
