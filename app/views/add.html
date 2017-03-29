@@ -1,4 +1,4 @@
-<div ng-controller="addCtrl" >
+<div ng-controller="addCtrl">
 	<div class="dj-zzc">
 	<div class="pj_head">
 		<div class="jiantou" ng-click="jiantou()"></div>
@@ -7,32 +7,25 @@
 	</div>
 	<div class="dj-content">
 		<div class="dj-list" ng-show="f">
-
+			
 			<div  ng-repeat="a in arr" ng-show="gg" class="height">
 				<div ng-class="{'dx':$index==i}" class="dj-xq"><!--信息的每一条-->
+					<span class="dj-a">姓名: {{a.xingming}}</span>
 					
-				
-					<span >姓名: {{a.xingming}}</span>
-				
-				
-
-					<span >职位: {{a.zhiwei}}</span>
-
-
-				
-				<button class="dj-bj btn-primary btn-sm" ng-click="qq()" >删除</button>
+					<span class="dj-b">职位: {{a.zhiwei}}</span>
+				<button class="dj-bj btn-primary btn-sm" ng-click="qq($index)" >删除</button>
 				<button class="dj-bj btn-primary btn-sm"  ng-click="xuigai(a,$index)">修改</button>
-				<div ng-show="ts" class="zz">
-			<div  class="tishi">
-			<p>确定要删除这条信息吗?</p>
-			<button ng-click="sc(a.id,$index)" class="j btn btn-primary btn-sm wc">
-				确定
-			</button>
-			<button class="j btn btn-primary btn-sm wc" ng-click="qa()">
-				取消
-			</button>
-		    </div>
-		</div>
+					<div ng-show="ts===$index" class="zz">
+						<div  class="tishi">
+							<p>确定要删除这条信息吗?</p>
+							<button ng-click="sc(a.id,$index)" class="j btn btn-primary btn-sm wc">
+								确定
+							</button>
+							<button class="j btn btn-primary btn-sm wc" ng-click="qa()">
+								取消
+							</button>
+		    			</div>
+					</div>
 				</div>
 			</div>
 			    <div ng-show="jgr" class="djj"><!--修改的信息-->
@@ -68,7 +61,7 @@
 			<p>部&#x3000;门 :&#x3000;<input type="text" ng-model="bumen"/></p>
 			<p>账&#x3000;号 :&#x3000;<input type="text" ng-model="user"/></p>
 			<p>密&#x3000;码 :&#x3000;<input type="password" ng-model="pass"/></p>
-			<p>手机号 :&#x3000;<input type="tel" ng-model="tel"/></p>
+			<p>手机号 :&#x3000;<input type="tel" ng-model="tel" id="tel"/></p>
 			<p>地&#x3000;点 :&#x3000;<select name="" class="dj-io"ng-model="didian">
 				<option value="北京">北京</option>
 				<option value="上海">上海</option>
@@ -84,4 +77,12 @@
 			<button class="j la btn btn-primary btn-sm" ng-click="qx()">取消</button>
 		</div>
 	</div>
+	<div ng-show="tel1" class="zz">
+			<div  class="tishi">
+			<p>请输入正确的手机号</p>
+			<button ng-click="o()" class="j btn btn-primary btn-sm wc">
+				确定
+			</button>
+		    </div>
+		</div>
 </div>

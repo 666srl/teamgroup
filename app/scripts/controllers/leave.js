@@ -11,6 +11,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
 	if(localStorage.loid == undefined){
 		$state.go("login");
   }else{
+  	
 	$scope.jiantou = function(){
 		$state.go("homepage");
 	}
@@ -25,6 +26,22 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
   		sessionStorage.tel = e.data.tel;
   		sessionStorage.zhiwei = e.data.zhiwei;
   	});
+  	
+  	
+  	$scope.srb = function(){
+  		var end = $('.end').val();
+  		var state = $('.state').val();
+  		if(end.replace("-", "").replace("-", "") - state.replace("-", "").replace("-", "")<=0){
+  			$scope.kong_yc =true;
+  			$scope.text = "您的时间填写错误";
+  		}
+  		console.log(end.replace("-", "").replace("-", "") - state.replace("-", "").replace("-", ""))
+  	}
+  	
+  	$scope.kong_qx = function(){
+  		$scope.kong_yc =false;
+  	}
+  	
   	
   	$scope.text1 ='';
   	$scope.liyou ='';
@@ -46,7 +63,6 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
 				zhiwei:sessionStorage.zhiwei,
 				leibie:$scope.text1,
 				liyou:$scope.liyou,
-
 				time2:$scope.shijian2,
 				status:1,
 				uid:localStorage.loid

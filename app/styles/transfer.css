@@ -68,12 +68,12 @@
 } 
 .tra_bth{
 	width:8rem;
-	margin-left:3.5rem;
+	margin-left:1.5rem;
 	float:left;
 	margin-top:1.5rem;
 }
 .tra_bth>input:nth-child(2){
-	margin-left:4rem;
+	margin-left:1rem;
 }
 
 .pj_center .pp {
