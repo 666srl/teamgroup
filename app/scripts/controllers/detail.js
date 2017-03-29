@@ -37,15 +37,16 @@ angular.module('teamGroupApp')
 					url: "http://" + ip + "/leave/" + $scope.arrbb[i],
 					method: "get",
 				}).then(function(e) {
-//					console.log(e)
+					console.log(e)
 //					console.log(e.data.status)
-					$scope.shanchu = function(index) {
-//						console.log(index)
+					$scope.shanchu = function(index,a) {
+//						alert(1)
+						console.log(index)
 						$http({
-							url: "http://" + ip + "/leave/?id=" + $scope.arrbb[index],
+							url: "http://" + ip + "/leave/"+ a,
 							method: "delete",
 						}).then(function(e) {
-							$scope.arrbb.splice(index,1)
+							$scope.arraa.splice(index,1)
 						})
 					}
 				})
@@ -68,13 +69,13 @@ angular.module('teamGroupApp')
 				}).then(function(e) {
 //					console.log(e)
 //					console.log(e.data.status)
-					$scope.shanchu = function(index) {
+					$scope.shanchu1= function(index,a) {
 //						console.log(index)
 						$http({
-							url: "http://" + ip + "/apply-for/?id=" + $scope.arrdd[index],
+							url: "http://" + ip + "/apply-for/" + a,
 							method: "delete",
 						}).then(function(e) {
-							$scope.arrdd.splice(index,1)
+							$scope.arrcc.splice(index,1)
 						})
 					}
 				})
@@ -97,13 +98,13 @@ angular.module('teamGroupApp')
 				}).then(function(e) {
 //					console.log(e)
 //					console.log(e.data.status)
-					$scope.shanchu = function(index) {
+					$scope.shanchu2= function(index,a) {
 //						console.log(index)
 						$http({
-							url: "http://" + ip + "/businesstrip/?id=" + $scope.arrff[index],
+							url: "http://" + ip + "/businesstrip/" + a,
 							method: "delete",
 						}).then(function(e) {
-							$scope.arrff.splice(index,1)
+							$scope.arree.splice(index,1)
 						})
 					}
 				})
@@ -127,13 +128,13 @@ angular.module('teamGroupApp')
 				}).then(function(e) {
 //					console.log(e)
 //					console.log(e.data.status)
-					$scope.shanchu = function(index) {
+					$scope.shanchu3= function(index,a) {
 //						console.log(index)
 						$http({
-							url: "http://" + ip + "/transfer/?id=" + $scope.arrhh[index],
+							url: "http://" + ip + "/transfer/" + a,
 							method: "delete",
 						}).then(function(e) {
-							$scope.arrhh.splice(index,1)
+							$scope.arrgg.splice(index,1)
 						})
 					}
 				})
@@ -156,14 +157,13 @@ angular.module('teamGroupApp')
 					method: "get",
 				}).then(function(e) {
 //					console.log(e)
-					console.log(e.data.status)
-					$scope.shanchu = function(index) {
+					$scope.shanchu4= function(index,a) {
 //						console.log(index)
 						$http({
-							url: "http://" + ip + "/vacation/?id=" + $scope.arrjj[index],
+							url: "http://" + ip + "/vacation/" + a,
 							method: "delete",
 						}).then(function(e) {
-							$scope.arrjj.splice(index,1)
+							$scope.arrii.splice(index,1)
 						})
 					}
 				})

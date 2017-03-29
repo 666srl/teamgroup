@@ -9,35 +9,35 @@
 				<p>请假原因：{{xinx.liyou}}</p>
 				<p ng-if="xinx.status==1">返回结果：申请未通过</p>
 				<p ng-if="xinx.status==0">返回结果：申请已通过</p>
-				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu($index)">
+				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu($index,xinx.id)">
 			</div>
 			<div class="staff_fu_content_1" ng-repeat="xinx1 in arrcc">
 				<p>类&#x3000;&#x3000;别：{{xinx1.xiangmumingcheng}}</p>
 				<p>报销金额：{{xinx1.jine}}</p>
 				<p ng-if="xinx1.status==1">返回结果：申请未通过</p>
 				<p ng-if="xinx1.status==0">返回结果：申请已通过</p>
-				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu($index)">
+				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu1($index,xinx1.id)">
 			</div>
 			<div class="staff_fu_content_1" ng-repeat="xinx2 in arree">
 				<p>类&#x3000;&#x3000;别：出差</p>
 				<p>出差原因：{{xinx2.baogao}}</p>
 				<p ng-if="xinx2.status==1">返回结果：申请未通过</p>
 				<p ng-if="xinx2.status==0">返回结果：申请已通过</p>
-				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu($index)">
+				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu2($index,xinx2.id)">
 			</div>
 			<div class="staff_fu_content_1" ng-repeat="xinx3 in arrgg">
 				<p>类&#x3000;&#x3000;别：职位调动</p>
 				<p>调动原因：{{xinx3.diaoruyuanyin}}</p>
 				<p ng-if="xinx3.status==1">返回结果：申请未通过</p>
 				<p ng-if="xinx3.status==0">返回结果：申请已通过</p>
-				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu($index)">
+				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu3($index,xinx3.id)">
 			</div>
 			<div class="staff_fu_content_1" ng-repeat="xinx4 in arrii">
 				<p>类&#x3000;&#x3000;别：调休</p>
 				<p>调休原因：{{xinx4.yuanyin}}</p>
 				<p ng-if="xinx4.status==1">返回结果：申请未通过</p>
 				<p ng-if="xinx4.status==0">返回结果：申请已通过</p>
-				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu($index)">
+				<input type="button" value="删除" class="btn btn-info" ng-click="shanchu4($index,xinx4.id)">
 			</div>
 			
 		</div>
