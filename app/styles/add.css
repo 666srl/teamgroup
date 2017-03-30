@@ -1,4 +1,6 @@
-
+button{
+	font-size: .6rem !important;
+}
 .dj-bg{
 	background: rgba(255,255,255,0.3);
 	height: 100%;
