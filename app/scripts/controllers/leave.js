@@ -63,6 +63,7 @@ angular.module('teamGroupApp').controller('leaveCtrl',function($scope,$http,$sta
 				zhiwei:sessionStorage.zhiwei,
 				leibie:$scope.text1,
 				liyou:$scope.liyou,
+				time1:$scope.shijian1,
 				time2:$scope.shijian2,
 				status:1,
 				uid:localStorage.loid
