@@ -88,7 +88,7 @@
 		 				zhiwei:$scope.zhiwei,
 		 				xingming:$scope.name,
 		 				state:$scope.zhangtai,
-		 				img:$scope.to,
+		 				img:$scope.to
 		 		}
 		 	}).then(function(data){
 
