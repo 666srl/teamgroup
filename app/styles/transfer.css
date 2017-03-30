@@ -40,7 +40,7 @@
 
 .pj_center {
 	margin-top: 0.5rem;
-	padding-left: 0.5rem;
+	padding-left: .8rem;
 	color: white;
 	font-size: 0.6rem;
 	font-family: "微软雅黑";
@@ -68,7 +68,7 @@
 } 
 .tra_bth{
 	width:8rem;
-	margin-left:1.5rem;
+	margin-left:4.5rem;
 	float:left;
 	margin-top:1.5rem;
 }
