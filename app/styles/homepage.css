@@ -63,7 +63,7 @@
 	margin-top: 2rem;
 }
 .srl-text {
-	line-height:7rem;
+
 	background: rgba(230,230,250,0.7);
 	text-align: center;
 	position: absolute;
@@ -94,18 +94,25 @@
 .srl-content .d {
 	width: 4rem;
 	height:7rem;
-	line-height:7rem;
+	
 	top: 14rem;
 	left: 20%;
 }
 .srl-content .e {
 	width: 4rem;
 	height:7rem;
-	line-height:7rem;
+	
 	top: 14rem;
 	left: 60%;
 }
 
 .srl-showtop button {
 	color: #fff;
+}
+i{
+	display:block !important;
+	margin-top:1rem ;
+    margin-bottom: 1.3rem;
+	color: #000000;
+	
 }

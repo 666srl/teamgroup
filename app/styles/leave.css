@@ -99,7 +99,7 @@ body{
 	margin-top:1.5rem;
 }
 .leave_btn input:nth-child(1){
-	margin-left:3rem;
+	margin-left:1.5rem;
 }
 .leave_qianjia span{
 	display:block;
@@ -161,11 +161,11 @@ body{
 }
 .end {
 	display: inline-block;
-	width: 70% !important;
+	width: 65% !important;
 	margin-left: 0rem;
 	}
 .state{
 	display: inline-block;
-	width: 70% !important;
+	width: 65% !important;
 	margin-left: 0rem;
 	}
