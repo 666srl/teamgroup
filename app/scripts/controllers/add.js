@@ -91,12 +91,7 @@
 		 				img:$scope.to
 		 		}
 		 	}).then(function(data){
-				$("#yes").attr("disabled", true);
-				if (status == 200) {
-					$("#yes").attr("disabled", false);
-				}
-
-                $scope.arr.push(data.data)
+				$scope.arr.push(data.data)
 		 		$scope.name=""
 				$scope.zhiwei=""
 				$scope.user=""
@@ -106,11 +101,15 @@
 				$scope.img = ""
 				$scope.x = false;
 				$scope.f = true;
-		 	})
-  	                     }else{
+				
+})
+                
+		 	
+		 	}else{
   	                     	$scope.tel1 = true;
   	                     
   	                     }
+		 	
   	            
   	         $scope.o = function(){
   	         	$scope.tel1 = false;
